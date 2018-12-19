@@ -2,6 +2,7 @@ package testcore.pages;
 
 import agent.IAgent;
 import central.Configuration;
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
 import java.util.Map;
@@ -28,8 +29,12 @@ public class HomePage extends FullPage {
     }
 
     public HomePage loginEmployee()throws Exception{
-        getControl("txtMobileNumberEmployee").enterText(getTestData().get("MobileNumber"));
+        getControl("txtUserIdEmployee").enterText(getTestData().get("UserID"));
         getControl("txtPasswordEmployee").enterText(getTestData().get("Password"));
+        getControl("txtCityEmployee").click();
+        getControl("txtSearchCity").enterText(getTestData().get("City"));
+        getControl("txtCitySearchResult").click();
+        getControl("btnLogin").click();
         isUserLoggedIn();
         return this;
     }

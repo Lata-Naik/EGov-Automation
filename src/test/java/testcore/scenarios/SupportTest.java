@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import testcore.pages.ComplaintsPage;
 import testcore.pages.HomePage;
 import testcore.pages.TradeLicense;
 
@@ -20,6 +21,7 @@ public class SupportTest {
     private Configuration conf = null;
     protected HomePage home;
     protected TradeLicense tradeLicense;
+    protected ComplaintsPage complaints;
     private IAgent agent;
     private ITestContext context = null;
     private String testName = null;
@@ -54,6 +56,7 @@ public class SupportTest {
         Map<String, String> testData = AppachhiCentral.INSTANCE.getTestData(context, testName);
         home = new HomePage(this.conf, agent, testData);
         tradeLicense = new TradeLicense(this.conf, agent, testData);
+        complaints = new ComplaintsPage(this.conf,agent,testData);
         logger.info(String.format("Set up for test method [%s] ended.", testName));
     }
 

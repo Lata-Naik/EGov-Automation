@@ -23,11 +23,17 @@
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "xpath=//span[text()='GET STARTED']"
 	},
+	"btnLogin": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=login-submit-action"
+	},
 	"btnComplaints": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//div[@class='label-container ']/div[text()='Complaints']"
+		"DESKTOP_WEB": "xpath=//div[@class='label-container ']/div[contains(text(),'Complaints')]"
 	},
 	"btnTradeLicense": {
 		"ANDROID": "locator=value",
@@ -40,6 +46,42 @@
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "css=.landingPageUser .label-text"
+	},
+	"txtUserIdEmployee": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=employee-phone"
+	},
+	"txtPasswordEmployee": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=employee-password"
+	},
+	"txtCityEmployee": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=person-city"
+	},
+	"txtSearchCity": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=city-picker-search"
+	},
+	"txtCitySearchResult": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[@class='list-main-card']"
+	},
+	"txtCitySearchResult": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[@class='list-main-card']"
 	}
 }
 

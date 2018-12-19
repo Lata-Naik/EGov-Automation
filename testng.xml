@@ -4,11 +4,11 @@
 
 	<test name="Login">
 		<groups>
-			<define name="Hopscotch">
-				<include name="Hopscotch" />
+			<define name="eGov">
+				<include name="eGov" />
 			</define>
 			<run>
-				<include name="Hopscotch" />
+				<include name="eGov" />
 			</run>
 		</groups>
 		<classes>

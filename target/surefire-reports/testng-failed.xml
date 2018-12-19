@@ -8,7 +8,7 @@
           <include name="runOncePerContext"/>
           <include name="tearDown"/>
           <include name="runOncePerClass"/>
-          <include name="fileComplaintCitizen"/>
+          <include name="rejectComplaintGRO"/>
           <include name="runOncePerSuite"/>
           <include name="runOncePerMethod"/>
         </methods>

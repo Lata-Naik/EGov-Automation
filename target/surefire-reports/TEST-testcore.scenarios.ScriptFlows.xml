@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testcore.scenarios.ScriptFlows" time="29.675" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testcore.scenarios.ScriptFlows" time="17.111" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="platform" value="DESKTOP_WEB"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/share/jdk1.8.0_192/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.192-b12"/>
     <property name="browser" value="Chrome"/>
-    <property name="app_browser_url" value="https://egov-micro-qa.egovernments.org/citizen/user/login"/>
+    <property name="app_browser_url" value="https://egov-micro-qa.egovernments.org/employee/user/login"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="/home/ubuntu/Documents/Test/EGov"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
-    <property name="test" value="testcore.scenarios.ScriptFlows#fileComplaintCitizen"/>
+    <property name="test" value="testcore.scenarios.ScriptFlows#rejectComplaintGRO"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/home/ubuntu/Documents/Test/EGov"/>
     <property name="java.runtime.version" value="1.8.0_192-b12"/>
@@ -51,7 +51,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/share/jdk1.8.0_192/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dplatform=DESKTOP_WEB -Dappium_url=http://127.0.0.1:13001/wd/hub -Dapp_browser_url=https://egov-micro-qa.egovernments.org/citizen/user/login -Dbrowser_bin_path=/usr/bin/google-chrome -Dbrowser_driver_path=/usr/bin/chromedriver -Dbrowser=Chrome -Dbrowser_resolution_width=1920 -Dbrowser_resolution_height=1080 -Dscreenshot_path=screenshots/ -Dtest=testcore.scenarios.ScriptFlows#fileComplaintCitizen test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dplatform=DESKTOP_WEB -Dappium_url=http://127.0.0.1:13001/wd/hub -Dapp_browser_url=https://egov-micro-qa.egovernments.org/employee/user/login -Dbrowser_bin_path=/usr/bin/google-chrome -Dbrowser_driver_path=/usr/bin/chromedriver -Dbrowser=Chrome -Dbrowser_resolution_width=1920 -Dbrowser_resolution_height=1080 -Dscreenshot_path=screenshots/ -Dtest=testcore.scenarios.ScriptFlows#rejectComplaintGRO test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -71,5 +71,5 @@
     <property name="browser_bin_path" value="/usr/bin/google-chrome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="fileComplaintCitizen" classname="testcore.scenarios.ScriptFlows" time="23.708"/>
+  <testcase name="rejectComplaintGRO" classname="testcore.scenarios.ScriptFlows" time="10.344"/>
 </testsuite>

@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="29354" started-at="2018-12-19T07:17:44Z" finished-at="2018-12-19T07:18:13Z">
+  <suite name="Surefire suite" duration-ms="16742" started-at="2018-12-19T11:23:16Z" finished-at="2018-12-19T11:23:32Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="29354" started-at="2018-12-19T07:17:44Z" finished-at="2018-12-19T07:18:13Z">
+    <test name="Surefire test" duration-ms="16742" started-at="2018-12-19T11:23:16Z" finished-at="2018-12-19T11:23:32Z">
       <class name="testcore.scenarios.ScriptFlows">
-        <test-method status="PASS" signature="runOncePerSuite()[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="runOncePerSuite" is-config="true" duration-ms="94" started-at="2018-12-19T12:47:44Z" finished-at="2018-12-19T12:47:44Z">
+        <test-method status="PASS" signature="runOncePerSuite()[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerSuite" is-config="true" duration-ms="113" started-at="2018-12-19T16:53:15Z" finished-at="2018-12-19T16:53:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerSuite -->
-        <test-method status="PASS" signature="runOncePerContext(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="runOncePerContext" is-config="true" duration-ms="5" started-at="2018-12-19T12:47:44Z" finished-at="2018-12-19T12:47:44Z">
+        <test-method status="PASS" signature="runOncePerContext(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerContext" is-config="true" duration-ms="6" started-at="2018-12-19T16:53:16Z" finished-at="2018-12-19T16:53:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@77659b30]]>
+                <![CDATA[org.testng.TestRunner@51bd8b5c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerContext -->
-        <test-method status="PASS" signature="runOncePerClass(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="runOncePerClass" is-config="true" duration-ms="1" started-at="2018-12-19T12:47:44Z" finished-at="2018-12-19T12:47:44Z">
+        <test-method status="PASS" signature="runOncePerClass(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerClass" is-config="true" duration-ms="1" started-at="2018-12-19T16:53:16Z" finished-at="2018-12-19T16:53:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@77659b30]]>
+                <![CDATA[org.testng.TestRunner@51bd8b5c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerClass -->
-        <test-method status="PASS" signature="runOncePerMethod(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="runOncePerMethod" is-config="true" duration-ms="5557" started-at="2018-12-19T12:47:44Z" finished-at="2018-12-19T12:47:49Z">
+        <test-method status="PASS" signature="runOncePerMethod(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerMethod" is-config="true" duration-ms="6303" started-at="2018-12-19T16:53:16Z" finished-at="2018-12-19T16:53:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@77659b30]]>
+                <![CDATA[org.testng.TestRunner@51bd8b5c]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void testcore.scenarios.ScriptFlows.fileComplaintCitizen() throws java.lang.Exception]]>
+                <![CDATA[public void testcore.scenarios.ScriptFlows.rejectComplaintGRO() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerMethod -->
-        <test-method status="PASS" signature="fileComplaintCitizen()[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="fileComplaintCitizen" duration-ms="23708" started-at="2018-12-19T12:47:49Z" finished-at="2018-12-19T12:48:13Z">
+        <test-method status="PASS" signature="rejectComplaintGRO()[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="rejectComplaintGRO" duration-ms="10346" started-at="2018-12-19T16:53:22Z" finished-at="2018-12-19T16:53:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fileComplaintCitizen -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="tearDown" is-config="true" duration-ms="73" started-at="2018-12-19T12:48:13Z" finished-at="2018-12-19T12:48:13Z">
+        </test-method> <!-- rejectComplaintGRO -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="tearDown" is-config="true" duration-ms="74" started-at="2018-12-19T16:53:32Z" finished-at="2018-12-19T16:53:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fileComplaintCitizen status=SUCCESS method=ScriptFlows.fileComplaintCitizen()[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711] output={null}]]]>
+                <![CDATA[[TestResult name=rejectComplaintGRO status=SUCCESS method=ScriptFlows.rejectComplaintGRO()[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc] output={null}]]]>
               </value>
             </param>
           </params>

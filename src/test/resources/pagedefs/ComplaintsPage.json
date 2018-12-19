@@ -76,8 +76,105 @@
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "xpath=//div[@class='label-text complaint-number-value-label']"
+	},
+	"txtFirstComplaint": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=complaint-0"
+	},
+	"btnAssign": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[contains(text(),'ASSIGN')]"
+	},
+	"btnReject": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=actionOne"
+	},
+	"txtSearchLME": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=employee-search"
+	},
+	"txtLMEName": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[text()='Manju']"
+	},
+	"txtAssignedToLMEmsg": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[@class='label-container thankyou-text']/div"
+	},
+	"btnMarkResolved": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//*[text()='MARK RESOLVED']"
+	},
+	"btnRequestReassign": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[text()='REQUEST RE-ASSIGN']"
+	},
+	"txtComment": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=reopencomplaint-comment-field"
+	},
+	"txtSearchMobileNumber": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=mobile-no"
+	},
+	"txtSearchComplaintNumber": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=complaint-no"
+	},
+	"btnSearch": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[text()='SEARCH']"
+	},
+	"txtResolvedSuccessMsg": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[@class='label-container secondary-text']"
+	},
+	"rdoReasonToReject": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[@class='undefined RadioComp']/div"
+	},
+	"btnSubmit": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=reopencomplaint-submit-action"
+	},
+	"txtRejectedSuccessMsg": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[@class='label-container thankyou-text']/div"
 	}
 }
+
 
 
 
