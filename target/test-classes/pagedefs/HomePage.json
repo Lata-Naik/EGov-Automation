@@ -1,0 +1,45 @@
+{
+	"txtMobileNumber": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@type='number']"
+	},
+	"btnContinue": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[text()='Continue']"
+	},
+	"txtOTP": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@type='number']"
+	},
+	"btnGetStarted": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[text()='GET STARTED']"
+	},
+	"btnComplaints": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[@class='label-container ']/div[text()='Complaints']"
+	},
+	"btnTradeLicense": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[@class='label-container ']/div[text()='TradeLicense']"
+	},
+	"txtWelcomeText": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=.landingPageUser .label-text"
+	}
+}
+

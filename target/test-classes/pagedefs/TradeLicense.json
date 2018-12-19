@@ -1,0 +1,121 @@
+{
+	"btnApply": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[text()='APPLY']"
+	},
+	"txtSelectCity": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='react-select-2-input']"
+	},
+	"btnSelect": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[text()='SELECT']"
+	},
+	"txtTradeName": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-tradeName']"
+	},
+	"drpSelectStructureType": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[text()='Select Structure Type']/.."
+	},
+	"drpSelectSubStructureType": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//div[text()='Select Structure Sub Type']/.."
+	},
+	"txtTradeCommencementDate": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-tradeCommencementDate']"
+	},
+	"txtPropertyId": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-tradeLocPropertyID']"
+	},
+	"txtUOMValue": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-accessoriesUOMValue']"
+	},
+	"txtMohalla": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='react-select-2-input']"
+	},
+	"btnNextStep": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[text()='NEXT STEP']"
+	},
+	"txtMobileNo": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-getOwnerMobNoField']"
+	},
+	"txtName": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-ownerName']"
+	},
+	"txtFatherHusbandName": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-getFatherNameField']"
+	},
+	"txtDOB": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-ownerDOB']"
+	},
+	"txtAddress": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-ownerAddress']"
+	},
+	"btnUploadIDProof": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[text()='UPLOAD FILE']"
+	},
+	"btnUploadOwnershipProof": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[text()='UPLOAD FILE']"
+	},
+	"btnSubmit": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[text()='SUBMIT']"
+	}
+}
+
+
+
+
+
