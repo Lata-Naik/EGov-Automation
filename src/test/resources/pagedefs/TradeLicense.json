@@ -33,13 +33,37 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//div[text()='Select Structure Sub Type']/.."
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-tradeStructureSubType']/preceding-sibling::div"
 	},
 	"txtTradeCommencementDate": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-tradeCommencementDate']"
+	},
+	"txtTradeCategory": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-tradeCategory']/.."
+	},
+	"txtTradeType": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-tradeType']/.."
+	},
+	"txtTradeSubType": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='react-select-3-input']"
+	},
+	"txtAccessories": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-accessoriesName']/.."
 	},
 	"txtPropertyId": {
 		"ANDROID": "locator=value",
@@ -57,7 +81,7 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//input[@id='react-select-2-input']"
+		"DESKTOP_WEB": "xpath=//input[@id='react-select-2-input']/.."
 	},
 	"btnNextStep": {
 		"ANDROID": "locator=value",
@@ -95,23 +119,35 @@
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-ownerAddress']"
 	},
+	"btnUploadProof": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=#material-ui-cardContent>div:nth-child(3) input"
+	},
 	"btnUploadIDProof": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//span[text()='UPLOAD FILE']"
+		"DESKTOP_WEB": "css=#material-ui-cardContent>div:nth-child(3)>div:nth-child(1) #contained-button-file"
 	},
 	"btnUploadOwnershipProof": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//span[text()='UPLOAD FILE']"
+		"DESKTOP_WEB": "css=#material-ui-cardContent>div:nth-child(3) #contained-button-file"
 	},
 	"btnSubmit": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "xpath=//span[text()='SUBMIT']"
+	},
+	"icnUploadClose": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=#material-ui-tradeDocumentDetails button .material-icons"
 	}
 }
 

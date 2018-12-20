@@ -301,9 +301,9 @@ public abstract class WebAgent implements IAgent {
 
 	@Override
 	public void switchToIFrame() throws Exception {
-			logger.debug("Switching to iFrame");
+			logger.info("Switching to iFrame");
 			List<WebElement> listFrames = driver.findElements(By.tagName("iFrame"));
-			logger.info("iframe "+ listFrames);
+			//logger.info("iframe "+ listFrames);
 			int frameIndex=listFrames.size();
 			logger.info("frameIndex "+frameIndex);
 			driver.switchTo().frame(listFrames.get(frameIndex-1));
@@ -311,7 +311,7 @@ public abstract class WebAgent implements IAgent {
 
 	@Override
 	public void switchToDefaultFrame() throws Exception {
-		logger.debug("Switching to Default Frame");
+		logger.info("Switching to Default Frame");
 		driver.switchTo().defaultContent();
 	}
 }

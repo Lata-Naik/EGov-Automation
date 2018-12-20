@@ -1,0 +1,56 @@
+{
+	"btnProceedToPayment": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-collectPaymentButtonLabel"
+	},
+	"btnMakePayment": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-submitButtonLabel"
+	},
+	"txtAmount": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//p[contains(@class,'tl-total-amount-value')]"
+	},
+	"txtMasterCard": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "name=MasterCard"
+	},
+	"txtCardNumber": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=CardNumber"
+	},
+	"txtCardMonth": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=CardMonth"
+	},
+	"txtCardYear": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=CardYear"
+	},
+	"btnPayNow": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=Paybutton"
+	}
+}
+
+
+
+
+
+

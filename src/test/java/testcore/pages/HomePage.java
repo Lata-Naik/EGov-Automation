@@ -50,9 +50,9 @@ public class HomePage extends FullPage {
     }
 
     public void isUserLoggedIn()throws Exception{
-        boolean usedLogin = getControl("txtWelcomeText").getText()
+        boolean userLogin = getControl("txtWelcomeText").getText()
                 .equalsIgnoreCase("Welcome "+getTestData().get("UserName")+",");
         logger.info("Logged in user "+getTestData().get("UserName"));
-        Assert.assertTrue(usedLogin, "User not logged in");
+        Assert.assertTrue(userLogin, "User not logged in");
     }
 }

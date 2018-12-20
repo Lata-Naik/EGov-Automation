@@ -21,16 +21,20 @@ public class ComplaintsPage extends FullPage {
 
     public ComplaintsPage createComplaint() throws Exception{
         getControl("btnFileComplaint").click();
+        getControl("txtUploadPhoto").enterText(getTestData().get("UploadPhoto"));
         getControl("drpComplaintType").click();
         getControl("txtWaterandSewage").click();
         getControl("txtBlockOrOverflowingSewage").click();
         getControl("txtAdditionalDetails").enterText(getTestData().get("AdditionalDetails"));
+        getControl("txtCity").enterText(getTestData().get("City"));
+        selectOptionFromDropDownByEnter(getTestData().get("City"));
+        getControl("txtMohalla").enterText(getTestData().get("Mohalla"));
+        selectOptionFromDropDownByEnter(getTestData().get("Mohalla"));;
         getControl("txtLocationDetails").click();
         getControl("txtSearchLocation").enterText(getTestData().get("SearchLocation"));
         getControl("txtSearchLocation").enterText(Keys.ENTER);
         Thread.sleep(1000);
         getControl("btnPick").click();
-        Thread.sleep(10000);
         getControl("txtHouseNo").enterText(getTestData().get("HouseNo"));
         getControl("txtLandmark").enterText(getTestData().get("Landmark"));
         getControl("btnSubmitComplaint").click();

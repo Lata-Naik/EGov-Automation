@@ -11,7 +11,8 @@ public class ScriptFlows extends SupportTest {
         home.loginCitizen()
                 .navigateToTradeLicense()
                 .applyTradeLicense()
-                .fillTradeLicenseForm();
+                .fillTradeLicenseForm()
+                .makePayment();
     }
 
     @Test

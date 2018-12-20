@@ -11,6 +11,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import testcore.pages.ComplaintsPage;
 import testcore.pages.HomePage;
+import testcore.pages.PaymentPage;
 import testcore.pages.TradeLicense;
 
 import java.lang.reflect.Method;
@@ -22,6 +23,7 @@ public class SupportTest {
     protected HomePage home;
     protected TradeLicense tradeLicense;
     protected ComplaintsPage complaints;
+    protected PaymentPage payment;
     private IAgent agent;
     private ITestContext context = null;
     private String testName = null;
@@ -57,6 +59,7 @@ public class SupportTest {
         home = new HomePage(this.conf, agent, testData);
         tradeLicense = new TradeLicense(this.conf, agent, testData);
         complaints = new ComplaintsPage(this.conf,agent,testData);
+        payment= new PaymentPage(this.conf,agent,testData);
         logger.info(String.format("Set up for test method [%s] ended.", testName));
     }
 

@@ -1,63 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
+<testng-results skipped="0" failed="1" ignored="4" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="16742" started-at="2018-12-19T11:23:16Z" finished-at="2018-12-19T11:23:32Z">
+  <suite name="Surefire suite" duration-ms="24081" started-at="2018-12-20T12:45:09Z" finished-at="2018-12-20T12:45:33Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="16742" started-at="2018-12-19T11:23:16Z" finished-at="2018-12-19T11:23:32Z">
+    <test name="Surefire test" duration-ms="24081" started-at="2018-12-20T12:45:09Z" finished-at="2018-12-20T12:45:33Z">
       <class name="testcore.scenarios.ScriptFlows">
-        <test-method status="PASS" signature="runOncePerSuite()[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerSuite" is-config="true" duration-ms="113" started-at="2018-12-19T16:53:15Z" finished-at="2018-12-19T16:53:16Z">
+        <test-method status="PASS" signature="runOncePerSuite()[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerSuite" is-config="true" duration-ms="197" started-at="2018-12-20T18:15:08Z" finished-at="2018-12-20T18:15:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerSuite -->
-        <test-method status="PASS" signature="runOncePerContext(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerContext" is-config="true" duration-ms="6" started-at="2018-12-19T16:53:16Z" finished-at="2018-12-19T16:53:16Z">
+        <test-method status="PASS" signature="runOncePerContext(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerContext" is-config="true" duration-ms="14" started-at="2018-12-20T18:15:09Z" finished-at="2018-12-20T18:15:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@51bd8b5c]]>
+                <![CDATA[org.testng.TestRunner@6aa8e115]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerContext -->
-        <test-method status="PASS" signature="runOncePerClass(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerClass" is-config="true" duration-ms="1" started-at="2018-12-19T16:53:16Z" finished-at="2018-12-19T16:53:16Z">
+        <test-method status="PASS" signature="runOncePerClass(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerClass" is-config="true" duration-ms="1" started-at="2018-12-20T18:15:09Z" finished-at="2018-12-20T18:15:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@51bd8b5c]]>
+                <![CDATA[org.testng.TestRunner@6aa8e115]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerClass -->
-        <test-method status="PASS" signature="runOncePerMethod(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerMethod" is-config="true" duration-ms="6303" started-at="2018-12-19T16:53:16Z" finished-at="2018-12-19T16:53:22Z">
+        <test-method status="PASS" signature="runOncePerMethod(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="runOncePerMethod" is-config="true" duration-ms="6991" started-at="2018-12-20T18:15:09Z" finished-at="2018-12-20T18:15:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@51bd8b5c]]>
+                <![CDATA[org.testng.TestRunner@6aa8e115]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void testcore.scenarios.ScriptFlows.rejectComplaintGRO() throws java.lang.Exception]]>
+                <![CDATA[public void testcore.scenarios.ScriptFlows.createTradeLicenseCitizen() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerMethod -->
-        <test-method status="PASS" signature="rejectComplaintGRO()[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="rejectComplaintGRO" duration-ms="10346" started-at="2018-12-19T16:53:22Z" finished-at="2018-12-19T16:53:32Z">
+        <test-method status="FAIL" signature="createTradeLicenseCitizen()[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="createTradeLicenseCitizen" duration-ms="16724" started-at="2018-12-20T18:15:16Z" finished-at="2018-12-20T18:15:32Z">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Issue in throwControlActionException for Platform: DESKTOP_WEB, Page: TradeLicense, Control Name: txtTradeCommencementDate. Exception: unknown error: cannot focus element  (Session info: chrome=71.0.3578.98)  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'System info: host: 'Lata-Naik', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '1.8.0_192'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:45157}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}Session ID: 9ceb10e22bdc539a1b12493fbae39c01]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Issue in throwControlActionException for Platform: DESKTOP_WEB, Page: TradeLicense, Control Name: txtTradeCommencementDate. Exception: unknown error: cannot focus element  (Session info: chrome=71.0.3578.98)  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'System info: host: 'Lata-Naik', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '1.8.0_192'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:45157}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}Session ID: 9ceb10e22bdc539a1b12493fbae39c01at control.Control.throwControlActionException(Control.java:89)at control.WebControl.enterText(WebControl.java:44)at testcore.pages.TradeLicense.fillTradeDetails(TradeLicense.java:46)at testcore.pages.TradeLicense.fillTradeLicenseForm(TradeLicense.java:32)at testcore.scenarios.ScriptFlows.createTradeLicenseCitizen(ScriptFlows.java:14)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rejectComplaintGRO -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="tearDown" is-config="true" duration-ms="74" started-at="2018-12-19T16:53:32Z" finished-at="2018-12-19T16:53:32Z">
+        </test-method> <!-- createTradeLicenseCitizen -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc]" name="tearDown" is-config="true" duration-ms="320" started-at="2018-12-20T18:15:32Z" finished-at="2018-12-20T18:15:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=rejectComplaintGRO status=SUCCESS method=ScriptFlows.rejectComplaintGRO()[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc] output={null}]]]>
+                <![CDATA[[TestResult name=createTradeLicenseCitizen status=FAILURE method=ScriptFlows.createTradeLicenseCitizen()[pri:0, instance:testcore.scenarios.ScriptFlows@3b81a1bc] output={null}]]]>
               </value>
             </param>
           </params>

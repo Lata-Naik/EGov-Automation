@@ -47,6 +47,24 @@
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "id=map-pick-button"
 	},
+	"txtCity": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=city"
+	},
+	"txtMohalla": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=mohalla"
+	},
+	"lstFirstDropDown": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=(//div[@class='autosuggest fix-for-layout-break'])[2]"
+	},
 	"txtHouseNo": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
@@ -172,6 +190,12 @@
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "xpath=//div[@class='label-container thankyou-text']/div"
+	},
+	"txtUploadPhoto": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=.upload-photo-overlay>div>input"
 	}
 }
 

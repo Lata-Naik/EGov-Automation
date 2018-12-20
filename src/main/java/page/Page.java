@@ -212,4 +212,13 @@ public abstract class Page implements IPage {
 		this.agent.switchToDefaultFrame();
 	}
 
+	public void selectOptionFromDropDownByEnter(String xpathValue) throws Exception{
+		String xpath="//*[contains(text(),'" + xpathValue + "')]";
+		getAgent().getWebDriver().findElement(By.xpath(xpath)).click();
+	}
+
+	public void selectOptionFromDropDownList(String cssValue) throws Exception{
+		String css="li[data-value='"+cssValue+"']";
+		getAgent().getWebDriver().findElement(By.cssSelector(css)).click();
+	}
 }

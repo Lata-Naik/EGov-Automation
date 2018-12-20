@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testcore.scenarios.ScriptFlows" time="17.111" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testcore.scenarios.ScriptFlows" time="24.737" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="platform" value="DESKTOP_WEB"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/share/jdk1.8.0_192/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.192-b12"/>
     <property name="browser" value="Chrome"/>
-    <property name="app_browser_url" value="https://egov-micro-qa.egovernments.org/employee/user/login"/>
+    <property name="app_browser_url" value="https://egov-micro-qa.egovernments.org/citizen/user/login"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="/home/ubuntu/Documents/Test/EGov"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
-    <property name="test" value="testcore.scenarios.ScriptFlows#rejectComplaintGRO"/>
+    <property name="test" value="testcore.scenarios.ScriptFlows#createTradeLicenseCitizen"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/home/ubuntu/Documents/Test/EGov"/>
     <property name="java.runtime.version" value="1.8.0_192-b12"/>
@@ -51,7 +51,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/share/jdk1.8.0_192/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dplatform=DESKTOP_WEB -Dappium_url=http://127.0.0.1:13001/wd/hub -Dapp_browser_url=https://egov-micro-qa.egovernments.org/employee/user/login -Dbrowser_bin_path=/usr/bin/google-chrome -Dbrowser_driver_path=/usr/bin/chromedriver -Dbrowser=Chrome -Dbrowser_resolution_width=1920 -Dbrowser_resolution_height=1080 -Dscreenshot_path=screenshots/ -Dtest=testcore.scenarios.ScriptFlows#rejectComplaintGRO test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dplatform=DESKTOP_WEB -Dappium_url=http://127.0.0.1:13001/wd/hub -Dapp_browser_url=https://egov-micro-qa.egovernments.org/citizen/user/login -Dbrowser_bin_path=/usr/bin/google-chrome -Dbrowser_driver_path=/usr/bin/chromedriver -Dbrowser=Chrome -Dbrowser_resolution_width=1920 -Dbrowser_resolution_height=1080 -Dscreenshot_path=screenshots/ -Dtest=testcore.scenarios.ScriptFlows#createTradeLicenseCitizen test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -71,5 +71,41 @@
     <property name="browser_bin_path" value="/usr/bin/google-chrome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="rejectComplaintGRO" classname="testcore.scenarios.ScriptFlows" time="10.344"/>
+  <testcase name="createTradeLicenseCitizen" classname="testcore.scenarios.ScriptFlows" time="16.738">
+    <failure message="Issue in throwControlActionException for Platform: DESKTOP_WEB, Page: TradeLicense, Control Name: txtTradeCommencementDate. Exception: unknown error: cannot focus element&#10;  (Session info: chrome=71.0.3578.98)&#10;  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;Lata-Naik&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-42-generic&apos;, java.version: &apos;1.8.0_192&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:45157}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}&#10;Session ID: 9ceb10e22bdc539a1b12493fbae39c01" type="java.lang.Exception">java.lang.Exception: 
+Issue in throwControlActionException for Platform: DESKTOP_WEB, Page: TradeLicense, Control Name: txtTradeCommencementDate. Exception: unknown error: cannot focus element
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'Lata-Naik', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '1.8.0_192'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:45157}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 9ceb10e22bdc539a1b12493fbae39c01
+	at testcore.scenarios.ScriptFlows.createTradeLicenseCitizen(ScriptFlows.java:14)
+</failure>
+    <system-out><![CDATA[[INFO ] [Thread:main] 2018-12-20 18:15:09,153 testcore.scenarios.SupportTest.runOncePerSuite:L33 - Central setup completed.
+[INFO ] [Thread:main] 2018-12-20 18:15:09,164 testcore.scenarios.SupportTest.runOncePerContext:L38 - Test context setup started for Surefire test test.
+[INFO ] [Thread:main] 2018-12-20 18:15:09,168 testcore.scenarios.SupportTest.runOncePerContext:L40 - Test context setup completed for Surefire test test.
+[INFO ] [Thread:main] 2018-12-20 18:15:09,190 testcore.scenarios.SupportTest.runOncePerMethod:L52 - Set up for test method [createTradeLicenseCitizen] started.
+[INFO ] [Thread:main] 2018-12-20 18:15:16,180 testcore.scenarios.SupportTest.runOncePerMethod:L60 - Set up for test method [createTradeLicenseCitizen] ended.
+[INFO ] [Thread:main] 2018-12-20 18:15:23,139 testcore.pages.HomePage.isUserLoggedIn:L55 - Logged in user lata
+[INFO ] [Thread:main] 2018-12-20 18:15:23,737 agent.internal.WebAgent.switchToIFrame:L304 - Switching to iFrame
+[INFO ] [Thread:main] 2018-12-20 18:15:23,764 agent.internal.WebAgent.switchToIFrame:L308 - frameIndex 1
+[ERROR] [Thread:main] 2018-12-20 18:15:32,901 control.Control.throwControlActionException:L88 - Issue in throwControlActionException for Platform: DESKTOP_WEB, Page: TradeLicense, Control Name: txtTradeCommencementDate. Exception: unknown error: cannot focus element
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'Lata-Naik', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '1.8.0_192'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:45157}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 9ceb10e22bdc539a1b12493fbae39c01
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706) on port 16222
+Only local connections are allowed.
+Dec 20, 2018 6:15:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
 </testsuite>

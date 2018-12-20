@@ -2,9 +2,7 @@ package testcore.pages;
 
 import agent.IAgent;
 import central.Configuration;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 
 import java.util.Map;
 
@@ -30,29 +28,36 @@ public class TradeLicense extends FullPage {
         return this;
     }
 
-    public void fillTradeLicenseForm() throws Exception{
-       fillTradeDetails();
-       filTradeLocationDetails();
+    public PaymentPage fillTradeLicenseForm() throws Exception{
+        fillTradeDetails();
+        filTradeLocationDetails();
         fillOwnerInformation();
         uploadFiles();
         submitForm();
+        return new PaymentPage(getConfig(),getAgent(),getTestData());
     }
 
     public void fillTradeDetails() throws Exception{
         getControl("txtTradeName").enterText(getTestData().get("TradeName"));
-        Thread.sleep(10000);
-//        getControl("drpSelectStructureType").enterText(getTestData().get("StructureType"));
-//        getControl("drpSelectStructureType").enterText(Keys.ENTER);
-//        getControl("drpSelectSubStructureType").enterText(getTestData().get("SubStructureType"));
-//        getControl("drpSelectSubStructureType").enterText(Keys.ENTER);
+        getControl("drpSelectStructureType").click();
+        selectOptionFromDropDownList(getTestData().get("StructureType"));
+        getControl("drpSelectSubStructureType").click();
+        selectOptionFromDropDownList(getTestData().get("SubStructureType"));
         getControl("txtTradeCommencementDate").enterText(getTestData().get("TradeCommencementDate"));
-        Thread.sleep(20000);
         getControl("txtUOMValue").enterText(getTestData().get("UOM"));
     }
 
     public void filTradeLocationDetails()throws Exception{
-       // getControl("txtMohalla").enterText(Keys.ENTER);
-        Thread.sleep(10000);
+        getControl("txtTradeCategory").click();
+        selectOptionFromDropDownList(getTestData().get("TradeCategory"));
+        getControl("txtTradeType").click();
+        selectOptionFromDropDownList(getTestData().get("TradeType"));
+        getControl("txtTradeSubType").click();
+        selectOptionFromDropDownByEnter(getTestData().get("TradeSubType"));
+        getControl("txtAccessories").click();
+        selectOptionFromDropDownList(getTestData().get("Accessories"));
+        getControl("txtMohalla").click();
+        selectOptionFromDropDownByEnter(getTestData().get("Mohalla"));
         getControl("btnNextStep").click();
     }
 
@@ -70,14 +75,12 @@ public class TradeLicense extends FullPage {
 
     public void uploadFiles()throws Exception{
         switchToIFrame();
-        getControl("btnUploadIDProof").click();
-        Thread.sleep(10000);
-       // getAgent().getWebDriver().findElement(By.xpath("//span[text()='UPLOAD FILE']")).sendKeys("/home/ubuntu/Documents/Test/EGov/src/test/resources/uploadFiles/image2.jpeg");
-        getControl("btnUploadOwnershipProof").click();
-        Thread.sleep(10000);
-       // getAgent().getWebDriver().findElement(By.xpath("(//span[text()='UPLOAD FILE'])[2]")).sendKeys("/home/ubuntu/Documents/Test/EGov/src/test/resources/uploadFiles/image1");
-      //  getControl("btnUploadIDProof").enterText(getTestData().get("IDProof"));
-       // getControl("btnUploadOwnershipProof").enterText(getTestData().get("OwnershipProof"));
+        Thread.sleep(1000);
+        getControl("btnUploadProof").enterText(getTestData().get("IDProof"));
+        Thread.sleep(5000);
+        getControl("icnUploadClose","isVisible");
+        getControl("btnUploadOwnershipProof").enterText(getTestData().get("OwnershipProof"));
+        Thread.sleep(1000);
         getControl("btnNextStep").click();
     }
 
