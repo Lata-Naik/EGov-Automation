@@ -39,7 +39,7 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//div[@class='label-container ']/div[text()='TradeLicense']"
+		"DESKTOP_WEB": "xpath=//div[@class='label-container ']/div[contains(text(),'Trade')]"
 	},
 	"txtWelcomeText": {
 		"ANDROID": "locator=value",

@@ -9,24 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,081</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">40,175</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcore.scenarios.ScriptFlows</td><td><a href="#m0">createTradeLicenseCitizen</a></td><td rowspan="1">1545309916181</td><td rowspan="1">16724</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcore.scenarios.ScriptFlows</td><td><a href="#m0">approveTradeLicenseApprover</a></td><td rowspan="1">1545648061574</td><td rowspan="1">28435</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">testcore.scenarios.ScriptFlows#createTradeLicenseCitizen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: Issue in throwControlActionException for Platform: DESKTOP_WEB, Page: TradeLicense, Control Name: txtTradeCommencementDate. Exception: unknown error: cannot focus element
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;Lata-Naik&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-42-generic&apos;, java.version: &apos;1.8.0_192&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:45157}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 9ceb10e22bdc539a1b12493fbae39c01
-	at control.Control.throwControlActionException(Control.java:89)
-	at control.WebControl.enterText(WebControl.java:44)
-	at testcore.pages.TradeLicense.fillTradeDetails(TradeLicense.java:46)
-	at testcore.pages.TradeLicense.fillTradeLicenseForm(TradeLicense.java:32)
-	at testcore.scenarios.ScriptFlows.createTradeLicenseCitizen(ScriptFlows.java:14)
+<h2>Surefire test</h2><h3 id="m0">testcore.scenarios.ScriptFlows#approveTradeLicenseApprover</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at testcore.pages.TradeLicense.isApplicationApproved(TradeLicense.java:130)
+	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:60)
 ... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

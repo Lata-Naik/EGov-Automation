@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 20 18:15:09 IST 2018</td>
+<td>Started on:</td><td>Mon Dec 24 16:10:56 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24081 ms)</td>
+<tr><td>Total time:</td><td>40 seconds (40175 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,36 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcore.scenarios.ScriptFlows.createTradeLicenseCitizen()'><b>createTradeLicenseCitizen</b><br>Test class: testcore.scenarios.ScriptFlows</td>
-<td><div><pre>java.lang.Exception: Issue in throwControlActionException for Platform: DESKTOP_WEB, Page: TradeLicense, Control Name: txtTradeCommencementDate. Exception: unknown error: cannot focus element
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;Lata-Naik&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-42-generic&apos;, java.version: &apos;1.8.0_192&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:45157}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 9ceb10e22bdc539a1b12493fbae39c01
-	at control.Control.throwControlActionException(Control.java:89)
-	at control.WebControl.enterText(WebControl.java:44)
-	at testcore.pages.TradeLicense.fillTradeDetails(TradeLicense.java:46)
-	at testcore.pages.TradeLicense.fillTradeLicenseForm(TradeLicense.java:32)
-	at testcore.scenarios.ScriptFlows.createTradeLicenseCitizen(ScriptFlows.java:14)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1697752980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1697752980'><pre>java.lang.Exception: Issue in throwControlActionException for Platform: DESKTOP_WEB, Page: TradeLicense, Control Name: txtTradeCommencementDate. Exception: unknown error: cannot focus element
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;Lata-Naik&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-42-generic&apos;, java.version: &apos;1.8.0_192&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:45157}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 9ceb10e22bdc539a1b12493fbae39c01
-	at control.Control.throwControlActionException(Control.java:89)
-	at control.WebControl.enterText(WebControl.java:44)
-	at testcore.pages.TradeLicense.fillTradeDetails(TradeLicense.java:46)
-	at testcore.pages.TradeLicense.fillTradeLicenseForm(TradeLicense.java:32)
-	at testcore.scenarios.ScriptFlows.createTradeLicenseCitizen(ScriptFlows.java:14)
+<td title='testcore.scenarios.ScriptFlows.approveTradeLicenseApprover()'><b>approveTradeLicenseApprover</b><br>Test class: testcore.scenarios.ScriptFlows</td>
+<td><div><pre>java.lang.NullPointerException
+	at testcore.pages.TradeLicense.isApplicationApproved(TradeLicense.java:130)
+	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:60)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1204296383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1204296383'><pre>java.lang.NullPointerException
+	at testcore.pages.TradeLicense.isApplicationApproved(TradeLicense.java:130)
+	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,8 +113,8 @@ Session ID: 9ceb10e22bdc539a1b12493fbae39c01
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 </pre></div></td>
-<td>16</td>
-<td>testcore.scenarios.ScriptFlows@3b81a1bc</td></tr>
+<td>28</td>
+<td>testcore.scenarios.ScriptFlows@dfd3711</td></tr>
 </table><p>
 </body>
 </html>

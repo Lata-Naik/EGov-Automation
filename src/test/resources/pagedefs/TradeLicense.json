@@ -148,9 +148,80 @@
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "css=#material-ui-tradeDocumentDetails button .material-icons"
+	},
+	"txtLicenseApplicationNo": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-applicationNo"
+	},
+	"txtTradeLicenseNo": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-tradeLicenseNo"
+	},
+	"txtOwnerMobileNo": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-ownerMobNo"
+	},
+	"txtApplicationStatus": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=#material-ui-appStatusAndToFromDateContainer .select-field-placeholder"
+	},
+	"txtApplicationFromDate": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-fromDate"
+	},
+	"txtApplicationToDate": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-toDate"
+	},
+	"btnSearch": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=material-ui-buttonContainer"
+	},
+	"btnReject": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[text()='REJECT']"
+	},
+	"btnApprove": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[contains(text(),'APPROVE')]"
+	},
+	"txtApprovalComments": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-div"
+	},
+	"btnUploadFiles": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[text()='UPLOAD FILES']"
+	},
+	"txtApplicationApproved": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=#custom-atoms-applicationSuccessCard #material-ui-header #custom-containers-key"
 	}
 }
-
 
 
 
