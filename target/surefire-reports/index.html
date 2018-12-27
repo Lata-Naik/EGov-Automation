@@ -129,8 +129,9 @@
                   </a> <!-- approveTradeLicenseApprover -->
                   <span class="method-name">approveTradeLicenseApprover</span>
                   <div class="stack-trace">java.lang.NullPointerException
-	at testcore.pages.TradeLicense.isApplicationApproved(TradeLicense.java:130)
-	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:60)
+	at testcore.pages.HomePage.isUserLoggedIn(HomePage.java:67)
+	at testcore.pages.HomePage.loginEmployee(HomePage.java:52)
+	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:57)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -197,12 +198,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'approveTradeLicenseApprover')
 data.setCell(0, 2, 'testcore.scenarios.ScriptFlows')
-data.setCell(0, 3, 28435);
+data.setCell(0, 3, 21066);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -249,26 +250,26 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">runOncePerContext(org.testng.TestRunner@a1f72f5)</span>
-                <span class="method-start">115 ms</span>
+                <span class="method-name">runOncePerContext(org.testng.TestRunner@e25951c)</span>
+                <span class="method-start">120 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">runOncePerClass(org.testng.TestRunner@a1f72f5)</span>
-                <span class="method-start">130 ms</span>
+                <span class="method-name">runOncePerClass(org.testng.TestRunner@e25951c)</span>
+                <span class="method-start">132 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">runOncePerMethod(org.testng.TestRunner@a1f72f5, public void testcore.scenarios.ScriptFlows.approveTradeLicenseApprove...)</span>
-                <span class="method-start">136 ms</span>
+                <span class="method-name">runOncePerMethod(org.testng.TestRunner@e25951c, public void testcore.scenarios.ScriptFlows.approveTradeLicenseApprove...)</span>
+                <span class="method-start">141 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">approveTradeLicenseApprover</span>
-                <span class="method-start">5017 ms</span>
+                <span class="method-start">1670 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=approveTradeLicenseApprover status=FAILURE method=ScriptFlows.approveTradeLicenseAp...)</span>
-                <span class="method-start">33843 ms</span>
+                <span class="method-start">22742 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

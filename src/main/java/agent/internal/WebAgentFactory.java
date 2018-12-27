@@ -28,10 +28,11 @@ public class WebAgentFactory {
 		switch (platform) {
 			case DESKTOP_WEB:
 				initDriver(config, browser);
-				Dimension resolution = new Dimension(Integer.parseInt(System.getProperty("browser_resolution_width")),Integer.parseInt(System.getProperty("browser_resolution_height")));
-				driver.manage().window().setSize(resolution);
-				driver.get(getProperty("app_browser_url", config));
-				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//				Dimension resolution = new Dimension(Integer.parseInt(System.getProperty("browser_resolution_width")),Integer.parseInt(System.getProperty("browser_resolution_height")));
+//				driver.manage().window().setSize(resolution);
+				driver.manage().window().maximize();
+//				driver.get(getProperty("app_browser_url", config));
+//				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				break;
 			default:
 				throw new Exception("Invalid platform, Supported platform is desktop");
@@ -47,8 +48,12 @@ public class WebAgentFactory {
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--disable-notifications");
 				options.addArguments("--disable-infobars");
-				options.setBinary(System.getProperty("browser_bin_path"));
+//				options.setBinary(System.getProperty("browser_bin_path"));
 				caps = DesiredCapabilities.chrome();
+
+
+
+
 				caps.setCapability(ChromeOptions.CAPABILITY, options);
 				caps.setCapability("pageLoadStrategy", "none");
 				caps.setVersion(ConfigType.PLATFORM_VER.toString());
@@ -123,9 +128,9 @@ public class WebAgentFactory {
 			case "OS_LINUX":
 				switch (browser) {
 					case CHROME:
-						System.setProperty("webdriver.chrome.bin", System.getProperty("browser_bin_path"));
-						System.setProperty("webdriver.chrome.driver", System.getProperty("browser_driver_path"));
-//				System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
+//						System.setProperty("webdriver.chrome.bin", System.getProperty("browser_bin_path"));
+//						System.setProperty("webdriver.chrome.driver", System.getProperty("browser_driver_path"));
+//						System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
 						break;
 					case FIREFOX:
 						System.setProperty("webdriver.firefox.bin", System.getProperty("browser_bin_path"));

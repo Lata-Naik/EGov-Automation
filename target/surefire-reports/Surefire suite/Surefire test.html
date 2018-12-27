@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 24 16:10:56 IST 2018</td>
+<td>Started on:</td><td>Thu Dec 27 16:11:43 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>40 seconds (40175 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23702 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,12 +77,14 @@ function toggleAllBoxes() {
 <tr>
 <td title='testcore.scenarios.ScriptFlows.approveTradeLicenseApprover()'><b>approveTradeLicenseApprover</b><br>Test class: testcore.scenarios.ScriptFlows</td>
 <td><div><pre>java.lang.NullPointerException
-	at testcore.pages.TradeLicense.isApplicationApproved(TradeLicense.java:130)
-	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:60)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1204296383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1204296383'><pre>java.lang.NullPointerException
-	at testcore.pages.TradeLicense.isApplicationApproved(TradeLicense.java:130)
-	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:60)
+	at testcore.pages.HomePage.isUserLoggedIn(HomePage.java:67)
+	at testcore.pages.HomePage.loginEmployee(HomePage.java:52)
+	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:57)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1324829744", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1324829744'><pre>java.lang.NullPointerException
+	at testcore.pages.HomePage.isUserLoggedIn(HomePage.java:67)
+	at testcore.pages.HomePage.loginEmployee(HomePage.java:52)
+	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,7 +115,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 </pre></div></td>
-<td>28</td>
+<td>21</td>
 <td>testcore.scenarios.ScriptFlows@dfd3711</td></tr>
 </table><p>
 </body>

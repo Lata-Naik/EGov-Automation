@@ -37,7 +37,7 @@ public class SupportTest {
 
     @BeforeTest(alwaysRun = true)
     public void runOncePerContext(ITestContext context) throws Exception {
-        logger.info(String.format("Test context setup started for %s test.", context.getName()));
+        //logger.info(String.format("Test context setup started for %s test.", context.getName()));
         AppachhiCentral.INSTANCE.registerContext(context);
         logger.info(String.format("Test context setup completed for %s test.", context.getName()));
     }
