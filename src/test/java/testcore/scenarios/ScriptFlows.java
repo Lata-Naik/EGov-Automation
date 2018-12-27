@@ -2,6 +2,8 @@ package testcore.scenarios;
 
 
 import org.testng.annotations.Test;
+import testcore.pages.HomePage;
+import testcore.pages.PropertyTax;
 
 public class ScriptFlows extends SupportTest {
 
@@ -50,4 +52,20 @@ public class ScriptFlows extends SupportTest {
                 .rejectComplaint()
                 .isComplaintRejected();
     }
+
+    @Test
+    public void createPropertyTaxCitizen() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("createPropertyTaxCitizen"));
+        home.loginCitizen()
+                .navigateToPropertyTax()
+                .applyPropertyTaxCitizen()
+                .fillPropertyTaxForm()
+                .PTmakePayment()
+                .getDataAfterPaymentSucessfull();
+        Thread.sleep(9000);
+
+
+
+    }
+
 }

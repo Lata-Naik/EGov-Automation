@@ -1,3 +1,4 @@
+testcore/pages/PropertyTax.class
 testcore/pages/PaymentPage.class
-testcore/pages/ComplaintsPage.class
 testcore/pages/TradeLicense.class
+testcore/pages/ComplaintsPage.class

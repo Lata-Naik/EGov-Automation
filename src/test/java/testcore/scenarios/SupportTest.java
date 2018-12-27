@@ -9,10 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import testcore.pages.ComplaintsPage;
-import testcore.pages.HomePage;
-import testcore.pages.PaymentPage;
-import testcore.pages.TradeLicense;
+import testcore.pages.*;
 
 import java.lang.reflect.Method;
 import java.util.Map;
@@ -24,6 +21,7 @@ public class SupportTest {
     protected TradeLicense tradeLicense;
     protected ComplaintsPage complaints;
     protected PaymentPage payment;
+    protected PropertyTax propertyTax;
     private IAgent agent;
     private ITestContext context = null;
     private String testName = null;
@@ -57,6 +55,7 @@ public class SupportTest {
         logger.debug(String.format("Test Method Name Started :: %s", testName));
         Map<String, String> testData = AppachhiCentral.INSTANCE.getTestData(context, testName);
         home = new HomePage(this.conf, agent, testData);
+        propertyTax = new PropertyTax(this.conf,agent,testData);
         tradeLicense = new TradeLicense(this.conf, agent, testData);
         complaints = new ComplaintsPage(this.conf,agent,testData);
         payment= new PaymentPage(this.conf,agent,testData);

@@ -1,7 +1,8 @@
-/home/ubuntu/Documents/Test/EGov/src/test/java/testcore/pages/PaymentPage.java
-/home/ubuntu/Documents/Test/EGov/src/test/java/testcore/pages/TradeLicense.java
-/home/ubuntu/Documents/Test/EGov/src/test/java/testcore/scenarios/ScriptFlows.java
-/home/ubuntu/Documents/Test/EGov/src/test/java/testcore/pages/HomePage.java
-/home/ubuntu/Documents/Test/EGov/src/test/java/testcore/pages/ComplaintsPage.java
-/home/ubuntu/Documents/Test/EGov/src/test/java/testcore/pages/FullPage.java
-/home/ubuntu/Documents/Test/EGov/src/test/java/testcore/scenarios/SupportTest.java
+/home/egov/git/EGov-Automation/src/test/java/testcore/pages/TradeLicense.java
+/home/egov/git/EGov-Automation/src/test/java/testcore/scenarios/SupportTest.java
+/home/egov/git/EGov-Automation/src/test/java/testcore/scenarios/ScriptFlows.java
+/home/egov/git/EGov-Automation/src/test/java/testcore/pages/FullPage.java
+/home/egov/git/EGov-Automation/src/test/java/testcore/pages/HomePage.java
+/home/egov/git/EGov-Automation/src/test/java/testcore/pages/ComplaintsPage.java
+/home/egov/git/EGov-Automation/src/test/java/testcore/pages/PaymentPage.java
+/home/egov/git/EGov-Automation/src/test/java/testcore/pages/PropertyTax.java

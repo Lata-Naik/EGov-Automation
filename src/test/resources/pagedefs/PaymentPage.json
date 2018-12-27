@@ -46,7 +46,14 @@
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "id=Paybutton"
+	},
+	"btnSubmit": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css = input[type='submit']"
 	}
+
 }
 
 
