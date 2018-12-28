@@ -3,16 +3,16 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test thread-count="1" verbose="0" name="Surefire test(failed)">
     <classes>
-      <class name="testcore.scenarios.ScriptFlows">
+      <class name="testcore.scenarios.TLFlows">
         <methods>
           <include name="runOncePerContext"/>
-          <include name="approveTradeLicenseApprover"/>
           <include name="tearDown"/>
           <include name="runOncePerClass"/>
+          <include name="rejectTradeLicenseApprover"/>
           <include name="runOncePerSuite"/>
           <include name="runOncePerMethod"/>
         </methods>
-      </class> <!-- testcore.scenarios.ScriptFlows -->
+      </class> <!-- testcore.scenarios.TLFlows -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

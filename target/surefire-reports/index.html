@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="testcore.scenarios.ScriptFlows" hash-for-method="approveTradeLicenseApprover">approveTradeLicenseApprover</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="testcore.scenarios.TLFlows" hash-for-method="rejectTradeLicenseApprover">rejectTradeLicenseApprover</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -120,19 +120,41 @@
           <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testcore.scenarios.ScriptFlows</span>
+              <span class="class-name">testcore.scenarios.TLFlows</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="approveTradeLicenseApprover">
-                  </a> <!-- approveTradeLicenseApprover -->
-                  <span class="method-name">approveTradeLicenseApprover</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at testcore.pages.HomePage.isUserLoggedIn(HomePage.java:67)
-	at testcore.pages.HomePage.loginEmployee(HomePage.java:52)
-	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:57)
-... Removed 29 stack frames
+                  <a name="rejectTradeLicenseApprover">
+                  </a> <!-- rejectTradeLicenseApprover -->
+                  <span class="method-name">rejectTradeLicenseApprover</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;PB-TL-2018-12-18-000285&apos;)]&quot;}
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;Lata-Naik&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-43-generic&apos;, java.version: &apos;1.8.0_192&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49747}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.80, webStorageEnabled: true, webdriver.remote.sessionid: 073b125eccdb48a6bf3b4c215f9...}
+Session ID: 073b125eccdb48a6bf3b4c215f9cd9c1
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;PB-TL-2018-12-18-000285&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at testcore.pages.TradeLicense.selectApplicationByNumber(TradeLicense.java:117)
+	at testcore.pages.TradeLicense.selectApplication(TradeLicense.java:113)
+	at testcore.pages.TradeLicense.rejectTradeLicense(TradeLicense.java:129)
+	at testcore.scenarios.TLFlows.rejectTradeLicenseApprover(TLFlows.java:31)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -154,7 +176,7 @@
       &lt;/method-selector&gt;
     &lt;/method-selectors&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcore.scenarios.ScriptFlows&quot;/&gt;
+      &lt;class name=&quot;testcore.scenarios.TLFlows&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -196,14 +218,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'approveTradeLicenseApprover')
-data.setCell(0, 2, 'testcore.scenarios.ScriptFlows')
-data.setCell(0, 3, 21066);
+data.setCell(0, 1, 'rejectTradeLicenseApprover')
+data.setCell(0, 2, 'testcore.scenarios.TLFlows')
+data.setCell(0, 3, 67720);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -218,21 +240,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testcore.scenarios.ScriptFlows</span>
+              <span class="ignored-class-name">testcore.scenarios.TLFlows</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">approveTradeLicenseApprover</span>
+                <br/>
                 <span class="ignored-method-name">createTradeLicenseCitizen</span>
-                <br/>
-                <span class="ignored-method-name">resolveComplaintLME</span>
-                <br/>
-                <span class="ignored-method-name">rejectComplaintGRO</span>
-                <br/>
-                <span class="ignored-method-name">fileComplaintCitizen</span>
-                <br/>
-                <span class="ignored-method-name">assignComplaintGRO</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -244,32 +260,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcore.scenarios.ScriptFlows</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcore.scenarios.TLFlows</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">runOncePerSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">runOncePerContext(org.testng.TestRunner@e25951c)</span>
-                <span class="method-start">120 ms</span>
+                <span class="method-name">runOncePerContext(org.testng.TestRunner@3adcc812)</span>
+                <span class="method-start">89 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">runOncePerClass(org.testng.TestRunner@e25951c)</span>
-                <span class="method-start">132 ms</span>
+                <span class="method-name">runOncePerClass(org.testng.TestRunner@3adcc812)</span>
+                <span class="method-start">101 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">runOncePerMethod(org.testng.TestRunner@e25951c, public void testcore.scenarios.ScriptFlows.approveTradeLicenseApprove...)</span>
-                <span class="method-start">141 ms</span>
+                <span class="method-name">runOncePerMethod(org.testng.TestRunner@3adcc812, public void testcore.scenarios.TLFlows.rejectTradeLicenseApprover() ...)</span>
+                <span class="method-start">106 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">approveTradeLicenseApprover</span>
-                <span class="method-start">1670 ms</span>
+                <span class="method-name">rejectTradeLicenseApprover</span>
+                <span class="method-start">15916 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=approveTradeLicenseApprover status=FAILURE method=ScriptFlows.approveTradeLicenseAp...)</span>
-                <span class="method-start">22742 ms</span>
+                <span class="method-name">tearDown([TestResult name=rejectTradeLicenseApprover status=FAILURE method=TLFlows.rejectTradeLicenseApprover...)</span>
+                <span class="method-start">83646 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

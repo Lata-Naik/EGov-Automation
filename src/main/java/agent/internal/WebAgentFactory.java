@@ -1,5 +1,7 @@
 package agent.internal;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Dimension;
@@ -11,6 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import agent.IAgent;
@@ -21,6 +24,10 @@ import enums.Platform;
 
 public class WebAgentFactory {
 	static WebDriver driver = null;
+	public static final String USERNAME = "mytest20";
+	public static final String ACCESS_KEY = "77f6834d-60ce-4830-b882-f02c09374228";
+	public static final String accessURL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
+
 
 	public static IAgent createAgent(Configuration config) throws Exception {
 		Platform platform = config.getPlatform();
@@ -28,17 +35,27 @@ public class WebAgentFactory {
 		switch (platform) {
 			case DESKTOP_WEB:
 				initDriver(config, browser);
+//				initDriverinCloud();
 //				Dimension resolution = new Dimension(Integer.parseInt(System.getProperty("browser_resolution_width")),Integer.parseInt(System.getProperty("browser_resolution_height")));
 //				driver.manage().window().setSize(resolution);
 				driver.manage().window().maximize();
 //				driver.get(getProperty("app_browser_url", config));
-//				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				break;
 			default:
 				throw new Exception("Invalid platform, Supported platform is desktop");
 		}
 
 		return new DesktopWebAgent(config, driver);
+	}
+
+	public static WebDriver initDriverinCloud() throws MalformedURLException {
+		DesiredCapabilities caps = DesiredCapabilities.chrome();
+		caps.setCapability("platform", "Windows 10");
+		caps.setCapability("version", "latest");
+		driver = new RemoteWebDriver(new URL(accessURL), caps);
+		return driver;
+
 	}
 
 	private static WebDriver initDriver(Configuration config, DesktopBrowser browser) throws Exception {
@@ -50,9 +67,6 @@ public class WebAgentFactory {
 				options.addArguments("--disable-infobars");
 //				options.setBinary(System.getProperty("browser_bin_path"));
 				caps = DesiredCapabilities.chrome();
-
-
-
 
 				caps.setCapability(ChromeOptions.CAPABILITY, options);
 				caps.setCapability("pageLoadStrategy", "none");
@@ -133,8 +147,8 @@ public class WebAgentFactory {
 //						System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
 						break;
 					case FIREFOX:
-						System.setProperty("webdriver.firefox.bin", System.getProperty("browser_bin_path"));
-						System.setProperty("webdriver.gecko.driver", System.getProperty("browser_driver_path"));
+//						System.setProperty("webdriver.firefox.bin", System.getProperty("browser_bin_path"));
+//						System.setProperty("webdriver.gecko.driver", System.getProperty("browser_driver_path"));
 						break;
 					default:
 						break;

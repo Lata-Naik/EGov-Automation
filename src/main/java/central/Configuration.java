@@ -75,7 +75,18 @@ public class Configuration {
 			else
 				ret_val=getValue(ConfigType.BASE_URL);
 		}
-
+		if ( arg.equalsIgnoreCase("browser_resolution_height") ) {
+			if ( System.getProperty("browser_resolution_height") != null )
+				ret_val=System.getProperty("browser_resolution_height");
+			else
+				ret_val=String.format("%s%s%s",  File.separator,System.getProperty("user.dir"),this.getValue(ConfigType.BROWSER_RESOLUTION_HEIGHT));
+		}
+		if(arg.equalsIgnoreCase("browser_resolution_width")){
+			if (System.getProperty("browser_resolution_width")!=null)
+				ret_val=System.getProperty("browser_resolution_width");
+			else
+				ret_val=String.format("%s%s%s",  File.separator,System.getProperty("user.dir"),this.getValue(ConfigType.BROWSER_RESOLUTION_WIDTH));
+		}
         return ret_val;
     }
 }

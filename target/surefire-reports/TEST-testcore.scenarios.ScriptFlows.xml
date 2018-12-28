@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testcore.scenarios.ScriptFlows" time="24.113" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testcore.scenarios.ScriptFlows" time="27.982" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/share/jdk1.8.0_192/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.192-b12"/>
-    <property name="app_browser_url" value="https://egov-micro-dev.egovernments.org/"/>
+    <property name="app_browser_url" value="https://egov-micro-qa.egovernments.org/"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="/home/ubuntu/Documents/Test/EGov"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="4.15.0-42-generic"/>
+    <property name="os.version" value="4.15.0-43-generic"/>
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="user.home" value="/home/ubuntu"/>
     <property name="user.timezone" value="Asia/Kolkata"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/share/jdk1.8.0_192/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dapp_browser_url=https://egov-micro-dev.egovernments.org/ -Dtest=testcore.scenarios.ScriptFlows#approveTradeLicenseApprover test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dapp_browser_url=https://egov-micro-qa.egovernments.org/ -Dtest=testcore.scenarios.ScriptFlows#approveTradeLicenseApprover test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -63,21 +63,22 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="approveTradeLicenseApprover" classname="testcore.scenarios.ScriptFlows" time="21.073">
+  <testcase name="approveTradeLicenseApprover" classname="testcore.scenarios.ScriptFlows" time="26.09">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:57)
+	at testcore.scenarios.ScriptFlows.approveTradeLicenseApprover(ScriptFlows.java:60)
 </failure>
-    <system-out><![CDATA[[INFO ] [Thread:main] 2018-12-27 16:11:43,728 testcore.scenarios.SupportTest.runOncePerSuite:L35 - Central setup completed.
-[INFO ] [Thread:main] 2018-12-27 16:11:43,739 testcore.scenarios.SupportTest.runOncePerContext:L42 - Test context setup completed for Surefire test test.
-[INFO ] [Thread:main] 2018-12-27 16:11:43,754 testcore.scenarios.SupportTest.runOncePerMethod:L54 - Set up for test method [approveTradeLicenseApprover] started.
-[INFO ] [Thread:main] 2018-12-27 16:11:45,282 testcore.scenarios.SupportTest.runOncePerMethod:L63 - Set up for test method [approveTradeLicenseApprover] ended.
-[INFO ] [Thread:main] 2018-12-27 16:11:45,284 testcore.pages.HomePage.navigateToURL:L24 - UserType: employee
-[INFO ] [Thread:main] 2018-12-27 16:11:45,284 testcore.pages.HomePage.navigateToURL:L29 - Actual url: https://egov-micro-dev.egovernments.org/
-[INFO ] [Thread:main] 2018-12-27 16:11:45,284 testcore.pages.HomePage.navigateToURL:L30 - url: https://egov-micro-dev.egovernments.org/employee/user/login
+    <system-out><![CDATA[[INFO ] [Thread:main] 2018-12-28 11:40:33,819 testcore.scenarios.SupportTest.runOncePerSuite:L35 - Central setup completed.
+[INFO ] [Thread:main] 2018-12-28 11:40:33,828 testcore.scenarios.SupportTest.runOncePerContext:L42 - Test context setup completed for Surefire test test.
+[INFO ] [Thread:main] 2018-12-28 11:40:33,841 testcore.scenarios.SupportTest.runOncePerMethod:L54 - Set up for test method [approveTradeLicenseApprover] started.
+[INFO ] [Thread:main] 2018-12-28 11:40:35,176 testcore.scenarios.SupportTest.runOncePerMethod:L63 - Set up for test method [approveTradeLicenseApprover] ended.
+[INFO ] [Thread:main] 2018-12-28 11:40:35,178 testcore.pages.HomePage.navigateToURL:L27 - New URL: https://egov-micro-qa.egovernments.org/employee/user/login
+[INFO ] [Thread:main] 2018-12-28 11:40:44,661 testcore.pages.HomePage.isUserLoggedIn:L66 - Logged in user Vijay Mehta
+[INFO ] [Thread:main] 2018-12-28 11:40:45,051 agent.internal.WebAgent.switchToIFrame:L304 - Switching to iFrame
+[INFO ] [Thread:main] 2018-12-28 11:40:45,070 agent.internal.WebAgent.switchToIFrame:L308 - frameIndex 1
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706) on port 9432
+    <system-err><![CDATA[Starting ChromeDriver 2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706) on port 4877
 Only local connections are allowed.
-Dec 27, 2018 4:11:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Dec 28, 2018 11:40:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ]]></system-err>
   </testcase>

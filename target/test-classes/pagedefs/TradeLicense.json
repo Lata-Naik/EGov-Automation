@@ -195,7 +195,7 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//span[text()='REJECT']"
+		"DESKTOP_WEB": "xpath=//span[contains(text(),'REJECT')]"
 	},
 	"btnApprove": {
 		"ANDROID": "locator=value",
@@ -209,6 +209,12 @@
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "id=custom-containers-div"
 	},
+	"txtRejectComments": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-div']"
+	},
 	"btnUploadFiles": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
@@ -216,6 +222,12 @@
 		"DESKTOP_WEB": "xpath=//span[text()='UPLOAD FILES']"
 	},
 	"txtApplicationApproved": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=#custom-atoms-applicationSuccessCard #material-ui-header #custom-containers-key"
+	},
+	"txtApplicationRejected": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
