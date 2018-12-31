@@ -1,70 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="29354" started-at="2018-12-19T07:17:44Z" finished-at="2018-12-19T07:18:13Z">
+  <suite name="Surefire suite" duration-ms="14041" started-at="2018-12-31T06:40:32Z" finished-at="2018-12-31T06:40:46Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="29354" started-at="2018-12-19T07:17:44Z" finished-at="2018-12-19T07:18:13Z">
-      <class name="testcore.scenarios.ScriptFlows">
-        <test-method status="PASS" signature="runOncePerSuite()[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="runOncePerSuite" is-config="true" duration-ms="94" started-at="2018-12-19T12:47:44Z" finished-at="2018-12-19T12:47:44Z">
+    <test name="Surefire test" duration-ms="14041" started-at="2018-12-31T06:40:32Z" finished-at="2018-12-31T06:40:46Z">
+      <class name="testcore.scenarios.UseCases">
+        <test-method status="PASS" signature="runOncePerSuite()[pri:0, instance:testcore.scenarios.UseCases@17550481]" name="runOncePerSuite" is-config="true" duration-ms="256" started-at="2018-12-31T12:10:32Z" finished-at="2018-12-31T12:10:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerSuite -->
-        <test-method status="PASS" signature="runOncePerContext(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="runOncePerContext" is-config="true" duration-ms="5" started-at="2018-12-19T12:47:44Z" finished-at="2018-12-19T12:47:44Z">
+        <test-method status="PASS" signature="runOncePerContext(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.UseCases@17550481]" name="runOncePerContext" is-config="true" duration-ms="16" started-at="2018-12-31T12:10:32Z" finished-at="2018-12-31T12:10:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@77659b30]]>
+                <![CDATA[org.testng.TestRunner@51a9ad5e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerContext -->
-        <test-method status="PASS" signature="runOncePerClass(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="runOncePerClass" is-config="true" duration-ms="1" started-at="2018-12-19T12:47:44Z" finished-at="2018-12-19T12:47:44Z">
+        <test-method status="PASS" signature="runOncePerClass(org.testng.ITestContext)[pri:0, instance:testcore.scenarios.UseCases@17550481]" name="runOncePerClass" is-config="true" duration-ms="15" started-at="2018-12-31T12:10:32Z" finished-at="2018-12-31T12:10:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@77659b30]]>
+                <![CDATA[org.testng.TestRunner@51a9ad5e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerClass -->
-        <test-method status="PASS" signature="runOncePerMethod(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="runOncePerMethod" is-config="true" duration-ms="5557" started-at="2018-12-19T12:47:44Z" finished-at="2018-12-19T12:47:49Z">
+        <test-method status="PASS" signature="runOncePerMethod(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:testcore.scenarios.UseCases@17550481]" name="runOncePerMethod" is-config="true" duration-ms="11243" started-at="2018-12-31T12:10:32Z" finished-at="2018-12-31T12:10:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@77659b30]]>
+                <![CDATA[org.testng.TestRunner@51a9ad5e]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void testcore.scenarios.ScriptFlows.fileComplaintCitizen() throws java.lang.Exception]]>
+                <![CDATA[public void testcore.scenarios.UseCases.assessNewProperty() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOncePerMethod -->
-        <test-method status="PASS" signature="fileComplaintCitizen()[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="fileComplaintCitizen" duration-ms="23708" started-at="2018-12-19T12:47:49Z" finished-at="2018-12-19T12:48:13Z">
+        <test-method status="FAIL" signature="assessNewProperty()[pri:0, instance:testcore.scenarios.UseCases@17550481]" name="assessNewProperty" duration-ms="56" started-at="2018-12-31T12:10:44Z" finished-at="2018-12-31T12:10:44Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerExceptionat testcore.pages.HomePage.loginEmployee(HomePage.java:31)at testcore.scenarios.UseCases.assessNewProperty(UseCases.java:10)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fileComplaintCitizen -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711]" name="tearDown" is-config="true" duration-ms="73" started-at="2018-12-19T12:48:13Z" finished-at="2018-12-19T12:48:13Z">
+        </test-method> <!-- assessNewProperty -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcore.scenarios.UseCases@17550481]" name="tearDown" is-config="true" duration-ms="2695" started-at="2018-12-31T12:10:44Z" finished-at="2018-12-31T12:10:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fileComplaintCitizen status=SUCCESS method=ScriptFlows.fileComplaintCitizen()[pri:0, instance:testcore.scenarios.ScriptFlows@dfd3711] output={null}]]]>
+                <![CDATA[[TestResult name=assessNewProperty status=FAILURE method=UseCases.assessNewProperty()[pri:0, instance:testcore.scenarios.UseCases@17550481] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcore.scenarios.ScriptFlows -->
+      </class> <!-- testcore.scenarios.UseCases -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

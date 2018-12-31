@@ -28,8 +28,12 @@ public class HomePage extends FullPage {
     }
 
     public HomePage loginEmployee()throws Exception{
-        getControl("txtMobileNumberEmployee").enterText(getTestData().get("MobileNumber"));
+        getControl("txtUserIdEmployee").enterText(getTestData().get("UserID"));
         getControl("txtPasswordEmployee").enterText(getTestData().get("Password"));
+        getControl("txtCityEmployee").click();
+        getControl("txtSearchCity").enterText(getTestData().get("City"));
+        getControl("txtCitySearchResult").click();
+        getControl("btnLogin").click();
         isUserLoggedIn();
         return this;
     }
@@ -49,5 +53,10 @@ public class HomePage extends FullPage {
                 .equalsIgnoreCase("Welcome "+getTestData().get("UserName")+",");
         logger.info("Logged in user "+getTestData().get("UserName"));
         Assert.assertTrue(usedLogin, "User not logged in");
+    }
+
+    public PropertyTax navigateToPropertyTax() throws Exception {
+        getControl("btnPropertyTax").click();
+        return new PropertyTax(getConfig(), getAgent(), getTestData());
     }
 }

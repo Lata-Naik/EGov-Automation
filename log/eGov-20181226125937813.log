@@ -1,0 +1,9 @@
+[INFO ] [Thread:main] 2018-12-26 12:59:38,702 testcore.scenarios.SupportTest.runOncePerSuite:L30 - Central setup completed.
+[INFO ] [Thread:main] 2018-12-26 12:59:38,797 testcore.scenarios.SupportTest.runOncePerContext:L35 - Test context setup started for EGov-Automation test.
+[DEBUG] [Thread:main] 2018-12-26 12:59:38,801 central.AppachhiCentral.registerContext:L70 - Loading Test Data File at Path :: D:\Repositories\new-framework\EGov-Automation\target\test-classes\data/DESKTOP_WEB/testdata.ini
+[INFO ] [Thread:main] 2018-12-26 12:59:38,826 testcore.scenarios.SupportTest.runOncePerContext:L37 - Test context setup completed for EGov-Automation test.
+[INFO ] [Thread:main] 2018-12-26 12:59:38,928 testcore.scenarios.SupportTest.runOncePerMethod:L49 - Set up for test method [assessNewProperty] started.
+[DEBUG] [Thread:main] 2018-12-26 12:59:38,991 testcore.scenarios.SupportTest.runOncePerMethod:L50 - Creating agent for DESKTOP_WEB
+[DEBUG] [Thread:main] 2018-12-26 12:59:39,052 agent.AgentFactory.createAgent:L16 - Creating agent for: DESKTOP_WEB
+[DEBUG] [Thread:main] 2018-12-26 12:59:39,359 agent.AgentFactory.createAgent:L28 - Failure in Creating agent for: DESKTOP_WEB
+[INFO ] [Thread:main] 2018-12-26 12:59:39,470 testcore.scenarios.SupportTest.tearDown:L61 - Tear down for test method [assessNewProperty] started.

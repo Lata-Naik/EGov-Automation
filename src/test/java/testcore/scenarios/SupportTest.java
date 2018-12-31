@@ -5,7 +5,6 @@ import agent.IAgent;
 import central.AppachhiCentral;
 import central.Configuration;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;

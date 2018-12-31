@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: testcore.scenarios.UseCases
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.744 sec <<< FAILURE! - in testcore.scenarios.UseCases
+assessNewProperty(testcore.scenarios.UseCases)  Time elapsed: 0.06 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at testcore.scenarios.UseCases.assessNewProperty(UseCases.java:10)
+

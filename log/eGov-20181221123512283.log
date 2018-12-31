@@ -1,0 +1,9 @@
+[INFO ] [Thread:main] 2018-12-21 12:35:13,044 testcore.scenarios.SupportTest.runOncePerSuite:L31 - Central setup completed.
+[INFO ] [Thread:main] 2018-12-21 12:35:13,075 testcore.scenarios.SupportTest.runOncePerContext:L36 - Test context setup started for EGov-Automation test.
+[DEBUG] [Thread:main] 2018-12-21 12:35:13,075 central.AppachhiCentral.registerContext:L70 - Loading Test Data File at Path :: D:\Repositories\new-framework\EGov-Automation\target\test-classes\data/DESKTOP_WEB/testdata.ini
+[INFO ] [Thread:main] 2018-12-21 12:35:13,075 testcore.scenarios.SupportTest.runOncePerContext:L38 - Test context setup completed for EGov-Automation test.
+[INFO ] [Thread:main] 2018-12-21 12:35:13,318 testcore.scenarios.SupportTest.runOncePerMethod:L50 - Set up for test method [createTradeLicenseCitizen] started.
+[DEBUG] [Thread:main] 2018-12-21 12:35:13,333 testcore.scenarios.SupportTest.runOncePerMethod:L51 - Creating agent for DESKTOP_WEB
+[DEBUG] [Thread:main] 2018-12-21 12:35:13,349 agent.AgentFactory.createAgent:L16 - Creating agent for: DESKTOP_WEB
+[DEBUG] [Thread:main] 2018-12-21 12:35:13,614 agent.AgentFactory.createAgent:L28 - Failure in Creating agent for: DESKTOP_WEB
+[INFO ] [Thread:main] 2018-12-21 12:35:13,646 testcore.scenarios.SupportTest.tearDown:L62 - Tear down for test method [createTradeLicenseCitizen] started.

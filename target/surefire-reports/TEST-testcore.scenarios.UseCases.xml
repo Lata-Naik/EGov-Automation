@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testcore.scenarios.UseCases" time="15.744" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_172\jre\classes"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.version" value="1.8.0_172-b11"/>
+    <property name="browser_driver_path" value="D:/Repositories/new-framework/EGov-Automation/src/main/java/drivers/chromedriver.exe"/>
+    <property name="user.name" value="manjunath"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\bin"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.6.0-bin\bin\..\bin\m2.conf"/>
+    <property name="browser_resolution_height" value="1080"/>
+    <property name="java.version" value="1.8.0_172"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\endorsed"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="maven.conf" value="C:\apache-maven-3.6.0-bin\bin\../conf"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="user.country" value="US"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_172\jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="10.0"/>
+    <property name="platform" value="DESKTOP_WEB"/>
+    <property name="browser_resolution_width" value="1920"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="25.172-b11"/>
+    <property name="user.variant" value=""/>
+    <property name="browser_bin_path" value="C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="user.script" value=""/>
+    <property name="user.home" value="C:\Users\manjunath"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="test" value="testcore.scenarios.UseCases#assessNewProperty"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.6.0-bin\bin\..\lib\jansi-native"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\python3\Scripts\;C:\python3\;C:\Scripts\;C:\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\manjunath\scoop\shims;C:\Users\manjunath\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_172;C:\Users\manjunath\AppData\Roaming\npm;C:\Users\manjunath\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\manjunath\Documents\WindowsPowerShell\Scripts;C:\ProgramData\chocolatey\bin;D:\kubectl\kubectl.1.7.0;D:\Kubernetes\Minikube;C:\Users\manjunath\scoop\shims;C:\Users\manjunath\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_172;C:\Users\manjunath\AppData\Roaming\npm;C:\Users\manjunath\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\manjunath\Documents\WindowsPowerShell\Scripts;C:\Users\manjunath\AppData\Local\atom\bin;C:\apache-maven-3.6.0-bin\bin;;."/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\apache-maven-3.6.0-bin\bin\.."/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dplatform=DESKTOP_WEB -Dappium_url=http://127.0.0.1:13001/wd/hub -Dapp_browser_url=https://egov-micro-qa.egovernments.org/employee/user/login -Dbrowser_bin_path=C:/Program Files (x86)/Google/Chrome/Application/chrome.exe -Dbrowser_driver_path=D:/Repositories/new-framework/EGov-Automation/src/main/java/drivers/chromedriver.exe -Dbrowser=Chrome -Dbrowser_resolution_width=1920 -Dbrowser_resolution_height=1080 -Dscreenshot_path=screenshots/ -Dtest=testcore.scenarios.UseCases#assessNewProperty test"/>
+    <property name="java.class.path" value="C:\apache-maven-3.6.0-bin\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.io.tmpdir" value="C:\Users\MANJUN~1\AppData\Local\Temp\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Repositories\new-framework\EGov-Automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="appium_url" value="http://127.0.0.1:13001/wd/hub"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="user.dir" value="D:\Repositories\new-framework\EGov-Automation"/>
+    <property name="app_browser_url" value="https://egov-micro-qa.egovernments.org/employee/user/login"/>
+    <property name="browser" value="Chrome"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="screenshot_path" value="screenshots/"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="1.8"/>
+  </properties>
+  <testcase name="assessNewProperty" classname="testcore.scenarios.UseCases" time="0.06">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at testcore.scenarios.UseCases.assessNewProperty(UseCases.java:10)
+</failure>
+    <system-out><![CDATA[[INFO ] [Thread:main] 2018-12-31 12:10:32,796 testcore.scenarios.SupportTest.runOncePerSuite:L30 - Central setup completed.
+[INFO ] [Thread:main] 2018-12-31 12:10:32,811 testcore.scenarios.SupportTest.runOncePerContext:L35 - Test context setup started for Surefire test test.
+[INFO ] [Thread:main] 2018-12-31 12:10:32,827 testcore.scenarios.SupportTest.runOncePerContext:L37 - Test context setup completed for Surefire test test.
+[INFO ] [Thread:main] 2018-12-31 12:10:32,842 testcore.scenarios.SupportTest.runOncePerMethod:L49 - Set up for test method [assessNewProperty] started.
+[INFO ] [Thread:main] 2018-12-31 12:10:44,085 testcore.scenarios.SupportTest.runOncePerMethod:L56 - Set up for test method [assessNewProperty] ended.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91) on port 27132
+Only local connections are allowed.
+Dec 31, 2018 12:10:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+</testsuite>
