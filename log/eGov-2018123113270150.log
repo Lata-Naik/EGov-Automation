@@ -1,0 +1,9 @@
+[INFO ] [Thread:main] 2018-12-31 13:27:01,195 testcore.scenarios.SupportTest.runOncePerSuite:L33 - Central setup completed.
+[INFO ] [Thread:main] 2018-12-31 13:27:01,211 testcore.scenarios.SupportTest.runOncePerContext:L38 - Test context setup started for Surefire test test.
+[DEBUG] [Thread:main] 2018-12-31 13:27:01,215 central.AppachhiCentral.registerContext:L70 - Loading Test Data File at Path :: D:\Repositories\new-framework\EGov-Automation\target\test-classes\data/DESKTOP_WEB/testdata.ini
+[INFO ] [Thread:main] 2018-12-31 13:27:01,215 testcore.scenarios.SupportTest.runOncePerContext:L40 - Test context setup completed for Surefire test test.
+[INFO ] [Thread:main] 2018-12-31 13:27:01,241 testcore.scenarios.SupportTest.runOncePerMethod:L52 - Set up for test method [createPropertyTaxCitizen] started.
+[DEBUG] [Thread:main] 2018-12-31 13:27:01,244 testcore.scenarios.SupportTest.runOncePerMethod:L53 - Creating agent for DESKTOP_WEB
+[DEBUG] [Thread:main] 2018-12-31 13:27:01,244 agent.AgentFactory.createAgent:L16 - Creating agent for: DESKTOP_WEB
+[DEBUG] [Thread:main] 2018-12-31 13:27:01,471 agent.AgentFactory.createAgent:L28 - Failure in Creating agent for: DESKTOP_WEB
+[INFO ] [Thread:main] 2018-12-31 13:27:01,531 testcore.scenarios.SupportTest.tearDown:L67 - Tear down for test method [createPropertyTaxCitizen] started.

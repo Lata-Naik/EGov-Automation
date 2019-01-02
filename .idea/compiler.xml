@@ -10,6 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="EGov-Automation" target="8" />
       <module name="EGovPGR" target="8" />
     </bytecodeTargetLevel>
   </component>

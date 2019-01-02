@@ -15,4 +15,17 @@ public class PropertyTax extends FullPage {
     public String pageName() {
         return null;
     }
+
+    public PropertyTax assessNewProperty() {
+        return this;
+    }
+    public PropertyTax commercialProperty() {
+        return this;
+    }
+    public void pay() {
+    }
+
+    public PropertyTax residentialProperty() {
+        return this;
+    }
 }

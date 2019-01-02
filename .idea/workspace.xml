@@ -2,373 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e66a380-3e49-45ec-8d3a-fac3540ea8fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/EGov-Automation.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/eGov-20181220134757430.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/eGov-20181220135853170.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/eGov-20181220141714406.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/eGov-20181221123512283.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/eGov-20181221124059936.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/agent/agent.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/agent/internal/internal.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/central/central.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/control/control.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/IEDriverServer.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/geckodriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/geckodriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enums/enums.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/page/page.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagedef/pagedef.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/utils.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcore/pages/pages.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcore/scenarios/scenarios.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/pagedefs/PropertyTax.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_html_0_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java_1_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_gherkin_2_11_1.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EGov-Automation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EGovPGR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EGovPGR.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218120526.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218120605.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218120742.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218120743.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218120744.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218120745.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218123547.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218123549.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218123550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218123551.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218123601.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218123819.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124013.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124209.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124210.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124211.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124212.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124222.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124421.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124422.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124423.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124453.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124454.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124455.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124456.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218124506.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218125305.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218125306.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218125307.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218125317.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218125533.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218125534.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218125535.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218125536.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218125546.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130030.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130032.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130033.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130132.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130133.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130134.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130135.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130145.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130335.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130336.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130337.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130348.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130425.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130426.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130427.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130428.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130438.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130520.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130521.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130522.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130532.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130940.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130941.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130942.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130943.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218130953.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131022.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131201.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131202.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131203.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131204.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131214.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131715.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131716.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131717.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131718.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218131728.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132107.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132108.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132109.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132129.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132326.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132327.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132328.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132329.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132330.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132340.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132416.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132417.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132418.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132419.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132429.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132843.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132845.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132847.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132848.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132849.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218132901.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134513.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134514.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134515.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134516.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134517.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134757.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134758.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134759.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134859.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134901.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134902.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218134903.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218135208.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218135209.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218135210.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218135211.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218135350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218135351.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218135352.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218135353.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218145349.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218145351.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218145352.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218145353.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218145354.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150054.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150057.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150058.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150059.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150102.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150233.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150234.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150235.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150236.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150237.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150239.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150549.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150551.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150552.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150554.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150557.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150559.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150916.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150917.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150918.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150919.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150922.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150923.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218150924.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152131.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152133.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152134.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152135.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152137.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152138.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152139.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152141.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152143.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152602.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152604.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152605.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152607.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152608.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152609.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152610.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152937.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152938.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152939.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152940.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152941.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152942.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152944.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218152945.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153138.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153139.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153140.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153142.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153143.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153145.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153146.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153256.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153257.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153258.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153259.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153301.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153302.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153304.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153334.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153420.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153421.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153422.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153423.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153424.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153425.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153427.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218153447.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154416.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154417.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154418.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154419.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154421.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154422.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154425.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154430.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154431.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154518.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154519.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154520.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154521.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154523.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154524.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154526.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154537.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154547.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154752.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154753.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154754.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154755.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154756.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154757.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154758.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154811.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218154831.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155140.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155141.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155142.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155143.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155144.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155145.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155146.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155147.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155158.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155218.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155219.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155343.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155344.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155345.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155346.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155347.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155348.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155421.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218155426.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160452.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160453.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160454.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160455.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160457.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160458.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160501.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160511.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160532.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160537.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160625.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160626.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160627.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160628.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160629.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160630.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160631.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160632.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160643.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160703.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160709.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160710.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218160711.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161424.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161425.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161426.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161427.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161429.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161430.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161432.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161443.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161503.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161509.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161510.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161511.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218161512.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218162646.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218162647.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218162648.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218162649.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218162651.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218162652.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218162654.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218163051.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218163052.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218163053.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218163054.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218163055.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218163057.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218163100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/ubuntu/Documents/Screenshots/20181218163112.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pagedef/PageDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagedef/PageDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcore/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcore/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcore/scenarios/SupportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcore/scenarios/SupportTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/data/DESKTOP_WEB/testdata.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data/DESKTOP_WEB/testdata.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pagedef/PageDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pagedef/PageDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-testcore.scenarios.ScriptFlows.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-testcore.scenarios.ScriptFlows.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-testcore.scenarios.ScriptFlows.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-testcore.scenarios.ScriptFlows.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testcore.scenarios.ScriptFlows.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testcore.scenarios.ScriptFlows.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/data/DESKTOP_WEB/testdata.ini" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/data/DESKTOP_WEB/testdata.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pagedefs/HomePage.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pagedefs/HomePage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testcore/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcore/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testcore/scenarios/ScriptFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcore/scenarios/ScriptFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testcore/scenarios/SupportTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcore/scenarios/SupportTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -401,7 +40,7 @@
         <counts>
           <entry key="html" value="1" />
           <entry key="ini" value="3" />
-          <entry key="java" value="46" />
+          <entry key="java" value="51" />
           <entry key="json" value="2" />
           <entry key="md" value="1" />
           <entry key="plantuml" value="10" />
@@ -414,7 +53,7 @@
           <entry key="Bash" value="3" />
           <entry key="HTML" value="1" />
           <entry key="Ini" value="2" />
-          <entry key="JAVA" value="46" />
+          <entry key="JAVA" value="51" />
           <entry key="JSON" value="2" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
@@ -424,8 +63,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="29" />
           <entry key="ini" value="40" />
-          <entry key="java" value="171" />
+          <entry key="java" value="334" />
           <entry key="json" value="24" />
           <entry key="sh" value="23" />
         </counts>
@@ -434,8 +74,9 @@
         <counts>
           <entry key="Bash" value="23" />
           <entry key="Ini" value="40" />
-          <entry key="JAVA" value="171" />
+          <entry key="JAVA" value="334" />
           <entry key="JSON" value="24" />
+          <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
     </session>
@@ -445,17 +86,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/ScriptFlows.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="162">
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="408">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -463,15 +104,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+            <state relative-caret-position="383">
+              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+              <folding>
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#446#447#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -564,14 +217,14 @@
         <option value="$PROJECT_DIR$/src/test/java/testcore/pages/ComplaintsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcore/scenarios/ScriptFlows.java" />
         <option value="$PROJECT_DIR$/src/main/java/pagedef/PageDef.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java" />
         <option value="$PROJECT_DIR$/src/test/resources/pagedefs/PropertyTax.json" />
         <option value="$PROJECT_DIR$/src/test/java/testcore/scenarios/SupportTest.java" />
         <option value="$PROJECT_DIR$/run.sh" />
-        <option value="$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java" />
         <option value="$PROJECT_DIR$/src/test/resources/data/DESKTOP_WEB/testdata.ini" />
         <option value="$PROJECT_DIR$/src/test/java/testcore/pages/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json" />
+        <option value="$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java" />
       </list>
     </option>
   </component>
@@ -615,72 +268,51 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="EGov-Automation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="EGov-Automation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="central" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -688,7 +320,7 @@
               <item name="testcore" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -697,7 +329,7 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -706,39 +338,56 @@
               <item name="scenarios" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="DESKTOP_WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pagedefs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
+              <item name="Surefire suite" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="avd&#9;ACTION&#9;Android.RunAndroidAvdManager" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546238708128" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546407324597" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../eGov-Automation/egov-services/test/egov_api_tests/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -777,104 +426,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Bash.run.sh">
-    <configuration name="run.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
-      <module name="EGovPGR" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="" />
-      <option name="PROJECT_INTERPRETER" value="true" />
-      <option name="WORKING_DIRECTORY" value="D:\Repositories\new-framework\EGov-Automation" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\Repositories\new-framework\EGov-Automation\run.sh" />
+  <component name="RunManager">
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="EGov-Automation" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="SUITE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="VM_PARAMETERS" value="-Dbrowser=chrome -Denv=qa" />
       <option name="PARAMETERS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ScriptFlows" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EGovPGR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcore.scenarios.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcore.scenarios" />
-      <option name="MAIN_CLASS_NAME" value="testcore.scenarios.ScriptFlows" />
+      <option name="WORKING_DIRECTORY" value="$MAVEN_REPOSITORY$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScriptFlows.createComplaintCitizen" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EGovPGR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcore.scenarios.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcore.scenarios" />
-      <option name="MAIN_CLASS_NAME" value="testcore.scenarios.ScriptFlows" />
-      <option name="METHOD_NAME" value="createComplaintCitizen" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScriptFlows.createTradeLicenseCitizen" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EGovPGR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcore.scenarios.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcore.scenarios" />
-      <option name="MAIN_CLASS_NAME" value="testcore.scenarios.ScriptFlows" />
-      <option name="METHOD_NAME" value="createTradeLicenseCitizen" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UseCases.assessNewProperty" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EGovPGR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcore.scenarios.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcore.scenarios" />
-      <option name="MAIN_CLASS_NAME" value="testcore.scenarios.UseCases" />
-      <option name="METHOD_NAME" value="assessNewProperty" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Bash.run.sh" />
-      <item itemvalue="TestNG.ScriptFlows.createComplaintCitizen" />
-      <item itemvalue="TestNG.ScriptFlows" />
-      <item itemvalue="TestNG.ScriptFlows.createTradeLicenseCitizen" />
-      <item itemvalue="TestNG.UseCases.assessNewProperty" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Bash.run.sh" />
-        <item itemvalue="TestNG.UseCases.assessNewProperty" />
-        <item itemvalue="TestNG.ScriptFlows.createTradeLicenseCitizen" />
-        <item itemvalue="TestNG.ScriptFlows" />
-        <item itemvalue="TestNG.ScriptFlows.createComplaintCitizen" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -932,8 +506,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24583964" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20045386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -942,13 +517,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32743362" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32743362" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.45088565" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.48925412" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" visible="true" weight="0.27697262" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" weight="0.27697262" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.22544283" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3268921" />
@@ -963,6 +538,38 @@
       <window_info anchor="right" id="Maven" order="8" />
       <window_info anchor="right" x="0" y="23" width="1366" height="715" id="PlantUML" order="9" type="WINDOWED" weight="0.32980332" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3428332" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="DB Browser" order="4" weight="0.32942164" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Project Explorer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info id="Job Explorer" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.37809187" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Console" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -985,7 +592,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/testcore/pages/desktop/DesktopHomePage.java</url>
           <line>32</line>
-          <properties class="testcore.pages.desktop.DesktopHomePage" method="moveToAccount">
+          <properties class="testcore.pages.desktop.DesktopHomePage">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="10" />
@@ -1204,13 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/TradeLicense.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/FullPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1266,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/ScriptFlows.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/SupportTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1319,29 +912,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/ScriptFlows.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="162">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/TradeLicense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="391">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+        <state relative-caret-position="383">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

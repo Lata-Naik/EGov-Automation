@@ -1,0 +1,4 @@
+[INFO ] [Thread:main] 2018-12-31 13:33:04,750 testcore.scenarios.SupportTest.runOncePerSuite:L33 - Central setup completed.
+[INFO ] [Thread:main] 2018-12-31 13:33:04,766 testcore.scenarios.SupportTest.runOncePerContext:L38 - Test context setup started for Surefire test test.
+[DEBUG] [Thread:main] 2018-12-31 13:33:04,766 central.AppachhiCentral.registerContext:L70 - Loading Test Data File at Path :: D:\Repositories\new-framework\EGov-Automation\target\test-classes\data/DESKTOP_WEB/testdata.ini
+[INFO ] [Thread:main] 2018-12-31 13:33:04,766 testcore.scenarios.SupportTest.runOncePerContext:L40 - Test context setup completed for Surefire test test.
