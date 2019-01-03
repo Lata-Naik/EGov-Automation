@@ -1,7 +1,0 @@
-//
-//  Config.xcconfig
-//  WebDriverAgent
-//
-
-DEVELOPMENT_TEAM = G3GS7GFCU2
-CODE_SIGN_IDENTITY = iPhone Developer 
