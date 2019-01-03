@@ -60,10 +60,17 @@ public class HomePage extends FullPage {
         return new TradeLicense(getConfig(),getAgent(),getTestData());
     }
 
+    public PropertyTax navigateToPropertyTax() throws Exception{
+        getControl("btnPropertyTax").click();
+        return new PropertyTax(getConfig(),getAgent(),getTestData());
+    }
+
     public void isUserLoggedIn()throws Exception{
         boolean userLogin = getControl("txtWelcomeText").getText()
                 .equalsIgnoreCase("Welcome "+getTestData().get("UserName")+",");
         logger.info("Logged in user "+getTestData().get("UserName"));
         Assert.assertTrue(userLogin, "User not logged in");
     }
+
+
 }

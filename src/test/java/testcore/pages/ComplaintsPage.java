@@ -123,4 +123,34 @@ public class ComplaintsPage extends FullPage {
         getControl("btnSubmitComplaint").click();
         return this;
     }
+
+    public ComplaintsPage rateComplaint() throws Exception{
+        getControl("txtMyComplaint").click();
+        scrollDownTillElement("txtResolvedComplaint");
+        getControl("txtResolvedComplaint").click();
+        getControl("btnRate").click();
+        getControl("btnStarRate4").click();
+//        getControl("txtFeedBackService").click();
+        getControl("txtFeedBackComments").enterText(getTestData().get("RateComments"));
+        getControl("btnFeedBackSubmit").click();
+        return this;
+    }
+    public ComplaintsPage isRateSubmitted() throws Exception{
+        boolean rejectedSuccess=getControl("txtRateSubmittedMsg").getText().equalsIgnoreCase("Thank You for your feedback!");
+        Assert.assertTrue(rejectedSuccess, "Rate not Submitted");
+
+        return this;
+    }
+    public ComplaintsPage logoutUser() throws Exception{
+        getControl("icnProfile").click();
+        getControl("txtLogout").click();
+        getControl("btnLogout").click();
+        isUserLoggedOut();
+        return this;
+    }
+
+    public void isUserLoggedOut()throws Exception{
+        boolean userLogin = getControl("txtLogin").isVisible();
+        Assert.assertTrue(userLogin, "User not logged out");
+    }
 }

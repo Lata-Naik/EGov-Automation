@@ -221,4 +221,12 @@ public abstract class Page implements IPage {
 		String css="li[data-value='"+cssValue+"']";
 		getAgent().getWebDriver().findElement(By.cssSelector(css)).click();
 	}
+
+	public void scrollDownTillElement(String ele) throws Exception{
+		do{
+			scrollDown();
+		}
+		while (!getControl(ele).isVisible());
+
+	}
 }

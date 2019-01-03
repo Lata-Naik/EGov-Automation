@@ -12,7 +12,8 @@ public class TLFlows extends SupportTest {
                 .navigateToTradeLicense()
                 .applyTradeLicense()
                 .fillTradeLicenseForm()
-                .makePayment();
+                .makePayment()
+                .isApplicationPlaced();
     }
 
     @Test
@@ -30,5 +31,15 @@ public class TLFlows extends SupportTest {
                 .navigateToTradeLicense()
                 .rejectTradeLicense()
                 .isApplicationRejected();
+    }
+
+    @Test
+    public void createTradeLicenseCounterEmployee() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("testScript"));
+        home.loginEmployee()
+                .navigateToTradeLicense()
+                .addNewTradeLicense()
+                .makePaymentCounterEmployee()
+                .isApplicationPlaced();
     }
 }

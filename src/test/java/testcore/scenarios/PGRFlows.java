@@ -24,6 +24,15 @@ public class PGRFlows extends SupportTest {
     }
 
     @Test
+    public void assignComplaintDGRO() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("assignComplaintDGRO"));
+        home.loginEmployee()
+                .navigateToComplaints()
+                .assignComplaintToLME()
+                .isComplaintAssigned();
+    }
+
+    @Test
     public void resolveComplaintLME() throws Exception{
         logger.debug(this.getTestStartInfoMessage("resolveComplaintLME"));
         home.loginEmployee()
@@ -48,5 +57,12 @@ public class PGRFlows extends SupportTest {
                 .navigateToComplaints()
                 .createComplaintCSR()
                 .isComplaintRegistered();
+
+    public void rateComplaintCitizen() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("fileComplaintCitizen"));
+        home.loginCitizen()
+                .navigateToComplaints()
+                .rateComplaint()
+                .isRateSubmitted();
     }
 }
