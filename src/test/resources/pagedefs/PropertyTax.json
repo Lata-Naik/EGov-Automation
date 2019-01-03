@@ -119,17 +119,23 @@
     "MWEB": "locator=value",
     "DESKTOP_WEB": "css = div#assessment-occupancy"
   },
+  "drpSubUsageType": {
+    "DESKTOP_WEB": "css = div#assessment-subUsageType"
+  },
   "txtBuildUpArea": {
     "ANDROID": "locator=value",
     "IOS": "locator=value",
     "MWEB": "locator=value",
     "DESKTOP_WEB": "css = input#assessment-built-area"
   },
-  "txtFlatBuildUpArea": {
+  "txtResidentialFlatBuildUpArea": {
     "ANDROID": "locator=value",
     "IOS": "locator=value",
     "MWEB": "locator=value",
     "DESKTOP_WEB": "css = input#assessment-super-area"
+  },
+  "txtCommercialFlatBuildUpArea": {
+    "DESKTOP_WEB": "css =input#assessment-built-area"
   },
   "drpFloorName": {
     "ANDROID": "locator=value",
@@ -238,6 +244,15 @@
     "IOS": "locator=value",
     "MWEB": "locator=value",
     "DESKTOP_WEB": "css = input#rcpt"
+  },
+  "rdoFullPayment": {
+    "DESKTOP_WEB": "css =input[value= 'Full_Amount']"
+  },
+  "rdoPartialPayment": {
+    "DESKTOP_WEB": "css =input[value= 'Partial_Amount']"
+  },
+  "txtAmountToBePaid": {
+    "DESKTOP_WEB": "css =input#amount-to-be-paid"
   },
   "btnPay": {
     "ANDROID": "locator=value",

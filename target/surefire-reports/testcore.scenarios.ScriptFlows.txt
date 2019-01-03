@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: testcore.scenarios.ScriptFlows
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 78.184 sec - in testcore.scenarios.ScriptFlows
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 93.388 sec - in testcore.scenarios.ScriptFlows

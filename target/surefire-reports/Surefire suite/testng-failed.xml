@@ -6,7 +6,7 @@
       <class name="testcore.scenarios.ScriptFlows">
         <methods>
           <include name="runOncePerContext"/>
-          <include name="createPropertyTaxCitizen"/>
+          <include name="createCommercialPropertyTaxAndMakePartialPaymentCitizen"/>
           <include name="tearDown"/>
           <include name="runOncePerClass"/>
           <include name="runOncePerSuite"/>

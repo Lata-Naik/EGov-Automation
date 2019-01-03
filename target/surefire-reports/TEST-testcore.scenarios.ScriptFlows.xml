@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testcore.scenarios.ScriptFlows" time="78.184" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testcore.scenarios.ScriptFlows" time="93.388" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="platform" value="DESKTOP_WEB"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
-    <property name="test" value="testcore.scenarios.ScriptFlows#createPropertyTaxCitizen"/>
+    <property name="test" value="testcore.scenarios.ScriptFlows#createCommercialPropertyTaxAndMakePartialPaymentCitizen"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/home/egov/git/EGov-Automation"/>
     <property name="java.runtime.version" value="1.8.0_191-b12"/>
@@ -51,7 +51,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dplatform=DESKTOP_WEB -Dappium_url=http://127.0.0.1:13001/wd/hub -Dapp_browser_url=https://egov-micro-qa.egovernments.org/citizen/user/login -Dbrowser_bin_path=/usr/bin/google-chrome -Dbrowser_driver_path=/usr/bin/chromedriver -Dbrowser=Chrome -Dbrowser_resolution_width=1920 -Dbrowser_resolution_height=1080 -Dscreenshot_path=screenshots/ -Dtest=testcore.scenarios.ScriptFlows#createPropertyTaxCitizen test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dplatform=DESKTOP_WEB -Dappium_url=http://127.0.0.1:13001/wd/hub -Dapp_browser_url=https://egov-micro-qa.egovernments.org/citizen/user/login -Dbrowser_bin_path=/usr/bin/google-chrome -Dbrowser_driver_path=/usr/bin/chromedriver -Dbrowser=Chrome -Dbrowser_resolution_width=1920 -Dbrowser_resolution_height=1080 -Dscreenshot_path=screenshots/ -Dtest=testcore.scenarios.ScriptFlows#createCommercialPropertyTaxAndMakePartialPaymentCitizen test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -71,5 +71,5 @@
     <property name="browser_bin_path" value="/usr/bin/google-chrome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="createPropertyTaxCitizen" classname="testcore.scenarios.ScriptFlows" time="71.577"/>
+  <testcase name="createCommercialPropertyTaxAndMakePartialPaymentCitizen" classname="testcore.scenarios.ScriptFlows" time="86.742"/>
 </testsuite>

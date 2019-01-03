@@ -3,6 +3,7 @@ package testcore.pages;
 import agent.IAgent;
 import central.Configuration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 
 import java.util.Map;
 
@@ -19,7 +20,7 @@ public class PropertyTax extends FullPage {
     }
 
     public PropertyTax applyPropertyTaxCitizen() throws Exception {
-        getControl("btnAssessAndPay").waitUntilClickable();
+        Thread.sleep(2000);
         getControl("btnAssessAndPay").click();
         getControl("btnAddNewProperty").waitUntilClickable();
         getControl("btnAddNewProperty").click();
@@ -27,14 +28,21 @@ public class PropertyTax extends FullPage {
         getControl("financialYear2018_19").click();
         return this;
     }
-    public PaymentPage fillPropertyTaxForm()throws Exception{
+    public PaymentPage fillPropertyTaxFormAndMakeFullPayment()throws Exception{
         fillPropertyAddress();
-        fillAssessmentInformation();
+        fillResidentialAssessmentInformation();
         fillOwnerInformation();
-        fillReviewAndPay();
-//        getDataAfterPaymentSucessfull();
+        fillReviewAndFullPayment();
         return new PaymentPage(getConfig(),getAgent(),getTestData());
 
+    }
+
+    public PaymentPage fillPropertyTaxFormAndMakePartialPayment() throws Exception{
+        fillPropertyAddress();
+        fillCommercialAssessmentInformation();
+        fillOwnerInformation();
+        fillReviewAndPartialPayment();
+        return new PaymentPage(getConfig(),getAgent(),getTestData());
     }
 
     public void getDataAfterPaymentSucessfull() throws Exception{
@@ -49,14 +57,31 @@ public class PropertyTax extends FullPage {
         System.out.println("=========================================================>"+payableAmount);
         System.out.println("=========================================================>"+amountPaid);
         System.out.println("=========================================================>"+amountDue);
+        if((payableAmount-amountPaid)!=amountDue)
+            throw new Exception("Calculation is Wrong.");
         getControl("btnFinish").click();
     }
 
-    private void fillReviewAndPay() throws Exception{
-
+    private void fillReviewAndFullPayment() throws Exception{
         scrollDown(20); // #TODO
         Thread.sleep(3000);
 //        getControl("chkDeclaration").click(); #TODO
+        getControl("rdoFullPayment").click();
+        getControl("btnPay").waitUntilClickable();
+        getControl("btnPay").click();
+    }
+
+    private void fillReviewAndPartialPayment() throws Exception{
+        scrollDown(20); // #TODO
+        Thread.sleep(3000);
+//        getControl("chkDeclaration").click(); #TODO
+        getControl("rdoPartialPayment").click();
+        Thread.sleep(3000);
+        getControl("txtAmountToBePaid").click();
+        getControl("txtAmountToBePaid").enterText(Keys.CONTROL+"a");
+        getControl("txtAmountToBePaid").enterText(Keys.BACK_SPACE);
+        Thread.sleep(3000);
+        getControl("txtAmountToBePaid").enterText(getTestData().get("AmountToBePaid"));
         getControl("btnPay").waitUntilClickable();
         getControl("btnPay").click();
     }
@@ -96,7 +121,7 @@ public class PropertyTax extends FullPage {
         getControl("btnNext").click();
     }
 
-    private void fillAssessmentInformation() throws Exception{
+    private void fillResidentialAssessmentInformation() throws Exception{
         getControl("drpPropertyUsageType").click();
         selectfromDropDown(getTestData().get("PropertyUsageType"));
         Thread.sleep(1000);
@@ -105,7 +130,32 @@ public class PropertyTax extends FullPage {
         Thread.sleep(1000);
         getControl("drpOccupancy").click();
         selectfromDropDown(getTestData().get("Occupancy"));
-        getControl("txtFlatBuildUpArea").enterText(getTestData().get("BuildUpArea"));
+        getControl("txtResidentialFlatBuildUpArea").enterText(getTestData().get("BuildUpArea"));
+        Thread.sleep(9000);
+        scrollDown();
+        Thread.sleep(1000);
+        getControl("drpFloorName").click();
+        selectfromDropDown(getTestData().get("FloorName"));
+        Thread.sleep(1000);
+        getControl("btnNext").click();
+    }
+
+    private void fillCommercialAssessmentInformation() throws Exception{
+        getControl("drpPropertyUsageType").click();
+        selectfromDropDown(getTestData().get("PropertyUsageType"));
+        Thread.sleep(1000);
+        getControl("drpPropertyType").click();
+        selectfromDropDown(getTestData().get("PropertyType"));
+        Thread.sleep(1000);
+        scrollDown();
+        getControl("drpSubUsageType").click();
+        selectfromDropDown(getTestData().get("SubUsageType"));
+        Thread.sleep(1000);
+        getControl("drpOccupancy").click();
+        selectfromDropDown(getTestData().get("Occupancy"));
+        scrollDown();
+        Thread.sleep(1000);
+        getControl("txtCommercialFlatBuildUpArea").enterText(getTestData().get("BuildUpArea"));
         Thread.sleep(9000);
         scrollDown();
         Thread.sleep(1000);

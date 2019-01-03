@@ -32,12 +32,13 @@ public class PaymentPage extends FullPage {
         Thread.sleep(15000);
     }
     public PropertyTax PTmakePayment() throws Exception{
-        getControl("txtMasterCard").waitUntilClickable();
+        getControl("txtMasterCard").waitUntilVisible();
         getControl("txtMasterCard").click();
         getControl("txtCardNumber").enterText(getTestData().get("CardNumber"));
         getControl("txtCardMonth").enterText(getTestData().get("CardMonth"));
         getControl("txtCardYear").enterText(getTestData().get("CardYear"));
         getControl("btnPayNow").click();
+        getControl("btnSubmit").waitUntilVisible();
         getControl("btnSubmit").click();
         Thread.sleep(15000);
         return new PropertyTax(getConfig(),getAgent(),getTestData());

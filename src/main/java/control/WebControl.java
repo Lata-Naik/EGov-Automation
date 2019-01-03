@@ -36,7 +36,7 @@ public class WebControl extends Control {
 		try {
 			String msg = String.format("Entering text %s in %s", text, this.getControlBasicInfoString());
 			logger.debug(msg);
-//			this.waitUntilVisible();
+			this.waitUntilVisible();
 			this.getRawWebElement().sendKeys(text);
 			this.getAgent().takeConditionalSnapShot();
 			logger.debug(String.format("Success in %s", msg));
