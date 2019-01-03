@@ -20,7 +20,7 @@ public class PaymentPage extends FullPage {
         return PaymentPage.class.getSimpleName();
     }
 
-    public void makePayment() throws Exception{
+    public PaymentPage makePayment() throws Exception{
         getControl("txtMasterCard").waitUntilClickable();
         getControl("txtMasterCard").click();
 //        getControl("btnProceedToPayment").click();
@@ -32,6 +32,7 @@ public class PaymentPage extends FullPage {
         getControl("btnPayNow").click();
         getControl("btnSubmit").click();
         Thread.sleep(15000);
+        return this;
     }
     public PropertyTax PTmakePayment() throws Exception{
         getControl("txtMasterCard").waitUntilVisible();
