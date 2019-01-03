@@ -52,7 +52,7 @@ public class PGRFlows extends SupportTest {
 
     @Test
     public void fileComplaintCSR() throws Exception {
-        logger.debug(this.getTestStartInfoMessage("fileComplaintCitizen"));
+        logger.debug(this.getTestStartInfoMessage("fileComplaintCSR"));
         home.loginEmployee()
                 .navigateToComplaints()
                 .createComplaintCSR()
@@ -61,7 +61,7 @@ public class PGRFlows extends SupportTest {
 
     @Test
     public void rateComplaintCitizen() throws Exception{
-        logger.debug(this.getTestStartInfoMessage("fileComplaintCitizen"));
+        logger.debug(this.getTestStartInfoMessage("rateComplaintCitizen"));
         home.loginCitizen()
                 .navigateToComplaints()
                 .rateComplaint()
