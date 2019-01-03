@@ -66,4 +66,6 @@ public class HomePage extends FullPage {
         logger.info("Logged in user "+getTestData().get("UserName"));
         Assert.assertTrue(userLogin, "User not logged in");
     }
+
+
 }
