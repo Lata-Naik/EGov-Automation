@@ -40,4 +40,13 @@ public class PGRFlows extends SupportTest {
                 .rejectComplaint()
                 .isComplaintRejected();
     }
+
+    @Test
+    public void fileComplaintCSR() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("fileComplaintCitizen"));
+        home.loginEmployee()
+                .navigateToComplaints()
+                .createComplaintCSR()
+                .isComplaintRegistered();
+    }
 }

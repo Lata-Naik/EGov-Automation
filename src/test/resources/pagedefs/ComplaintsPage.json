@@ -93,7 +93,7 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//div[@class='label-text complaint-number-value-label']"
+		"DESKTOP_WEB": "css=.complaint-number-value-label"
 	},
 	"txtFirstComplaint": {
 		"ANDROID": "locator=value",
@@ -196,6 +196,18 @@
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "css=.upload-photo-overlay>div>input"
+	},
+    "icnAddComplaint": {
+      "DESKTOP_WEB": "css=#mycomplaints-add"
+    },
+    "txtCitizenName": {
+      "DESKTOP_WEB": "css=#add-complaint"
+    },
+    "txtCitizenNumber": {
+      "DESKTOP_WEB": "css=#complainant-mobile-no"
+    },
+	"txtSearchComplaintType": {
+		"DESKTOP_WEB": "css=#complainttype-search"
 	}
 }
 
