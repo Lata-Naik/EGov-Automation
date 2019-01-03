@@ -20,16 +20,32 @@ public class PaymentPage extends FullPage {
         return PaymentPage.class.getSimpleName();
     }
 
-    public PaymentPage makePayment() throws Exception{
-        getControl("btnProceedToPayment").click();
-        getControl("btnMakePayment").click();
-        logger.info("Amount to be paid "+getControl("txtAmount").getText());
+    public void makePayment() throws Exception{
+        getControl("txtMasterCard").waitUntilClickable();
+        getControl("txtMasterCard").click();
+//        getControl("btnProceedToPayment").click();
+//        getControl("btnMakePayment").click();
+//        logger.info("Amount to be paid "+getControl("txtAmount").getText());
         getControl("txtCardNumber").enterText(getTestData().get("CardNumber"));
         getControl("txtCardMonth").enterText(getTestData().get("CardMonth"));
         getControl("txtCardYear").enterText(getTestData().get("CardYear"));
         getControl("btnPayNow").click();
-        return this;
+        getControl("btnSubmit").click();
+        Thread.sleep(15000);
     }
+    public PropertyTax PTmakePayment() throws Exception{
+        getControl("txtMasterCard").waitUntilVisible();
+        getControl("txtMasterCard").click();
+        getControl("txtCardNumber").enterText(getTestData().get("CardNumber"));
+        getControl("txtCardMonth").enterText(getTestData().get("CardMonth"));
+        getControl("txtCardYear").enterText(getTestData().get("CardYear"));
+        getControl("btnPayNow").click();
+        getControl("btnSubmit").waitUntilVisible();
+        getControl("btnSubmit").click();
+        Thread.sleep(15000);
+        return new PropertyTax(getConfig(),getAgent(),getTestData());
+    }
+
     public PaymentPage makePaymentCounterEmployee() throws Exception{
         getControl("btnProceedToPayment").click();
         logger.info("Amount to be paid "+getControl("txtAmount").getText());

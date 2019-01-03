@@ -47,6 +47,9 @@
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "id=Paybutton"
 	},
+	"btnSubmit": {
+		"DESKTOP_WEB": "css = input[type='submit']"
+	},
 	"txtCash": {
 		"DESKTOP_WEB": "css=[role='tablist']>div>button:nth-child(1)"
 	},
@@ -67,9 +70,6 @@
 	},
 	"txtPayerMobileNumber": {
 		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-payerMobileNo']"
-	},
-	"btnSubmit": {
-		"DESKTOP_WEB": "id=custom-containers-submitButtonLabel"
 	},
 	"txtChequeNumber": {
 		"DESKTOP_WEB": "id=custom-containers-chequeNo"
@@ -101,9 +101,6 @@
 	"txtDDBankBranch": {
 		"DESKTOP_WEB": "id=custom-containers-ddBranch"
 	},
-	"txtCardNumber": {
-		"DESKTOP_WEB": "id=custom-containers-last4Digits"
-	},
 	"txtTransactionNumber": {
 		"DESKTOP_WEB": "id=custom-containers-TrxNo"
 	},
@@ -116,6 +113,7 @@
 	"txtApplicationNumber": {
 		"DESKTOP_WEB": "css=#custom-atoms-div #material-ui-header>div"
 	}
+
 }
 
 
