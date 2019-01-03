@@ -26,7 +26,7 @@ public class SupportTest {
     protected PaymentPage payment;
     private IAgent agent;
     private ITestContext context = null;
-    private String testName = null;
+    public String testName = null;
 
     @BeforeSuite(alwaysRun = true)
     public void runOncePerSuite() throws Exception {

@@ -244,6 +244,9 @@
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "css=#custom-atoms-applicationSuccessCard #material-ui-header #custom-containers-key"
+	},
+	"btnAddNewApplication": {
+		"DESKTOP_WEB": "id=material-ui-newApplicationButton"
 	}
 }
 

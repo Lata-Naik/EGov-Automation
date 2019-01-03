@@ -1,5 +1,6 @@
 package agent.internal;
 
+import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -49,10 +50,13 @@ public class WebAgentFactory {
 		return new DesktopWebAgent(config, driver);
 	}
 
+
 	public static WebDriver initDriverinCloud() throws MalformedURLException {
 		DesiredCapabilities caps = DesiredCapabilities.chrome();
 		caps.setCapability("platform", "Windows 10");
 		caps.setCapability("version", "latest");
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		caps.setCapability("name",name);
 		driver = new RemoteWebDriver(new URL(accessURL), caps);
 		return driver;
 

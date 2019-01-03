@@ -159,4 +159,10 @@ public class TradeLicense extends FullPage {
 		Assert.assertTrue(applicationApproved, "Application not rejected");
 		Thread.sleep(10000);
 	}
+	public PaymentPage addNewTradeLicense()throws Exception{
+        switchToIFrame();
+        getControl("btnAddNewApplication").click();
+        fillTradeLicenseForm();
+        return new PaymentPage(getConfig(),getAgent(),getTestData());
+    }
 }
