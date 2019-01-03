@@ -59,6 +59,7 @@ public class PGRFlows extends SupportTest {
                 .isComplaintRegistered();
     }
 
+    @Test
     public void rateComplaintCitizen() throws Exception{
         logger.debug(this.getTestStartInfoMessage("fileComplaintCitizen"));
         home.loginCitizen()
