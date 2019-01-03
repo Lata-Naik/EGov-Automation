@@ -24,7 +24,7 @@ public class SupportTest {
     protected PropertyTax propertyTax;
     private IAgent agent;
     private ITestContext context = null;
-    private String testName = null;
+    public String testName = null;
 
     @BeforeSuite(alwaysRun = true)
     public void runOncePerSuite() throws Exception {
@@ -35,7 +35,7 @@ public class SupportTest {
 
     @BeforeTest(alwaysRun = true)
     public void runOncePerContext(ITestContext context) throws Exception {
-        logger.info(String.format("Test context setup started for %s test.", context.getName()));
+        //logger.info(String.format("Test context setup started for %s test.", context.getName()));
         AppachhiCentral.INSTANCE.registerContext(context);
         logger.info(String.format("Test context setup completed for %s test.", context.getName()));
     }

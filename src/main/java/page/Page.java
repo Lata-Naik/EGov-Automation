@@ -25,7 +25,7 @@ import pagedef.PageDef;
 
 public abstract class Page implements IPage {
 	protected static Logger logger = AppachhiCentral.getLogger();
-	private Configuration config = null;
+	protected Configuration config = null;
 	private IAgent agent = null;
 	private PageDef pageDef = null;
 	private Platform platform = null;
@@ -220,5 +220,13 @@ public abstract class Page implements IPage {
 	public void selectOptionFromDropDownList(String cssValue) throws Exception{
 		String css="li[data-value='"+cssValue+"']";
 		getAgent().getWebDriver().findElement(By.cssSelector(css)).click();
+	}
+
+	public void scrollDownTillElement(String ele) throws Exception{
+		do{
+			scrollDown();
+		}
+		while (!getControl(ele).isVisible());
+
 	}
 }

@@ -27,13 +27,13 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//div[text()='Select Structure Type']/.."
+		"DESKTOP_WEB": "css=[for='custom-containers-tradeStructureType']+div"
 	},
 	"drpSelectSubStructureType": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-tradeStructureSubType']/preceding-sibling::div"
+		"DESKTOP_WEB": "css=[for='custom-containers-tradeStructureSubType']+div"
 	},
 	"txtTradeCommencementDate": {
 		"ANDROID": "locator=value",
@@ -45,25 +45,25 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-tradeCategory']/.."
+		"DESKTOP_WEB": "css=[for='custom-containers-tradeCategory']+div"
 	},
 	"txtTradeType": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-tradeType']/.."
+		"DESKTOP_WEB": "css=[for='custom-containers-tradeType']+div>div"
 	},
 	"txtTradeSubType": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//input[@id='react-select-3-input']"
+		"DESKTOP_WEB": "css=#custom-containers-local-tradeSubType>div>div>div"
 	},
 	"txtAccessories": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-accessoriesName']/.."
+		"DESKTOP_WEB": "css=[for='custom-containers-accessoriesName']+div"
 	},
 	"txtPropertyId": {
 		"ANDROID": "locator=value",
@@ -75,19 +75,25 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-accessoriesUOMValue']"
+		"DESKTOP_WEB": "css=#custom-containers-accessoriesUOMValue"
 	},
 	"txtMohalla": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//input[@id='react-select-2-input']/.."
+		"DESKTOP_WEB": "css=#custom-containers-local-tradeLocMohalla>div>div>div"
 	},
 	"btnNextStep": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "xpath=//span[text()='NEXT STEP']"
+	},
+	"drpOwnerShipType": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=[for='custom-containers-subOwnership']+div>div"
 	},
 	"txtMobileNo": {
 		"ANDROID": "locator=value",
@@ -112,6 +118,12 @@
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-ownerDOB']"
+	},
+	"txtGender": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=[for='custom-containers-getOwnerGenderField']+div>div"
 	},
 	"txtAddress": {
 		"ANDROID": "locator=value",
@@ -148,9 +160,95 @@
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "css=#material-ui-tradeDocumentDetails button .material-icons"
+	},
+	"txtLicenseApplicationNo": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-applicationNo"
+	},
+	"txtTradeLicenseNo": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-tradeLicenseNo"
+	},
+	"txtOwnerMobileNo": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-ownerMobNo"
+	},
+	"txtApplicationStatus": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=#material-ui-appStatusAndToFromDateContainer .select-field-placeholder"
+	},
+	"txtApplicationFromDate": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-fromDate"
+	},
+	"txtApplicationToDate": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-toDate"
+	},
+	"btnSearch": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=material-ui-buttonContainer"
+	},
+	"btnReject": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[contains(text(),'REJECT')]"
+	},
+	"btnApprove": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[contains(text(),'APPROVE')]"
+	},
+	"txtApprovalComments": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "id=custom-containers-div"
+	},
+	"txtRejectComments": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-div']"
+	},
+	"btnUploadFiles": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath=//span[text()='UPLOAD FILES']"
+	},
+	"txtApplicationApproved": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=#custom-atoms-applicationSuccessCard #material-ui-header #custom-containers-key"
+	},
+	"txtApplicationRejected": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=#custom-atoms-applicationSuccessCard #material-ui-header #custom-containers-key"
+	},
+	"btnAddNewApplication": {
+		"DESKTOP_WEB": "id=material-ui-newApplicationButton"
 	}
 }
-
 
 
 
