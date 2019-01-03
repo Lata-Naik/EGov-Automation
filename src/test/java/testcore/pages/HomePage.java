@@ -2,6 +2,7 @@ package testcore.pages;
 
 import agent.IAgent;
 import central.Configuration;
+import enums.ConfigType;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
@@ -19,7 +20,16 @@ public class HomePage extends FullPage {
         return HomePage.class.getSimpleName();
     }
 
+    public void navigateToURL(String userType) throws Exception{
+//        logger.info("UserType: "+userType);
+        String newURL =  getConfig().getProperty("app_browser_url", config)+userType+"/user/login";
+//        logger.info("Actual url: "+getConfig().getProperty("app_browser_url", config));
+        logger.info("New URL: "+newURL);
+        getAgent().getWebDriver().navigate().to(newURL);
+    }
+
     public HomePage loginCitizen()throws Exception{
+        navigateToURL(getTestData().get("UserType"));
         getControl("txtMobileNumber").enterText(getTestData().get("MobileNumber"));
         getControl("btnContinue").click();
         getControl("txtOTP").enterText(getTestData().get("OTP"));
@@ -29,6 +39,7 @@ public class HomePage extends FullPage {
     }
 
     public HomePage loginEmployee()throws Exception{
+        navigateToURL(getTestData().get("UserType"));
         getControl("txtUserIdEmployee").enterText(getTestData().get("UserID"));
         getControl("txtPasswordEmployee").enterText(getTestData().get("Password"));
         getControl("txtCityEmployee").click();

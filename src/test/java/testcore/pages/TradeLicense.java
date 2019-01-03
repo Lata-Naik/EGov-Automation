@@ -94,11 +94,12 @@ public class TradeLicense extends FullPage {
     }
 
     public TradeLicense approveTradeLicense() throws Exception{
-        selectApplicationToApprove();
+        selectApplication();
+        approveApplication();
         return this;
     }
 
-    public void selectApplicationToApprove() throws Exception{
+    public void selectApplication() throws Exception{
         switchToIFrame();
 //        getControl("txtLicenseApplicationNo").enterText(getTestData().get("ApplicationNumber"));
 //        getControl("txtTradeLicenseNo").enterText(getTestData().get("TradeLicenseNo"));
@@ -110,7 +111,6 @@ public class TradeLicense extends FullPage {
         Thread.sleep(2000);
         getControl("btnSearch").click();
         selectApplicationByNumber(getTestData().get("ApplicationNumber"));
-        approveApplication();
     }
     public void selectApplicationByNumber(String applicationNo) throws Exception{
         String applicationNoXpath = "//span[contains(text(),'"+applicationNo+"')]";
@@ -123,12 +123,31 @@ public class TradeLicense extends FullPage {
       //  getControl("TradeLicense").enterText(getTestData().get("UploadFiles"));
         getControl("btnApprove").click();
     }
+
+
+    public TradeLicense rejectTradeLicense()throws Exception{
+        selectApplication();
+        rejectApplication();
+        return this;
+    }
+
     public void rejectApplication()throws Exception{
         getControl("btnReject").click();
+        getControl("txtRejectComments").enterText(getTestData().get("RejectComments"));
+        //  getControl("TradeLicense").enterText(getTestData().get("UploadFiles"));
+        getControl("btnReject").click();
     }
+
     public void isApplicationApproved()throws Exception{
         boolean applicationApproved = getControl("txtApplicationApproved").getText().equalsIgnoreCase("Trade License Approved Successfully");
         logger.info(getControl("txtApplicationApproved").getText());
         Assert.assertTrue(applicationApproved, "Application not approved");
+    }
+
+    public void isApplicationRejected()throws Exception{
+        boolean applicationApproved = getControl("txtApplicationRejected").getText().equalsIgnoreCase("Trade License Application Rejected");
+        logger.info(getControl("txtApplicationRejected").getText());
+        Assert.assertTrue(applicationApproved, "Application not rejected");
+        Thread.sleep(10000);
     }
 }

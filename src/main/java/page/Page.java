@@ -25,7 +25,7 @@ import pagedef.PageDef;
 
 public abstract class Page implements IPage {
 	protected static Logger logger = AppachhiCentral.getLogger();
-	private Configuration config = null;
+	protected Configuration config = null;
 	private IAgent agent = null;
 	private PageDef pageDef = null;
 	private Platform platform = null;
