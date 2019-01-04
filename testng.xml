@@ -4,7 +4,8 @@
 	<test name="Login">
 		<classes>
 			<class name="testcore.scenarios.PGRFlows"/>
-			<class name="testcore.scenarios.TLFlows"/>
+			<!--<class name="testcore.scenarios.PTFlows"/>-->
+			<!--<class name="testcore.scenarios.TLFlows"/>-->
 		</classes>
 	</test>
 </suite>

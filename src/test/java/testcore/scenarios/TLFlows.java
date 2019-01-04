@@ -7,7 +7,7 @@ public class TLFlows extends SupportTest {
 
     @Test
     public void createTradeLicenseCitizen() throws Exception{
-        logger.debug(this.getTestStartInfoMessage("testScript"));
+        logger.debug(this.getTestStartInfoMessage("createTradeLicenseCitizen"));
         home.loginCitizen()
                 .navigateToTradeLicense()
                 .applyTradeLicense()
@@ -18,7 +18,7 @@ public class TLFlows extends SupportTest {
 
     @Test
     public void approveTradeLicenseApprover() throws Exception {
-        logger.debug(this.getTestStartInfoMessage("testScript"));
+        logger.debug(this.getTestStartInfoMessage("approveTradeLicenseApprover"));
         home.loginEmployee()
                 .navigateToTradeLicense()
                 .approveTradeLicense()
@@ -26,7 +26,7 @@ public class TLFlows extends SupportTest {
     }
     @Test
     public void rejectTradeLicenseApprover() throws Exception {
-        logger.debug(this.getTestStartInfoMessage("testScript"));
+        logger.debug(this.getTestStartInfoMessage("rejectTradeLicenseApprover"));
         home.loginEmployee()
                 .navigateToTradeLicense()
                 .rejectTradeLicense()
@@ -35,11 +35,20 @@ public class TLFlows extends SupportTest {
 
     @Test
     public void createTradeLicenseCounterEmployee() throws Exception{
-        logger.debug(this.getTestStartInfoMessage("testScript"));
+        logger.debug(this.getTestStartInfoMessage("createTradeLicenseCounterEmployee"));
         home.loginEmployee()
                 .navigateToTradeLicense()
                 .addNewTradeLicense()
                 .makePaymentCounterEmployee()
                 .isApplicationPlaced();
+    }
+
+    @Test
+    public void cancelApprovedLicenseApprover() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("cancelApprovedLicenseApprover"));
+        home.loginEmployee()
+                .navigateToTradeLicense()
+                .cancelTradeLicense()
+                .isApprovedTradeLicenseCancelled();
     }
 }

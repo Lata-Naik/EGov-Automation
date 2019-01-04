@@ -189,7 +189,7 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "id=custom-containers-fromDate"
+		"DESKTOP_WEB": "id=custom-containers-frocustom-containers-nextButtonLabelmDate"
 	},
 	"txtApplicationToDate": {
 		"ANDROID": "locator=value",
@@ -215,17 +215,11 @@
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "xpath=//span[contains(text(),'APPROVE')]"
 	},
-	"txtApprovalComments": {
+	"txtAddComments": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "id=custom-containers-div"
-	},
-	"txtRejectComments": {
-		"ANDROID": "locator=value",
-		"IOS": "locator=value",
-		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-div']"
 	},
 	"btnUploadFiles": {
 		"ANDROID": "locator=value",
@@ -247,6 +241,15 @@
 	},
 	"btnAddNewApplication": {
 		"DESKTOP_WEB": "id=material-ui-newApplicationButton"
+	},
+	"btnCancelTradeLicense": {
+		"DESKTOP_WEB": "xpath=//span[contains(text(),'CANCEL TRADE LICENSE')]"
+	},
+	"txtLicenseCancelled": {
+		"DESKTOP_WEB": "css=#custom-atoms-applicationSuccessCard #material-ui-header #custom-containers-key"
+	},
+	"txtApplicationNumber": {
+		"DESKTOP_WEB": "css=#custom-atoms-div #material-ui-header>div"
 	}
 }
 
