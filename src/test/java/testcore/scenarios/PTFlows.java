@@ -3,75 +3,30 @@ package testcore.scenarios;
 
 import org.testng.annotations.Test;
 
-public class PGRFlows extends SupportTest {
+public class PTFlows extends SupportTest {
 
     @Test
-    public void fileComplaintCitizen() throws Exception{
-        logger.debug(this.getTestStartInfoMessage("fileComplaintCitizen"));
+    public void createResidentialPropertyTaxAndMakeFullPaymentCitizen() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("createResidentialPropertyTaxAndMakeFullPaymentCitizen"));
         home.loginCitizen()
-                .navigateToComplaints()
-                .createComplaint()
-                .isComplaintRegistered();
+                .navigateToPropertyTax()
+                .applyPropertyTaxCitizen()
+                .fillPropertyTaxFormAndMakeFullPayment()
+                .PTmakePayment()
+                .getDataAfterPaymentSucessfull();
+        Thread.sleep(9000);
     }
 
     @Test
-    public void assignComplaintGRO() throws Exception{
-        logger.debug(this.getTestStartInfoMessage("assignComplaintGRO"));
-        home.loginEmployee()
-                .navigateToComplaints()
-                .assignComplaintToLME()
-                .isComplaintAssigned();
-    }
-
-    @Test
-    public void assignComplaintDGRO() throws Exception{
-        logger.debug(this.getTestStartInfoMessage("assignComplaintDGRO"));
-        home.loginEmployee()
-                .navigateToComplaints()
-                .assignComplaintToLME()
-                .isComplaintAssigned();
-    }
-
-    @Test
-    public void resolveComplaintLME() throws Exception{
-        logger.debug(this.getTestStartInfoMessage("resolveComplaintLME"));
-        home.loginEmployee()
-                .navigateToComplaints()
-                .searchAndResolveComplaint()
-                .isComplaintResolved();
-    }
-
-    @Test
-    public void rejectComplaintGRO() throws Exception{
-        logger.debug(this.getTestStartInfoMessage("rejectComplaintGRO"));
-        home.loginEmployee()
-                .navigateToComplaints()
-                .rejectComplaint()
-                .isComplaintRejected();
-    }
-
-    @Test
-    public void fileComplaintCSR() throws Exception {
-        logger.debug(this.getTestStartInfoMessage("fileComplaintCSR"));
-        home.loginEmployee()
-                .navigateToComplaints()
-                .createComplaintCSR()
-                .isComplaintRegistered();
-    }
-
-    @Test
-    public void rateComplaintCitizen() throws Exception{
-        logger.debug(this.getTestStartInfoMessage("rateComplaintCitizen"));
+    public void createCommercialPropertyTaxAndMakePartialPaymentCitizen() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("createCommercialPropertyTaxAndMakePartialPaymentCitizen"));
         home.loginCitizen()
-                .navigateToComplaints()
-                .rateComplaint()
-                .isRateSubmitted();
+                .navigateToPropertyTax()
+                .applyPropertyTaxCitizen()
+                .fillPropertyTaxFormAndMakePartialPayment()
+                .PTmakePayment()
+                .getDataAfterPaymentSucessfull();
+        Thread.sleep(9000);
     }
 
-    @Test
-    public void reopenClosedComplaintCitizen()throws Exception{
-        logger.debug(this.getTestStartInfoMessage("reopenClosedComplaintCitizen"));
-        home.loginCitizen()
-                .navigateToComplaints();
-    }
 }
