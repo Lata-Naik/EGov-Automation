@@ -48,7 +48,10 @@
 		"DESKTOP_WEB": "xpath=//div[@class='label-text complaint-submitted-label']"
 	},
 	"txtComplaintNumber": {
-		"DESKTOP_WEB": "xpath=//div[@class='label-text complaint-number-value-label']"
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "css=.complaint-number-value-label"
 	},
 	"txtFirstComplaint": {
 		"DESKTOP_WEB": "id=complaint-0"
@@ -104,6 +107,18 @@
 	"txtUploadPhoto": {
 		"DESKTOP_WEB": "css=.upload-photo-overlay>div>input"
 	},
+    "icnAddComplaint": {
+      "DESKTOP_WEB": "css=#mycomplaints-add"
+    },
+    "txtCitizenName": {
+      "DESKTOP_WEB": "css=#add-complaint"
+    },
+    "txtCitizenNumber": {
+      "DESKTOP_WEB": "css=#complainant-mobile-no"
+    },
+	"txtSearchComplaintType": {
+		"DESKTOP_WEB": "css=#complainttype-search"
+  },
 	"txtResolvedComplaint": {
 		"DESKTOP_WEB": "xpath=//div[@class='label-container complaint-status-text dark-color']/div[text()='Your Complaint has been Resolved']"
 	},

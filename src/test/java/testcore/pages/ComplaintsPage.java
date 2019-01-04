@@ -21,10 +21,10 @@ public class ComplaintsPage extends FullPage {
 
     public ComplaintsPage createComplaint() throws Exception{
         getControl("btnFileComplaint").click();
-        getControl("txtUploadPhoto").enterText(getTestData().get("UploadPhoto"));
+        //getControl("txtUploadPhoto").enterText(getTestData().get("UploadPhoto"));
         getControl("drpComplaintType").click();
-        getControl("txtWaterandSewage").click();
-        getControl("txtBlockOrOverflowingSewage").click();
+        getControl("txtSearchComplaintType").enterText(getTestData().get("ComplaintType"));
+        selectOptionFromDropDownByEnter(getTestData().get("ComplaintType"));
         getControl("txtAdditionalDetails").enterText(getTestData().get("AdditionalDetails"));
         getControl("txtCity").enterText(getTestData().get("City"));
         selectOptionFromDropDownByEnter(getTestData().get("City"));
@@ -43,7 +43,7 @@ public class ComplaintsPage extends FullPage {
 
     public void isComplaintRegistered() throws Exception{
         boolean complaintRegistered=getControl("txtComplaintRegSuccessMsg").getText().equalsIgnoreCase("Complaint Registered Successfully");
-        logger.info("Registered complaint Number is: "+getControl("txtComplaintRegSuccessMsg").getText());
+        logger.info("Registered complaint Number is: "+getControl("txtComplaintNumber").getText());
         Assert.assertTrue(complaintRegistered, "Complaint not registered");
     }
 
@@ -106,6 +106,22 @@ public class ComplaintsPage extends FullPage {
     public void isComplaintRejected() throws Exception{
         boolean rejectedSuccess=getControl("txtRejectedSuccessMsg").getText().equalsIgnoreCase("You have Rejected this complaint.");
         Assert.assertTrue(rejectedSuccess, "Complaint not rejected by GRO");
+    }
+
+    public ComplaintsPage createComplaintCSR()throws Exception{
+        getControl("icnAddComplaint").click();
+        getControl("txtCitizenName").enterText(getTestData().get("CitizenName"));
+        getControl("txtCitizenNumber").enterText(getTestData().get("CitizenNumber"));
+        getControl("drpComplaintType").click();
+        getControl("txtSearchComplaintType").enterText(getTestData().get("ComplaintType"));
+        selectOptionFromDropDownByEnter(getTestData().get("ComplaintType"));
+        getControl("txtAdditionalDetails").enterText(getTestData().get("AdditionalDetails"));
+        getControl("txtMohalla").enterText(getTestData().get("Mohalla"));
+        selectOptionFromDropDownByEnter(getTestData().get("Mohalla"));
+        getControl("txtHouseNo").enterText(getTestData().get("HouseNo"));
+        getControl("txtLandmark").enterText(getTestData().get("Landmark"));
+        getControl("btnSubmitComplaint").click();
+        return this;
     }
 
     public ComplaintsPage rateComplaint() throws Exception{
