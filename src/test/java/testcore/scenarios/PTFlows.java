@@ -2,7 +2,7 @@ package testcore.scenarios;
 
 import org.testng.annotations.Test;
 
-public class TestCases extends SupportTest {
+public class PTFlows extends SupportTest {
 
     @Test
     public void assessNonResidentialProperty() throws Exception {
