@@ -25,8 +25,8 @@ import enums.Platform;
 
 public class WebAgentFactory {
 	static WebDriver driver = null;
-	public static final String USERNAME = "mytest20";
-	public static final String ACCESS_KEY = "77f6834d-60ce-4830-b882-f02c09374228";
+	public static final String USERNAME = "egovtest";
+	public static final String ACCESS_KEY = "4b9511a7-0b60-4375-8555-159943970d6a";
 	public static final String accessURL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
 
 
@@ -36,7 +36,7 @@ public class WebAgentFactory {
 		switch (platform) {
 			case DESKTOP_WEB:
 				initDriver(config, browser);
-//				initDriverinCloud();
+				// initDriverinCloud();
 //				Dimension resolution = new Dimension(Integer.parseInt(System.getProperty("browser_resolution_width")),Integer.parseInt(System.getProperty("browser_resolution_height")));
 //				driver.manage().window().setSize(resolution);
 				driver.manage().window().maximize();
