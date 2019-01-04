@@ -16,7 +16,9 @@ public class PropertyTax extends FullPage {
         return null;
     }
 
-    public PropertyTax assessNewProperty() {
+    public PropertyTax assessNewProperty() throws Exception {
+        getControl("btnApply").click();
+        getControl("btnFY").click();
         return this;
     }
     public PropertyTax commercialProperty() {

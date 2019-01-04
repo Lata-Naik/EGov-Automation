@@ -23,7 +23,7 @@ public class HomePage extends FullPage {
         getControl("btnContinue").click();
         getControl("txtOTP").enterText(getTestData().get("OTP"));
         getControl("btnGetStarted").click();
-        isUserLoggedIn();
+//        isUserLoggedIn();
         return this;
     }
 

@@ -2,7 +2,6 @@ package agent.internal;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,21 +15,25 @@ import org.openqa.selenium.safari.SafariDriver;
 import agent.IAgent;
 import central.Configuration;
 import enums.ConfigType;
-import enums.DesktopBrowser;
 import enums.Platform;
+import utils.Properties;
+
+import static org.openqa.selenium.remote.BrowserType.*;
 
 public class WebAgentFactory {
 	static WebDriver driver = null;
 
 	public static IAgent createAgent(Configuration config) throws Exception {
 		Platform platform = config.getPlatform();
-		DesktopBrowser browser = DesktopBrowser.valueOf(getProperty("browser", config).toUpperCase());
+		String browser = System.getProperty("browser");
+		String url = Properties.url;
 		switch (platform) {
 			case DESKTOP_WEB:
 				initDriver(config, browser);
-				Dimension resolution = new Dimension(Integer.parseInt(System.getProperty("browser_resolution_width")),Integer.parseInt(System.getProperty("browser_resolution_height")));
-				driver.manage().window().setSize(resolution);
-				driver.get(getProperty("app_browser_url", config));
+//				Dimension resolution = new Dimension(Integer.parseInt(System.getProperty("browser_resolution_width")),Integer.parseInt(System.getProperty("browser_resolution_height")));
+//				driver.manage().window().setSize(resolution);
+//				driver.get(getProperty("app_browser_url", config));
+                driver.get(url);
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				break;
 			default:
@@ -40,21 +43,22 @@ public class WebAgentFactory {
 		return new DesktopWebAgent(config, driver);
 	}
 
-	private static WebDriver initDriver(Configuration config, DesktopBrowser browser) throws Exception {
-		DesiredCapabilities caps = null;
+	private static WebDriver initDriver(Configuration config, String browser) throws Exception {
+        System.out.println("Browser to be tested on --" + browser);
+        DesiredCapabilities caps = null;
 		switch (browser) {
 			case CHROME:
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--disable-notifications");
 				options.addArguments("--disable-infobars");
-				options.setBinary(System.getProperty("browser_bin_path"));
+				options.addArguments("--start-maximized");
 				caps = DesiredCapabilities.chrome();
 				caps.setCapability(ChromeOptions.CAPABILITY, options);
 				caps.setCapability("pageLoadStrategy", "none");
 				caps.setVersion(ConfigType.PLATFORM_VER.toString());
 				setPropertyByOS(browser);
-				driver = new ChromeDriver(caps);
 
+				driver = new ChromeDriver(caps);
 				break;
 			case EDGE:
 				caps = DesiredCapabilities.internetExplorer();
@@ -85,18 +89,16 @@ public class WebAgentFactory {
 		return driver;
 	}
 
-	private static void setPropertyByOS(DesktopBrowser browser) throws Exception {
+	private static void setPropertyByOS(String browser) throws Exception {
 		String driverPath = System.getProperty("user.dir") + "/src/test/resources/drivers/desktop/";
 		switch (getOS()) {
 			case "OS_WINDOWS":
 				switch (browser) {
 					case CHROME:
-						System.setProperty("webdriver.chrome.bin", System.getProperty("browser_bin_path"));
-						System.setProperty("webdriver.chrome.driver", System.getProperty("browser_driver_path"));
+                        System.setProperty("webdriver.chrome.driver", "D:\\Repositories\\new-framework\\EGov-Automation\\src\\main\\java\\drivers\\chromedriver.exe");
 						break;
 					case FIREFOX:
-						System.setProperty("webdriver.firefox.bin", System.getProperty("browser_bin_path"));
-						System.setProperty("webdriver.gecko.driver", System.getProperty("browser_driver_path"));
+                        System.setProperty("webdriver.gecko.driver", "src/main/java/drivers/geckodriver.exe");
 						break;
 					case EDGE:
 						//System.setProperty("webdriver.edge.driver", driverPath + "MicrosoftWebDriver.exe");
@@ -158,22 +160,22 @@ public class WebAgentFactory {
 		return osType;
 	}
 
-	public static String getProperty(String arg, Configuration config) {
-		String ret_val="";
-
-		if ( arg.equalsIgnoreCase("browser") ) {
-			if ( System.getProperty("browser") != null )
-				ret_val=System.getProperty("browser");
-			else
-				ret_val=config.getValue(ConfigType.BROWSER);
-		}
-
-		if ( arg.equalsIgnoreCase("app_browser_url") ) {
-			if ( System.getProperty("app_browser_url") != null )
-				ret_val=System.getProperty("app_browser_url");
-			else
-				ret_val=config.getValue(ConfigType.APP_URL);
-		}
-		return ret_val;
-	}
+//	public static String getProperty(String arg, Configuration config) {
+//		String ret_val="";
+//
+//		if ( arg.equalsIgnoreCase("browser") ) {
+//			if ( System.getProperty("browser") != null )
+//				ret_val=System.getProperty("browser");
+//			else
+//				ret_val=config.getValue(ConfigType.BROWSER);
+//		}
+//
+//		if ( arg.equalsIgnoreCase("app_browser_url") ) {
+//			if ( System.getProperty("app_browser_url") != null )
+//				ret_val=System.getProperty("app_browser_url");
+//			else
+//				ret_val=config.getValue(ConfigType.APP_URL);
+//		}
+//		return ret_val;
+//	}
 }

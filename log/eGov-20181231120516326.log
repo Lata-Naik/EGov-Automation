@@ -646,7 +646,7 @@
 [DEBUG] [Thread:Forwarding executeScript on session 598705f7b83713b8e1c43c2fa3d4ddf3 to remote] 2018-12-31 12:05:29,257 org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection:L320 - Connection [id: 0][route: {}->http://localhost:48749] can be kept alive indefinitely
 [DEBUG] [Thread:Forwarding executeScript on session 598705f7b83713b8e1c43c2fa3d4ddf3 to remote] 2018-12-31 12:05:29,257 org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection:L326 - Connection released: [id: 0][route: {}->http://localhost:48749][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
 [INFO ] [Thread:main] 2018-12-31 12:05:29,257 testcore.scenarios.SupportTest.runOncePerMethod:L56 - Set up for test method [assessNewProperty] ended.
-[DEBUG] [Thread:main] 2018-12-31 12:05:29,273 testcore.scenarios.UseCases.assessNewProperty:L9 - Test method [testScript] start
+[DEBUG] [Thread:main] 2018-12-31 12:05:29,273 testcore.scenarios.TestCases.assessNewProperty:L9 - Test method [testScript] start
 [DEBUG] [Thread:main] 2018-12-31 12:05:29,273 control.Control.createControl:L98 - Locator Type: CSS, Locator Value: input[id='employee-phone'], Page: HomePage
 [DEBUG] [Thread:Forwarding findElements on session 598705f7b83713b8e1c43c2fa3d4ddf3 to remote] 2018-12-31 12:05:29,289 org.apache.http.client.protocol.RequestAddCookies.process:L123 - CookieSpec selected: default
 [DEBUG] [Thread:Forwarding findElements on session 598705f7b83713b8e1c43c2fa3d4ddf3 to remote] 2018-12-31 12:05:29,289 org.apache.http.client.protocol.RequestAuthCache.process:L77 - Auth cache not set in the context

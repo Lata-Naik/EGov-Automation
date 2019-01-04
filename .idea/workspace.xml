@@ -2,12 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e66a380-3e49-45ec-8d3a-fac3540ea8fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/EGov-Automation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Properties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/PropertiesReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/platform.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/qa_ctz.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/qa_emp.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utils/Properties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utils/PropertiesReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/conf/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/conf/config.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/conf/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/data/DESKTOP_WEB/testdata.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/pagedefs/ComplaintsPage.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/pagedefs/HomePage.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/pagedefs/PropertyTax.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/pagedefs/TradeLicense.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/platform.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/qa_ctz.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/qa_emp.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/suites/suite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/testcore/scenarios/TestCases.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/uploadFiles/image1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/uploadFiles/image2.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EGovPGR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EGovPGR.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/eGov-20181231114824832.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/eGov-20181231114824832.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/eGov-20181231114916470.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/eGov-20181231114916470.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/eGov-20181231115427188.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/eGov-20181231115427188.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/eGov-20181231120516326.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/eGov-20181231120516326.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/eGov-20181231121032702.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/eGov-20181231121032702.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124555.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124556.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124558.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124559.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124627.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124628.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124629.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124631.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124632.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124636.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124638.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124649.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124659.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124751.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124752.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124753.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124754.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124755.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124756.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124757.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124759.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124800.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124801.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124812.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181219124813.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231114940.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231115454.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231120531.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231121045.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133155.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133158.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133159.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133201.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133202.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133416.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133418.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133419.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133421.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133422.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133423.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231133424.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231155245.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231155402.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231160213.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231160215.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231160217.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231160219.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231160220.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231160221.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/eGov-20181231160222.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agent/internal/WebAgentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agent/internal/WebAgentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcore/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcore/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcore/scenarios/TestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/data/DESKTOP_WEB/testdata.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data/DESKTOP_WEB/testdata.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/pagedefs/PropertyTax.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/pagedefs/PropertyTax.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agent/internal/WebAgentFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/agent/internal/WebAgentFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agent/internal/WebAgentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/agent/internal/WebAgentFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcore/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcore/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcore/scenarios/UseCases.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +106,8 @@
     <session id="-53847777">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
@@ -33,50 +119,54 @@
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="3" />
           <entry key="html" value="1" />
-          <entry key="ini" value="3" />
-          <entry key="java" value="51" />
-          <entry key="json" value="2" />
+          <entry key="ini" value="5" />
+          <entry key="java" value="99" />
+          <entry key="json" value="10" />
           <entry key="md" value="1" />
           <entry key="plantuml" value="10" />
-          <entry key="properties" value="1" />
+          <entry key="properties" value="8" />
           <entry key="sh" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="3" />
+          <entry key="CLASS" value="3" />
           <entry key="HTML" value="1" />
-          <entry key="Ini" value="2" />
-          <entry key="JAVA" value="51" />
-          <entry key="JSON" value="2" />
+          <entry key="Ini" value="4" />
+          <entry key="JAVA" value="99" />
+          <entry key="JSON" value="10" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="PlantUML file" value="10" />
-          <entry key="Properties" value="1" />
+          <entry key="Properties" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="29" />
-          <entry key="ini" value="40" />
-          <entry key="java" value="334" />
-          <entry key="json" value="24" />
+          <entry key="ini" value="41" />
+          <entry key="java" value="591" />
+          <entry key="json" value="163" />
+          <entry key="properties" value="24" />
           <entry key="sh" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="23" />
-          <entry key="Ini" value="40" />
-          <entry key="JAVA" value="334" />
-          <entry key="JSON" value="24" />
+          <entry key="Ini" value="41" />
+          <entry key="JAVA" value="591" />
+          <entry key="JSON" value="163" />
           <entry key="PLAIN_TEXT" value="29" />
+          <entry key="Properties" value="24" />
         </counts>
       </usages-collector>
     </session>
@@ -86,26 +176,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/ScriptFlows.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="185">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/TradeLicense.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/TestCases.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+            <state relative-caret-position="97">
+              <caret line="30" column="37" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -113,16 +215,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state relative-caret-position="255">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding>
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
                 <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-48">
+              <caret line="49" column="22" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/pagedefs/PropertyTax.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -138,8 +254,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sure</find>
-      <find>package testcore\.scenarios\;\n\nimport org\.testng\.annotations\.Test\;\n\npublic class ScriptFlows extends SupportTest \{\n\n    \@Test\(groups \= \{ \&quot;Hopscotch\&quot; \}\, description \= \&quot;HS_01\&quot;\, alwaysRun \= true\)\n    public void HS_01\(\) throws Exception \{\n        logger\.debug\(this\.getTestStartInfoMessage\(\&quot;HS_01\&quot;\)\)\;\n        home\.splashToHome\(\)\.moveToAccount\(\)\.register\(\)\.profileDetails\(\)\;\n        logger\.debug\(this\.getTestEndInfoMessage\(\&quot;HS_01\&quot;\)\)\;\n    \}\n\n    \@Test\(groups \= \{ \&quot;Hopscotch\&quot; \}\, description \= \&quot;HS_02\&quot;\, alwaysRun \= true\)\n    public void HS_02\(\) throws Exception \{\n        logger\.debug\(this\.getTestStartInfoMessage\(\&quot;HS_02\&quot;\)\)\;\n        home\.splashToHome\(\)\.searchProduct\(\)\.listToDesc\(\)\.addToCart\(\)\.goBackToHome\(\)\.moveToAccount\(\)\.register\(\)\.cart\(\)\;\n        logger\.debug\(this\.getTestEndInfoMessage\(\&quot;HS_02\&quot;\)\)\;\n    \}\n\n    \@Test\(groups \= \{ \&quot;Hopscotch\&quot; \}\, description \= \&quot;HS_14\&quot;\, alwaysRun \= true\)\n    public void HS_14\(\) throws Exception \{\n        logger\.debug\(this\.getTestStartInfoMessage\(\&quot;HS_14\&quot;\)\)\;\n        home\.splashToHome\(\)\.searchProduct\(\)\;\n        logger\.debug\(this\.getTestEndInfoMessage\(\&quot;HS_14\&quot;\)\)\;\n    \}\n\n    \@Test\(groups \= \{ \&quot;Hopscotch\&quot; \}\, description \= \&quot;HS_15\&quot;\, alwaysRun \= true\)\n    public void HS_15\(\) throws Exception \{\n        logger\.debug\(this\.getTestStartInfoMessage\(\&quot;HS_15\&quot;\)\)\;\n        home\.splashToHome\(\)\.moveToBoutique\(\)\.lastProduct\(\)\.similarProducts\(\)\;\n        logger\.debug\(this\.getTestEndInfoMessage\(\&quot;HS_15\&quot;\)\)\;\n    \}\n\n    \@Test\(groups \= \{ \&quot;Hopscotch\&quot; \}\, description \= \&quot;HS_16\&quot;\, alwaysRun \= true\)\n    public void HS_16\(\) throws Exception \{\n        logger\.debug\(this\.getTestStartInfoMessage\(\&quot;HS_16\&quot;\)\)\;\n        home\.splashToHome\(\)\.moveToBoutique\(\)\.listToDesc\(\)\.multipleItemsAddToCart\(\)\;\n        logger\.debug\(this\.getTestEndInfoMessage\(\&quot;HS_16\&quot;\)\)\;\n    \}\n\n   \@Test\(groups \= \{ \&quot;Hopscotch\&quot; \}\, description \= \&quot;HS_20\&quot;\, alwaysRun \= true\)\n    public void HS_20\(\) throws Exception \{\n        logger\.debug\(this\.getTestStartInfoMessage\(\&quot;HS_20\&quot;\)\)\;\n        home\.splashToHome\(\)\.moveToBoutique\(\)\.goBackAndVerifyBoutique\(\)\;\n        logger\.debug\(this\.getTestEndInfoMessage\(\&quot;HS_20\&quot;\)\)\;\n    \}\n\n    \@Test\(groups \= \{ \&quot;Hopscotch\&quot; \,\&quot;test\&quot; \}\, description \= \&quot;HS_26\&quot;\, alwaysRun \= true\)\n    public void HS_26\(\) throws Exception \{\n        logger\.debug\(this\.getTestStartInfoMessage\(\&quot;HS_26\&quot;\)\)\;\n        home\.splashToHome\(\)\.scrollDownHomePage\(\)\.closeAndRelaunch\(\)\;\n        logger\.debug\(this\.getTestEndInfoMessage\(\&quot;HS_26\&quot;\)\)\;\n    \}\n\n\}\n</find>
       <find>mobilenumber</find>
       <find>btnPayCheckout</find>
       <find>btnPay</find>
@@ -165,6 +279,10 @@
       <find>scri</find>
       <find>btnComplaints</find>
       <find>txtMobileNumberEmployee</find>
+      <find>cap</find>
+      <find>user</find>
+      <find>btnTradeLicense</find>
+      <find>empl</find>
       <find>txtUserIdEmployee</find>
     </findStrings>
   </component>
@@ -174,14 +292,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testng.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/ScriptFlows.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/SupportTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/core/ScriptFlows.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcore/ScriptFlows.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcore/pages/FullPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcore/business/BusinessFlow.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcore/scenarios/Test.java" />
         <option value="$PROJECT_DIR$/src/test/resources/pagedefs/AddressPage.json" />
         <option value="$PROJECT_DIR$/src/test/resources/pagedefs/ProductDescPage.json" />
         <option value="$PROJECT_DIR$/src/test/java/testcore/pages/AddressPage.java" />
@@ -205,7 +315,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Features/Login.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/conf/config.ini" />
-        <option value="$PROJECT_DIR$/src/main/java/agent/internal/WebAgentFactory.java" />
         <option value="$PROJECT_DIR$/src/test/resources/conf/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/agent/internal/IWindowActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcore/pages/TradeLicense.java" />
@@ -217,14 +326,23 @@
         <option value="$PROJECT_DIR$/src/test/java/testcore/pages/ComplaintsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcore/scenarios/ScriptFlows.java" />
         <option value="$PROJECT_DIR$/src/main/java/pagedef/PageDef.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/pagedefs/PropertyTax.json" />
         <option value="$PROJECT_DIR$/src/test/java/testcore/scenarios/SupportTest.java" />
         <option value="$PROJECT_DIR$/run.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/PropertiesReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Properties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pagedef/LocalDriver.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/platform.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/agent/AgentFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/agent/internal/WebAgentFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/qa.properties" />
         <option value="$PROJECT_DIR$/src/test/resources/data/DESKTOP_WEB/testdata.ini" />
         <option value="$PROJECT_DIR$/src/test/java/testcore/pages/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json" />
-        <option value="$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/qa_emp.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/pagedefs/PropertyTax.json" />
+        <option value="$PROJECT_DIR$/src/test/java/testcore/scenarios/TestCases.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json" />
       </list>
     </option>
   </component>
@@ -256,7 +374,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -268,8 +386,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -290,46 +406,37 @@
         <subPane>
           <expand>
             <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testcore" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testcore" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -338,56 +445,32 @@
               <item name="scenarios" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EGov-Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pagedefs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EGov-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="Surefire suite" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="avd&#9;ACTION&#9;Android.RunAndroidAvdManager" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546407324597" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546505872776" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../eGov-Automation/egov-services/test/egov_api_tests/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -426,7 +509,69 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.TestCases.assessNonResidentialProperty">
+    <configuration name="ScriptFlows.createTradeLicenseCitizen" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EGovPGR" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcore.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcore.scenarios" />
+      <option name="MAIN_CLASS_NAME" value="testcore.scenarios.ScriptFlows" />
+      <option name="METHOD_NAME" value="createTradeLicenseCitizen" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dplatform=DESKTOP_WEB -Dbrowser=chrome -Denv=qa_ctz" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MAVEN_REPOSITORY$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCases.assessNonResidentialProperty" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EGovPGR" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcore.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcore.scenarios" />
+      <option name="MAIN_CLASS_NAME" value="testcore.scenarios.TestCases" />
+      <option name="METHOD_NAME" value="assessNonResidentialProperty" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dbrowser=chrome -Denv=qa_emp" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MAVEN_REPOSITORY$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="EGov-Automation" />
       <shortenClasspath name="CLASSPATH_FILE" />
@@ -449,6 +594,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.ScriptFlows.createTradeLicenseCitizen" />
+      <item itemvalue="TestNG.TestCases.assessNonResidentialProperty" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestCases.assessNonResidentialProperty" />
+        <item itemvalue="TestNG.ScriptFlows.createTradeLicenseCitizen" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -464,35 +619,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ScriptFlows_createComplaintCitizen - 2018.12.18 at 10h 40m 41s.xml">
-      <configuration name="ScriptFlows.createComplaintCitizen" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ScriptFlows_createComplaintCitizen - 2018.12.18 at 10h 46m 44s.xml">
-      <configuration name="ScriptFlows.createComplaintCitizen" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ScriptFlows_createComplaintCitizen - 2018.12.18 at 11h 43m 02s.xml">
-      <configuration name="ScriptFlows.createComplaintCitizen" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ScriptFlows_createComplaintCitizen - 2018.12.18 at 11h 43m 40s.xml">
-      <configuration name="ScriptFlows.createComplaintCitizen" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ScriptFlows_createComplaintCitizen - 2018.12.18 at 11h 45m 14s.xml">
-      <configuration name="ScriptFlows.createComplaintCitizen" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ScriptFlows - 2018.12.20 at 13h 58m 54s.xml">
-      <configuration name="ScriptFlows" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ScriptFlows - 2018.12.20 at 14h 17m 16s.xml">
-      <configuration name="ScriptFlows" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ScriptFlows_createTradeLicenseCitizen - 2018.12.21 at 12h 35m 14s.xml">
+    <history-entry file="ScriptFlows_createTradeLicenseCitizen - 2019.01.02 at 14h 00m 54s.xml">
       <configuration name="ScriptFlows.createTradeLicenseCitizen" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="UseCases_assessNewProperty - 2018.12.26 at 12h 59m 40s.xml">
-      <configuration name="UseCases.assessNewProperty" configurationId="TestNG" />
+    <history-entry file="ScriptFlows_createTradeLicenseCitizen - 2019.01.02 at 14h 01m 55s.xml">
+      <configuration name="ScriptFlows.createTradeLicenseCitizen" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="UseCases_assessNewProperty - 2018.12.27 at 13h 22m 33s.xml">
-      <configuration name="UseCases.assessNewProperty" configurationId="TestNG" />
+    <history-entry file="ScriptFlows_createTradeLicenseCitizen - 2019.01.02 at 14h 03m 02s.xml">
+      <configuration name="ScriptFlows.createTradeLicenseCitizen" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ScriptFlows_createTradeLicenseCitizen - 2019.01.02 at 14h 51m 31s.xml">
+      <configuration name="ScriptFlows.createTradeLicenseCitizen" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_assessNonResidentialProperty - 2019.01.02 at 15h 09m 34s.xml">
+      <configuration name="TestCases.assessNonResidentialProperty" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_assessNonResidentialProperty - 2019.01.02 at 15h 10m 55s.xml">
+      <configuration name="TestCases.assessNonResidentialProperty" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_assessNonResidentialProperty - 2019.01.02 at 15h 15m 03s.xml">
+      <configuration name="TestCases.assessNonResidentialProperty" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_assessNonResidentialProperty - 2019.01.02 at 15h 16m 25s.xml">
+      <configuration name="TestCases.assessNonResidentialProperty" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_assessNonResidentialProperty - 2019.01.03 at 11h 40m 00s.xml">
+      <configuration name="TestCases.assessNonResidentialProperty" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_assessNonResidentialProperty - 2019.01.03 at 11h 42m 31s.xml">
+      <configuration name="TestCases.assessNonResidentialProperty" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -505,10 +660,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20045386" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19969743" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -517,16 +672,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32743362" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45088565" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.48925412" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3268921" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44927537" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4380032" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" weight="0.27697262" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" weight="0.72624797" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.22544283" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3268921" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.5185185" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -589,6 +744,30 @@
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/agent/AgentFactory.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/PropertiesReader.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/PropertiesReader.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testcore/pages/HomePage.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/testcore/pages/desktop/DesktopHomePage.java</url>
           <line>32</line>
@@ -602,6 +781,21 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>getControl(&quot;txtWelcomeText&quot;).getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>boolean usedLogin = getControl(&quot;txtWelcomeText&quot;).getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>agent = WebAgentFactory.createAgent(config);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>System.getProperty(&quot;platform&quot;)</expression-string>
         <language-id>JAVA</language-id>
@@ -620,183 +814,8 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/control/MobileControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/conf/config.xcconfig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EGovPGR.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/pagedefs/TradeLicense.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/control/Control.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/agent/internal/IWindowActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/agent/internal/WebAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="127" column="31" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
-          <folding>
-            <element signature="e#7773#7774#0" expanded="true" />
-            <element signature="e#7798#7799#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/ComplaintsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/suites/suite.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="712" column="25" selection-start-line="712" selection-start-column="25" selection-end-line="712" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/agent/AgentFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/agent/internal/WebAgentFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/central/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pagedef/PageDef.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/IniReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/JavaUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/control/WebControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="124" column="13" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/JsonReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/Platform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphviz-2.38/bin/GVedit.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/agent/agent.plantuml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="81" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EGov-Automation.plantuml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="228" column="15" selection-start-line="228" selection-start-column="15" selection-end-line="228" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agent/agent.plantuml" />
+    <entry file="file://$PROJECT_DIR$/EGov-Automation.plantuml" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -818,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/pagedefs/PropertyTax.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -839,62 +851,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/central/central.plantuml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/central/AppachhiCentral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/scenarios.plantuml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/page/page.plantuml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/pages.plantuml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/SupportTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#2914#2915#0" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/central.plantuml" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/scenarios.plantuml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/page/page.plantuml" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/pages.plantuml" />
     <entry file="file://$PROJECT_DIR$/run.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="515" selection-start-line="1" selection-end-line="1" selection-end-column="515" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/page/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/control/IControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -905,56 +869,283 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/data/DESKTOP_WEB/testdata.ini">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        <state relative-caret-position="40">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/Category.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/JavaUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pagedef/PageDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agent/IAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agent/internal/DesktopWebAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/ObjectRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/control/WebControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/control/IControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/control/Control.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3867">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pagedef/Identifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/page/IPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/AppachhiCentral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="74" column="38" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/platform.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pagedef/LocalDriver.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/enums/DesktopBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/enums/Platform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="57" column="57" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/page/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding>
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1473#1474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.13.1/testng-6.13.1.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="341" selection-start-line="341" selection-end-line="341" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/data/DESKTOP_WEB/testdata.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.13.1/testng-6.13.1.jar!/org/testng/internal/MethodInvocationHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/SupportTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#2914#2915#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agent/AgentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/pagedefs/TradeLicense.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/qa_ctz.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="211" column="5" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agent/internal/WebAgentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/PropertiesReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/qa_emp.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" selection-start-column="51" selection-end-column="51" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/ScriptFlows.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="185">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/TradeLicense.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="238">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/pagedefs/PropertyTax.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/PropertyTax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        <state relative-caret-position="255">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding>
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
             <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/TestCases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/pagedefs/HomePage.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcore/pages/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcore/scenarios/UseCases.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="97">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="37" />
         </state>
       </provider>
     </entry>

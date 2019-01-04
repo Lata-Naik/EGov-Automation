@@ -3,7 +3,7 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//input[@type='number']"
+		"DESKTOP_WEB": "xpath=//*[@type='number']"
 	},
 	"btnContinue": {
 		"ANDROID": "locator=value",
@@ -39,7 +39,7 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "xpath=//div[@class='label-container ']/div[text()='TradeLicense']"
+		"DESKTOP_WEB": "xpath=//div[@class='label-container ']/div[text()='Trade License']"
 	},
 	"txtWelcomeText": {
 		"ANDROID": "locator=value",
@@ -51,13 +51,13 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "id=employee-phone"
+		"DESKTOP_WEB": "css=input[id='employee-phone']"
 	},
 	"txtPasswordEmployee": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "id=employee-password"
+		"DESKTOP_WEB": "css=input[id='employee-password']"
 	},
 	"txtCityEmployee": {
 		"ANDROID": "locator=value",
@@ -81,6 +81,6 @@
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
-		"DESKTOP_WEB": "css=div.pt-landing-card .landing-page-button button"
+		"DESKTOP_WEB": "xpath=//div[@class='label-container ']/div[text()='Property Tax']"
 	}
 }
