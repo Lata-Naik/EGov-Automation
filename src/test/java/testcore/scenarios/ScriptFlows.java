@@ -22,10 +22,4 @@ public class ScriptFlows extends SupportTest {
                 .createComplaint()
                 .isComplaintRegigistered();
     }
-
-    @Test
-    public void assignComplaintGRO() throws Exception{
-        logger.debug(this.getTestStartInfoMessage("assignComplaintGRO"));
-        home.loginEmployee();
-    }
 }

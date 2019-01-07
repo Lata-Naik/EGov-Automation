@@ -62,7 +62,7 @@ public class SupportTest {
         if (ITestResult.FAILURE == result.getStatus()) {
             agent.takeSnapShot();
         }
-        agent.quit();
+//        agent.quit();
         logger.info(String.format("Tear down for test method [%s] ended.", testName));
     }
 

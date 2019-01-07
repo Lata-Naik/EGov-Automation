@@ -7,19 +7,19 @@ public class PTFlows extends SupportTest {
     @Test
     public void assessNonResidentialProperty() throws Exception {
         logger.debug(getTestStartInfoMessage("testScript"));
-        home.loginEmployee()
+        home.loginAsEmployee("CSR")
                 .navigateToPropertyTax()
-                .assessNewProperty();
-//                .commercialProperty()
-//                .pay();
+                .assessNewProperty()
+                .commercialProperty()
+                .reviewAndPay();
     }
     @Test
     public void assessResidentialProperty() throws Exception {
         logger.debug(getTestStartInfoMessage("testScript"));
-        home.loginEmployee()
+        home.loginAsEmployee("CSR")
                 .navigateToPropertyTax()
                 .assessNewProperty()
                 .residentialProperty()
-                .pay();
+                .reviewAndPay();
     }
 }
