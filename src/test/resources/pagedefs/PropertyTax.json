@@ -264,7 +264,7 @@
     "ANDROID": "locator=value",
     "IOS": "locator=value",
     "MWEB": "locator=value",
-    "DESKTOP_WEB": "css = div[class = 'undefined checkbox-container']"
+    "DESKTOP_WEB": "p.declaration-main-header+div #rcpt"
   },
   "txtPropertyID": {
     "ANDROID": "locator=value",

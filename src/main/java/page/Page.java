@@ -66,7 +66,7 @@ public abstract class Page implements IPage {
 		if ( control != null ) {
 			if ( controlFunction.equalsIgnoreCase("isVisible") )
 				result = control.isVisible();
-			else if ( controlFunction.equalsIgnoreCase("isEnabled") ) 
+			else if ( controlFunction.equalsIgnoreCase("isEnabled") )
 				result = control.isEnabled();
 		}
 		return result;
@@ -145,6 +145,10 @@ public abstract class Page implements IPage {
 	public void scrollDown(int count) throws Exception {
 		this.agent.scrollDown(count);
 	}
+	@Override
+	public void scrollToBottom() throws Exception {
+		this.agent.scrollToBottom();
+	}
 
 	@Override
 	public Platform getPlatform() {
@@ -208,8 +212,12 @@ public abstract class Page implements IPage {
 		this.agent.switchToIFrame();
 	}
 
-	public void switchToDefaultFrame() throws Exception{
+	public void switchToDefaultFrame() throws Exception {
 		this.agent.switchToDefaultFrame();
+	}
+
+	public void executeJavascript(String jscript) throws Exception{
+		this.agent.executeJavascript(jscript);
 	}
 
 	public void selectOptionFromDropDownByEnter(String xpathValue) throws Exception{

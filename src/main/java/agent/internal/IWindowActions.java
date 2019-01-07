@@ -33,7 +33,9 @@ public interface IWindowActions {
 	void scrollDown() throws Exception;
 
 	void scrollDown(int count) throws Exception;
-	
+
+	void scrollToBottom() throws Exception;
+
 	void swipeDownTillElement(String elementName) throws Exception;
 
 	void assertPageLoad() throws Exception;
@@ -41,4 +43,6 @@ public interface IWindowActions {
 	void switchToIFrame() throws Exception;
 
 	void switchToDefaultFrame() throws Exception;
+
+	void executeJavascript(String jscript) throws Exception;
 }

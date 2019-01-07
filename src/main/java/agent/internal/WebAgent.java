@@ -34,7 +34,7 @@ public abstract class WebAgent implements IAgent {
 	private boolean snapshotsEnabled = false;
 	private boolean alwaysTakeSnapshot = false;
 	private int scrollPixelCount;
-	
+
 
 	public WebAgent(Configuration config, WebDriver driver) throws Exception {
 		this.config = config;
@@ -151,7 +151,7 @@ public abstract class WebAgent implements IAgent {
 			this.throwActionException(e);
 		}
 	}
-	
+
 	@Override
 	public void switchToNewWindow() throws Exception {
 		try {
@@ -227,6 +227,13 @@ public abstract class WebAgent implements IAgent {
 	}
 
 	@Override
+	public void scrollToBottom() throws Exception {
+		logger.info("Scrolling to bottom of the page");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,4000)");
+	}
+
+	@Override
 	public void scrollUp() throws Exception {
 		scroll(Direction.UP, 1);
 	}
@@ -293,7 +300,7 @@ public abstract class WebAgent implements IAgent {
 	public void switchToWebView() throws Exception {
 		throwUnsupportedActionException();
 	}
-	
+
 	@Override
 	public void swipeDownTillElement(String elementName) throws Exception {
 		throwUnsupportedActionException();
@@ -313,5 +320,11 @@ public abstract class WebAgent implements IAgent {
 	public void switchToDefaultFrame() throws Exception {
 		logger.info("Switching to Default Frame");
 		driver.switchTo().defaultContent();
+	}
+	@Override
+	public void executeJavascript(String jscript) throws Exception {
+		logger.info("Executing javascript");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript(jscript);
 	}
 }
