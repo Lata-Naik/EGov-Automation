@@ -135,6 +135,7 @@ public class ComplaintsPage extends FullPage {
         getControl("btnFeedBackSubmit").click();
         return this;
     }
+
     public ComplaintsPage isRateSubmitted() throws Exception{
         boolean rejectedSuccess=getControl("txtRateSubmittedMsg").getText().equalsIgnoreCase("Thank You for your feedback!");
         Assert.assertTrue(rejectedSuccess, "Rate not Submitted");
@@ -152,5 +153,13 @@ public class ComplaintsPage extends FullPage {
     public void isUserLoggedOut()throws Exception{
         boolean userLogin = getControl("txtLogin").isVisible();
         Assert.assertTrue(userLogin, "User not logged out");
+    }
+
+    public ComplaintsPage reopenComplaint() throws Exception{
+        getControl("txtMyComplaint").click();
+        scrollDownTillElement("txtResolvedComplaint");
+        getControl("txtResolvedComplaint").click();
+
+        return this;
     }
 }

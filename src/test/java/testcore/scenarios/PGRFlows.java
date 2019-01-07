@@ -67,4 +67,12 @@ public class PGRFlows extends SupportTest {
                 .rateComplaint()
                 .isRateSubmitted();
     }
+
+    @Test
+    public void reopenClosedComplaintCitizen() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("reopenClosedComplaintCitizen"));
+        home.loginCitizen()
+                .navigateToComplaints()
+                .reopenComplaint();
+    }
 }
