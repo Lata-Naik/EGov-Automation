@@ -51,14 +51,14 @@ public class ComplaintsPage extends FullPage {
         getControl("txtFirstComplaint").click();
         getControl("btnAssign").click();
         getControl("txtSearchLME").enterText(getTestData().get("LMEName"));
-        getControl("txtLMEName").click();
+        selectOptionFromDropDownByEnter(getTestData().get("LMEName"));
         getControl("btnAssign").click();
         return this;
     }
 
     public void isComplaintAssigned()throws Exception{
         boolean complaintAssigned=getControl("txtAssignedToLMEmsg").isVisible();
-        logger.info("Complaint: "+getControl("txtAssignedToLMEmsg").getText());
+        logger.info("Complaint Assigned to: "+getControl("txtAssignedToLMEName").getText());
         Assert.assertTrue(complaintAssigned, "Complaint not assigned To LME");
     }
 

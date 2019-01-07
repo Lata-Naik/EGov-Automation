@@ -72,7 +72,10 @@
 		"DESKTOP_WEB": "xpath=//div[text()='Manju']"
 	},
 	"txtAssignedToLMEmsg": {
-		"DESKTOP_WEB": "xpath=//div[@class='label-container thankyou-text']/div"
+		"DESKTOP_WEB": "css=.rainmaker-displayInline>div:nth-child(1)>div"
+	},
+	"txtAssignedToLMEName": {
+		"DESKTOP_WEB": "css=.rainmaker-displayInline>div:nth-child(2)>div"
 	},
 	"btnMarkResolved": {
 		"DESKTOP_WEB": "xpath=//*[text()='MARK RESOLVED']"

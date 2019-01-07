@@ -112,7 +112,7 @@ public class TradeLicense extends FullPage {
 		// getControl("txtTradeLicenseNo").enterText(getTestData().get("TradeLicenseNo"));
 		// getControl("txtOwnerMobileNo").enterText(getTestData().get("OwnerMobileNumber"));
 		getControl("txtApplicationStatus").click();
-		selectOptionFromDropDownList("PAID");
+		selectOptionFromDropDownList(getTestData().get("ApplicationStatus"));
 		// getControl("txtApplicationFromDate").enterText(getTestData().get("ApplicationFromDate"));
 		// getControl("txtApplicationToDate").enterText(getTestData().get("ApplicationToDate"));
 		Thread.sleep(2000);
@@ -127,7 +127,7 @@ public class TradeLicense extends FullPage {
 
 	public void approveApplication() throws Exception {
 		getControl("btnApprove").click();
-		getControl("txtApprovalComments").enterText(getTestData().get("ApprovalComments"));
+		getControl("txtAddComments").enterText(getTestData().get("ApprovalComments"));
 		// getControl("TradeLicense").enterText(getTestData().get("UploadFiles"));
 		getControl("btnApprove").click();
 	}
@@ -140,7 +140,7 @@ public class TradeLicense extends FullPage {
 
 	public void rejectApplication() throws Exception {
 		getControl("btnReject").click();
-		getControl("txtRejectComments").enterText(getTestData().get("RejectComments"));
+		getControl("txtAddComments").enterText(getTestData().get("RejectComments"));
 		// getControl("TradeLicense").enterText(getTestData().get("UploadFiles"));
 		getControl("btnReject").click();
 	}
@@ -159,10 +159,26 @@ public class TradeLicense extends FullPage {
 		Assert.assertTrue(applicationApproved, "Application not rejected");
 		Thread.sleep(10000);
 	}
+
 	public PaymentPage addNewTradeLicense()throws Exception{
         switchToIFrame();
         getControl("btnAddNewApplication").click();
         fillTradeLicenseForm();
         return new PaymentPage(getConfig(),getAgent(),getTestData());
     }
+
+	public TradeLicense cancelTradeLicense() throws Exception {
+		selectApplication();
+		getControl("btnCancelTradeLicense").click();
+		getControl("txtAddComments").enterText(getTestData().get("CancelComments"));
+		getControl("btnCancelTradeLicense").click();
+		return this;
+	}
+
+	public void isApprovedTradeLicenseCancelled() throws Exception {
+		boolean applicationApproved = getControl("txtLicenseCancelled").getText()
+				.equalsIgnoreCase("Trade License Cancelled");
+		logger.info("Cancelled "+getControl("txtApplicationNumber").getText());
+		Assert.assertTrue(applicationApproved, "Application not cancelled");
+	}
 }
