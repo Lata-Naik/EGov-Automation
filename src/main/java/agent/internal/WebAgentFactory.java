@@ -35,8 +35,8 @@ public class WebAgentFactory {
 		DesktopBrowser browser = DesktopBrowser.valueOf(getProperty("browser", config).toUpperCase());
 		switch (platform) {
 			case DESKTOP_WEB:
-				// initDriver(config, browser);
-				initDriverinCloud();
+				initDriver(config, browser);
+				// initDriverinCloud();
 //				Dimension resolution = new Dimension(Integer.parseInt(System.getProperty("browser_resolution_width")),Integer.parseInt(System.getProperty("browser_resolution_height")));
 //				driver.manage().window().setSize(resolution);
 				driver.manage().window().maximize();
