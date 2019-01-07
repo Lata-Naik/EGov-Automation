@@ -55,8 +55,8 @@ public class WebAgentFactory {
 		DesiredCapabilities caps = DesiredCapabilities.chrome();
 		caps.setCapability("platform", "Windows 10");
 		caps.setCapability("version", "latest");
-		String name[]=System.getProperty("test").split("#");
-		caps.setCapability("name", name[1]);
+//		String name[]=System.getProperty("test").split("#");
+		caps.setCapability("name", "Smoke Test ");
 		driver = new RemoteWebDriver(new URL(accessURL), caps);
 		return driver;
 
