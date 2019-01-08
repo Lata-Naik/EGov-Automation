@@ -73,6 +73,16 @@ public class PGRFlows extends SupportTest {
         logger.debug(this.getTestStartInfoMessage("reopenClosedComplaintCitizen"));
         home.loginCitizen()
                 .navigateToComplaints()
-                .reopenComplaint();
+                .reopenComplaintResolved()
+                .isComplaintReopened();
+    }
+
+    @Test
+    public void reopenRejectedComplaintCitizen() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("reopenRejectedComplaintCitizen"));
+        home.loginCitizen()
+                .navigateToComplaints()
+                .reopenComplaintRejected()
+                .isComplaintReopened();
     }
 }
