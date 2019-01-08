@@ -2,8 +2,6 @@ package testcore.pages;
 
 import agent.IAgent;
 import central.Configuration;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
@@ -162,7 +160,7 @@ public class ComplaintsPage extends FullPage {
         scrollDownTillElement("txtResolvedComplaint");
         getControl("txtResolvedComplaint").click();
         getControl("btnReopen").click();
-        getControl("txtNoWorkDone").click();
+        executeJavascript("document.querySelector('#reopencomplaint-radio-button-0').click()");
         getControl("txtComment").enterText(getTestData().get("ReopenCooment"));
         getControl("btnSubmit").click();
         return this;
@@ -173,7 +171,7 @@ public class ComplaintsPage extends FullPage {
         scrollDownTillElement("txtRejectedComplaint");
         getControl("txtRejectedComplaint").click();
         getControl("btnReopen").click();
-        getControl("txtNoWorkDone").click();
+        executeJavascript("document.querySelector('#reopencomplaint-radio-button-0').click()");
         getControl("txtComment").enterText(getTestData().get("ReopenCooment"));
         getControl("btnSubmit").click();
         return this;
@@ -183,5 +181,21 @@ public class ComplaintsPage extends FullPage {
         boolean reopenedSuccess=getControl("txtReopenedSuccessMsg").getText().equalsIgnoreCase("Your complaint has been Re-opened");
         Assert.assertTrue(reopenedSuccess, "Complaint not reopened");
         return this;
+    }
+
+    public ComplaintsPage reassignComplaintToLME() throws Exception{
+        scrollDownTillElement("txtRequestReassign");
+        getControl("txtRequestReassign").click();
+        getControl("btnAssign").click();
+        getControl("txtSearchLME").enterText(getTestData().get("LMEName"));
+        selectOptionFromDropDownByEnter(getTestData().get("LMEName"));
+        getControl("btnAssign").click();
+        return this;
+    }
+
+    public void isComplaintReassigned()throws Exception{
+        boolean complaintAssigned=getControl("txtAssignedToLMEmsg").isVisible();
+        logger.info("Complaint Assigned to: "+getControl("txtAssignedToLMEName").getText());
+        Assert.assertTrue(complaintAssigned, "Complaint not assigned To LME");
     }
 }

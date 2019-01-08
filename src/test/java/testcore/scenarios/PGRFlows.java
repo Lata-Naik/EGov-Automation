@@ -85,4 +85,22 @@ public class PGRFlows extends SupportTest {
                 .reopenComplaintRejected()
                 .isComplaintReopened();
     }
+
+    @Test
+    public void reassignToLMEasGRO() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("reassignToLMEasGRO"));
+        home.loginEmployee()
+                .navigateToComplaints()
+                .reassignComplaintToLME()
+                .isComplaintReassigned();;
+    }
+
+    @Test
+    public void reassignToLMEasDGRO() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("reassignToLMEasDGRO"));
+        home.loginEmployee()
+                .navigateToComplaints()
+                .reassignComplaintToLME()
+                .isComplaintReassigned();;
+    }
 }

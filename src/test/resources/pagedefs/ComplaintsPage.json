@@ -187,6 +187,9 @@
 	},
 	"txtRejectedComplaint": {
 		"DESKTOP_WEB": "xpath=//div[text()='Your Complaint has been Rejected']"
+	},
+	"txtRequestReassign": {
+		"DESKTOP_WEB": "xpath=//div[text()='requested for re-assign']"
 	}
 }
 
