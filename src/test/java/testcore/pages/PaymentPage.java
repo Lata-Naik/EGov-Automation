@@ -47,16 +47,11 @@ public class PaymentPage extends FullPage {
         return new PropertyTax(getConfig(),getAgent(),getTestData());
     }
 
-    public PropertyTax counterEmployeePay() throws Exception {
-        makePaymentCounterEmployee();
-        return new PropertyTax(getConfig(),getAgent(),getTestData());
-    }
-
     public PaymentPage makePaymentCounterEmployee() throws Exception{
         getControl("btnProceedToPayment").click();
         logger.info("Amount to be paid "+getControl("txtAmount").getText());
         if(getTestData().get("ModeOfPayment").equalsIgnoreCase("Cash")){
-//            getControl("txtCash").click();
+            getControl("txtCash").click();
             payByCash();
             Thread.sleep(10000);
         }
@@ -76,8 +71,10 @@ public class PaymentPage extends FullPage {
         return this;
     }
 
-    public void payByCash()throws Exception{
+    public PaymentPage payByCash()throws Exception{
         addPayerDetails();
+        getControl("btnPay").click();
+        return this;
     }
     public void payByCheque()throws Exception{
         addPayerDetails();
@@ -104,15 +101,17 @@ public class PaymentPage extends FullPage {
 
     public void addPayerDetails() throws Exception{
         getControl("drpPaidBy").click();
-        selectOptionFromDropDownList(getTestData().get("PaidBy"));
+        selectOptionFromDropDownByEnter(getTestData().get("PaidBy"));
         Thread.sleep(5000);
         getControl("txtPayerName").enterText(getTestData().get("PayerName"));
         getControl("txtPayerMobileNumber").enterText(getTestData().get("PayerMobileNumber"));
     }
 
-    public void isApplicationPlaced() throws Exception{
-        boolean applicationApproved = getControl("txtSuccessMessage").getText().equalsIgnoreCase("Payment has been collected successfully!");
-        logger.info(getControl("txtApplicationNumber").getText());
+    public HomePage isApplicationPlaced() throws Exception{
+        boolean applicationApproved = getControl("txtPTsuccessMsg").getText().equalsIgnoreCase("Payment has recorded successfully");
+        logger.info("Property Tax Unique ID: "+getControl("txtPTID").getText());
         Assert.assertTrue(applicationApproved, "Application not placed");
-        }
+        getControl("btnPTFinish").click();
+        return new HomePage(getConfig(), getAgent(), getTestData());
+    }
 }

@@ -324,7 +324,7 @@
     "ANDROID": "locator=value",
     "IOS": "locator=value",
     "MWEB": "locator=value",
-    "DESKTOP_WEB": "xpath = //span[contains(text(),'Finish')]"
+    "DESKTOP_WEB": "xpath = //*[contains(text(), 'Finish')]"
   },
   "txtTotalTaxDue":{
     "DESKTOP_WEB": "css=div.property-dues-total-amount > div.label-text"

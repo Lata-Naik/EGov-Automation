@@ -30,22 +30,13 @@ public class PropertyTax extends FullPage{
         fillOwnerInformation();
         return this;
     }
-    public PropertyTax reviewAndPay() throws Exception {
+    public PaymentPage reviewAndPay() throws Exception {
         scrollDown(20);//#TODO
         StringBuilder stringBuilder = new StringBuilder();
         System.out.println(stringBuilder.append("Property Tax Dues: ").append(getControl("txtTotalTaxDue").getText()).toString());
         String number = getControl("txtTotalTaxDue").getText().substring(getControl("txtTotalTaxDue").getText().lastIndexOf(" ") + 1);
-        System.out.println(number);
         getControl("btnNext").click();
-        paymentDetails(number);
-        return this;
-    }
-
-    public String paymentDetails(String number) throws Exception {
-        getControl("radioPartialPayment").click();
-        fillReviewAndPartialPayment();
-        getControl("txtAmountToPay").enterText("100");
-        return number;
+        return new PaymentPage(getConfig(),getAgent(),getTestData());
     }
 
     public PropertyTax residentialProperty() {
@@ -67,7 +58,6 @@ public class PropertyTax extends FullPage{
         fillOwnerInformation();
         fillReviewAndFullPayment();
         return new PaymentPage(getConfig(),getAgent(),getTestData());
-
     }
 
     public PaymentPage fillPropertyTaxFormAndMakePartialPayment() throws Exception{

@@ -63,13 +63,13 @@
 		"DESKTOP_WEB": "css=[role='tablist']>div>button:nth-child(4)"
 	},
 	"drpPaidBy": {
-		"DESKTOP_WEB": "xpath=//div[@class='select-field-placeholder']/../.."
+		"DESKTOP_WEB": "css=div[id='paidBy']"
 	},
 	"txtPayerName": {
-		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-payerName']"
+		"DESKTOP_WEB": "css=input[id='payerName'][type=text]"
 	},
 	"txtPayerMobileNumber": {
-		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-payerMobileNo']"
+		"DESKTOP_WEB": "css=input[id='ownerMobile'][type=text]"
 	},
 	"txtChequeNumber": {
 		"DESKTOP_WEB": "id=custom-containers-chequeNo"
@@ -110,14 +110,19 @@
 	"txtSuccessMessage": {
 		"DESKTOP_WEB": "css=#custom-atoms-body #custom-containers-key"
 	},
+	"txtPTsuccessMsg":{
+		"DESKTOP_WEB": "css=div.pt-reciept-top-cont > div:nth-child(3) .label-text"
+	},
 	"txtApplicationNumber": {
 		"DESKTOP_WEB": "css=#custom-atoms-div #material-ui-header>div"
-	}
-
+	},
+	"btnPay":{
+		"DESKTOP_WEB": "xpath=//*[contains(text(),'PAY')]"
+	},
+    "txtPTID":{
+        "DESKTOP_WEB": "xpath=//*[contains(text(), 'PT-')]"
+    },
+    "btnPTFinish": {
+        "DESKTOP_WEB": "xpath = //*[contains(text(), 'Finish')]"
+    }
 }
-
-
-
-
-
-

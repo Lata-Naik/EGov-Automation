@@ -11,7 +11,10 @@ public class PTFlows extends SupportTest {
                 .navigateToPropertyTax()
                 .assessNewProperty()
                 .commercialProperty()
-                .reviewAndPay();
+                .reviewAndPay()
+                .payByCash()
+                .isApplicationPlaced()
+                .loggedOutAsEmployee();
     }
     @Test
     public void assessResidentialProperty() throws Exception {

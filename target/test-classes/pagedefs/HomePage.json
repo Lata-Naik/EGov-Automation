@@ -82,5 +82,14 @@
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "xpath=//div[@class='label-container ']/div[text()='Property Tax']"
-	}
+	},
+    "btnAppToolBar":{
+      "DESKTOP_WEB": "css=div > div.app-toolbar"
+    },
+	"btnLogout":{
+      "DESKTOP_WEB": "css=#header-logout"
+    },
+  "btnLogoutYes":{
+    "DESKTOP_WEB": "css=#logout-yes-button"
+  }
 }

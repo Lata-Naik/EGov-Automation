@@ -38,6 +38,16 @@ public class HomePage extends FullPage {
         return this;
     }
 
+    public void loggedOutAsEmployee() throws Exception {
+        getControl("btnAppToolBar").click();
+        getControl("btnLogout").click();
+        getControl("btnLogoutYes").click();
+    }
+
+    public HomePage loggedOutAsCitizen(String user){
+        return this;
+    }
+
     public ComplaintsPage navigateToComplaints() throws Exception{
         getControl("btnComplaints").click();
         return new ComplaintsPage(getConfig(),getAgent(),getTestData());
