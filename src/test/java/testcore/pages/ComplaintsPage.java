@@ -2,6 +2,8 @@ package testcore.pages;
 
 import agent.IAgent;
 import central.Configuration;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
@@ -139,9 +141,9 @@ public class ComplaintsPage extends FullPage {
     public ComplaintsPage isRateSubmitted() throws Exception{
         boolean rejectedSuccess=getControl("txtRateSubmittedMsg").getText().equalsIgnoreCase("Thank You for your feedback!");
         Assert.assertTrue(rejectedSuccess, "Rate not Submitted");
-
         return this;
     }
+
     public ComplaintsPage logoutUser() throws Exception{
         getControl("icnProfile").click();
         getControl("txtLogout").click();
@@ -155,11 +157,31 @@ public class ComplaintsPage extends FullPage {
         Assert.assertTrue(userLogin, "User not logged out");
     }
 
-    public ComplaintsPage reopenComplaint() throws Exception{
+    public ComplaintsPage reopenComplaintResolved() throws Exception{
         getControl("txtMyComplaint").click();
         scrollDownTillElement("txtResolvedComplaint");
         getControl("txtResolvedComplaint").click();
+        getControl("btnReopen").click();
+        getControl("txtNoWorkDone").click();
+        getControl("txtComment").enterText(getTestData().get("ReopenCooment"));
+        getControl("btnSubmit").click();
+        return this;
+    }
 
+    public ComplaintsPage reopenComplaintRejected() throws Exception{
+        getControl("txtMyComplaint").click();
+        scrollDownTillElement("txtRejectedComplaint");
+        getControl("txtRejectedComplaint").click();
+        getControl("btnReopen").click();
+        getControl("txtNoWorkDone").click();
+        getControl("txtComment").enterText(getTestData().get("ReopenCooment"));
+        getControl("btnSubmit").click();
+        return this;
+    }
+
+    public ComplaintsPage isComplaintReopened() throws Exception{
+        boolean reopenedSuccess=getControl("txtReopenedSuccessMsg").getText().equalsIgnoreCase("Your complaint has been Re-opened");
+        Assert.assertTrue(reopenedSuccess, "Complaint not reopened");
         return this;
     }
 }

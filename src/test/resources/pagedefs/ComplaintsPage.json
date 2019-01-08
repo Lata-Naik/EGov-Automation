@@ -121,12 +121,12 @@
     },
 	"txtSearchComplaintType": {
 		"DESKTOP_WEB": "css=#complainttype-search"
-  },
+ 	},
 	"txtResolvedComplaint": {
 		"DESKTOP_WEB": "xpath=//div[@class='label-container complaint-status-text dark-color']/div[text()='Your Complaint has been Resolved']"
 	},
 	"btnRate": {
-		"DESKTOP_WEB": "css=.complaint-details-timline-button .label-container "
+		"DESKTOP_WEB": "css=.rainmaker-displayInline>div:nth-child(1)>.label-container "
 	},
 	"txtFeedBackService": {
 		"DESKTOP_WEB": "id=feedback-checkbox0"
@@ -175,10 +175,20 @@
 	},
 	"icnProfile": {
 		"DESKTOP_WEB": "xpath=//div[text()='LOGIN']"
+	},
+	"btnReopen": {
+		"DESKTOP_WEB": "xpath=//div[text()='RE-OPEN']"
+	},
+	"txtNoWorkDone": {
+		"DESKTOP_WEB": "id=reopencomplaint-radio-button-0"
+	},
+	"txtReopenedSuccessMsg": {
+		"DESKTOP_WEB": "css=.thankyou-text .label-text "
+	},
+	"txtRejectedComplaint": {
+		"DESKTOP_WEB": "xpath=//div[text()='Your Complaint has been Rejected']"
 	}
 }
-
-
 
 
 
