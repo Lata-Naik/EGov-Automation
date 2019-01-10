@@ -81,7 +81,7 @@
 		"DESKTOP_WEB": "xpath=//*[text()='MARK RESOLVED']"
 	},
 	"btnRequestReassign": {
-		"DESKTOP_WEB": "xpath=//div[text()='REQUEST RE-ASSIGN']"
+		"DESKTOP_WEB": "xpath=//*[text()='REQUEST RE-ASSIGN']"
 	},
 	"txtComment": {
 		"DESKTOP_WEB": "id=reopencomplaint-comment-field"
@@ -190,6 +190,9 @@
 	},
 	"txtRequestReassign": {
 		"DESKTOP_WEB": "xpath=//div[text()='requested for re-assign']"
+	},
+	"txtRequestedSuccessMsg": {
+		"DESKTOP_WEB": "xpath=//div[@class='label-container thankyou-text']/div"
 	}
 }
 

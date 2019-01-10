@@ -129,7 +129,7 @@ public class TradeLicense extends FullPage {
 		getControl("btnApprove").click();
 		getControl("txtAddComments").enterText(getTestData().get("ApprovalComments"));
 		// getControl("TradeLicense").enterText(getTestData().get("UploadFiles"));
-		getControl("btnApprove").click();
+		getControl("btnApproveApplication").click();
 	}
 
 	public TradeLicense rejectTradeLicense() throws Exception {
@@ -142,7 +142,7 @@ public class TradeLicense extends FullPage {
 		getControl("btnReject").click();
 		getControl("txtAddComments").enterText(getTestData().get("RejectComments"));
 		// getControl("TradeLicense").enterText(getTestData().get("UploadFiles"));
-		getControl("btnReject").click();
+		getControl("btnRejectApplication").click();
 	}
 
 	public void isApplicationApproved() throws Exception {

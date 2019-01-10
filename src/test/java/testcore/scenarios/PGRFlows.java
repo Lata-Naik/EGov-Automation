@@ -103,4 +103,31 @@ public class PGRFlows extends SupportTest {
                 .reassignComplaintToLME()
                 .isComplaintReassigned();;
     }
+
+    @Test
+    public void rejectReassignRequestGRO() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("rejectReassignRequestGRO"));
+        home.loginEmployee()
+                .navigateToComplaints()
+                .rejectReassignRequest()
+                .isReassignRequestRejected();
+    }
+
+    @Test
+    public void rejectReassignRequestDGRO() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("rejectReassignRequestDGRO"));
+        home.loginEmployee()
+                .navigateToComplaints()
+                .rejectReassignRequest()
+                .isReassignRequestRejected();
+    }
+
+    @Test
+    public void requestReassignLME() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("requestReassignLME"));
+        home.loginEmployee()
+                .navigateToComplaints()
+                .searchAndReassignRequest()
+                .isReassignRequestSubmitted();
+    }
 }

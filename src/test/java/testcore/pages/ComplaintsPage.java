@@ -91,6 +91,7 @@ public class ComplaintsPage extends FullPage {
 
     public void searchComplaintByComplaintNumber() throws Exception{
         getControl("txtSearchComplaintNumber").enterText(getTestData().get("SearchComplaintNumber"));
+        getControl("btnSearch").click();
         getControl("txtFirstComplaint").click();
     }
 
@@ -195,7 +196,37 @@ public class ComplaintsPage extends FullPage {
 
     public void isComplaintReassigned()throws Exception{
         boolean complaintAssigned=getControl("txtAssignedToLMEmsg").isVisible();
-        logger.info("Complaint Assigned to: "+getControl("txtAssignedToLMEName").getText());
+        logger.info("Complaint Reassigned to: "+getControl("txtAssignedToLMEName").getText());
         Assert.assertTrue(complaintAssigned, "Complaint not assigned To LME");
     }
+
+    public ComplaintsPage rejectReassignRequest() throws Exception{
+        scrollDownTillElement("txtRequestReassign");
+        getControl("txtRequestReassign").click();
+        getControl("btnReject").click();
+        executeJavascript("document.querySelector('#reopencomplaint-radio-button-0').click()");
+        getControl("txtComment").enterText(getTestData().get("RejectReassignComment"));
+        getControl("btnSubmit").click();
+        return this;
+    }
+
+    public void isReassignRequestRejected()throws Exception{
+        boolean reopenedSuccess=getControl("txtRejectedSuccessMsg").getText().equalsIgnoreCase("You have Rejected this complaint.");
+        Assert.assertTrue(reopenedSuccess, "Reassign request not rejected");
+    }
+
+    public ComplaintsPage searchAndReassignRequest() throws Exception{
+        searchComplaintByComplaintNumber();
+        getControl("btnRequestReassign").click();
+        executeJavascript("document.querySelector('#reopencomplaint-radio-button-0').click()");
+        getControl("txtComment").enterText(getTestData().get("Comment"));
+        getControl("btnRequestReassign").click();
+        return this;
+    }
+
+    public void isReassignRequestSubmitted() throws Exception{
+        boolean reopenedSuccess=getControl("txtRequestedSuccessMsg").getText().equalsIgnoreCase("Your Re-Assign request has been sent.");
+        Assert.assertTrue(reopenedSuccess, "Reassign request not submitted");
+    }
+
 }
