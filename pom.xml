@@ -119,6 +119,24 @@
 			<artifactId>selenium-firefox-driver</artifactId>
 			<version>3.7.1</version>
 		</dependency>
-  </dependencies>
+
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>3.2.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>2.4.5</version>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>3.2.0</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
 
 </project>

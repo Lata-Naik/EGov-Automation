@@ -5,7 +5,6 @@ import agent.IAgent;
 import central.AppachhiCentral;
 import central.Configuration;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -17,6 +16,7 @@ import java.util.Map;
 public class SupportTest {
     protected static Logger logger = AppachhiCentral.getLogger();
     private Configuration conf = null;
+    protected APIAgent apiAgent=null;
     protected HomePage home;
     protected TradeLicense tradeLicense;
     protected ComplaintsPage complaints;
@@ -59,6 +59,7 @@ public class SupportTest {
         tradeLicense = new TradeLicense(this.conf, agent, testData);
         complaints = new ComplaintsPage(this.conf,agent,testData);
         payment= new PaymentPage(this.conf,agent,testData);
+        apiAgent = new APIAgent(this.conf,agent,testData);
         logger.info(String.format("Set up for test method [%s] ended.", testName));
     }
 
@@ -68,7 +69,7 @@ public class SupportTest {
         if (ITestResult.FAILURE == result.getStatus()) {
             agent.takeSnapShot();
         }
-        agent.quit();
+//        agent.quit();
         logger.info(String.format("Tear down for test method [%s] ended.", testName));
     }
 

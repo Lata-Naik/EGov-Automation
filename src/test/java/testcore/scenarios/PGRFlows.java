@@ -17,27 +17,30 @@ public class PGRFlows extends SupportTest {
     @Test
     public void assignComplaintGRO() throws Exception{
         logger.debug(this.getTestStartInfoMessage("assignComplaintGRO"));
+        String complaintNumber=apiAgent.createComplaint();
         home.loginEmployee()
                 .navigateToComplaints()
-                .assignComplaintToLME()
+                .assignComplaintToLME(complaintNumber)
                 .isComplaintAssigned();
     }
 
     @Test
     public void assignComplaintDGRO() throws Exception{
         logger.debug(this.getTestStartInfoMessage("assignComplaintDGRO"));
+        String complaintNumber=apiAgent.createComplaint();
         home.loginEmployee()
                 .navigateToComplaints()
-                .assignComplaintToLME()
+                .assignComplaintToLME(complaintNumber)
                 .isComplaintAssigned();
     }
 
     @Test
     public void resolveComplaintLME() throws Exception{
         logger.debug(this.getTestStartInfoMessage("resolveComplaintLME"));
+        String complaintNumber = apiAgent.assignComplaint();
         home.loginEmployee()
                 .navigateToComplaints()
-                .searchAndResolveComplaint()
+                .searchAndResolveComplaint(complaintNumber)
                 .isComplaintResolved();
     }
 
@@ -92,7 +95,7 @@ public class PGRFlows extends SupportTest {
         home.loginEmployee()
                 .navigateToComplaints()
                 .reassignComplaintToLME()
-                .isComplaintReassigned();;
+                .isComplaintReassigned();
     }
 
     @Test
@@ -101,7 +104,7 @@ public class PGRFlows extends SupportTest {
         home.loginEmployee()
                 .navigateToComplaints()
                 .reassignComplaintToLME()
-                .isComplaintReassigned();;
+                .isComplaintReassigned();
     }
 
     @Test
@@ -125,9 +128,10 @@ public class PGRFlows extends SupportTest {
     @Test
     public void requestReassignLME() throws Exception{
         logger.debug(this.getTestStartInfoMessage("requestReassignLME"));
+        String complaintNumber=apiAgent.createComplaint();
         home.loginEmployee()
                 .navigateToComplaints()
-                .searchAndReassignRequest()
+                .searchAndReassignRequest(complaintNumber)
                 .isReassignRequestSubmitted();
     }
 }

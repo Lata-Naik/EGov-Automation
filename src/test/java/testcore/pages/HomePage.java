@@ -2,8 +2,6 @@ package testcore.pages;
 
 import agent.IAgent;
 import central.Configuration;
-import enums.ConfigType;
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
 import java.util.Map;

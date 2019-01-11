@@ -47,8 +47,10 @@ public class ComplaintsPage extends FullPage {
         Assert.assertTrue(complaintRegistered, "Complaint not registered");
     }
 
-    public ComplaintsPage assignComplaintToLME() throws Exception{
-        getControl("txtFirstComplaint").click();
+    public ComplaintsPage assignComplaintToLME(String complaintNumber) throws Exception{
+        getControl("btnSearch").click();
+        searchComplaintByComplaintNumber(complaintNumber);
+//        getControl("txtFirstComplaint").click();
         getControl("btnAssign").click();
         getControl("txtSearchLME").enterText(getTestData().get("LMEName"));
         selectOptionFromDropDownByEnter(getTestData().get("LMEName"));
@@ -70,8 +72,8 @@ public class ComplaintsPage extends FullPage {
         return this;
     }
 
-    public ComplaintsPage searchAndResolveComplaint() throws Exception{
-        searchComplaintByMobileNumber();
+    public ComplaintsPage searchAndResolveComplaint(String complaintNumber) throws Exception{
+        searchComplaintByComplaintNumber(complaintNumber);
         getControl("btnMarkResolved").click();
         getControl("txtComment").enterText(getTestData().get("Comment"));
         getControl("btnMarkResolved").click();
@@ -89,8 +91,8 @@ public class ComplaintsPage extends FullPage {
         getControl("txtFirstComplaint").click();
     }
 
-    public void searchComplaintByComplaintNumber() throws Exception{
-        getControl("txtSearchComplaintNumber").enterText(getTestData().get("SearchComplaintNumber"));
+    public void searchComplaintByComplaintNumber(String complaintNumber) throws Exception{
+        getControl("txtSearchComplaintNumber").enterText(complaintNumber);
         getControl("btnSearch").click();
         getControl("txtFirstComplaint").click();
     }
@@ -215,8 +217,8 @@ public class ComplaintsPage extends FullPage {
         Assert.assertTrue(reopenedSuccess, "Reassign request not rejected");
     }
 
-    public ComplaintsPage searchAndReassignRequest() throws Exception{
-        searchComplaintByComplaintNumber();
+    public ComplaintsPage searchAndReassignRequest(String complaintNumber) throws Exception{
+        searchComplaintByComplaintNumber(complaintNumber);
         getControl("btnRequestReassign").click();
         executeJavascript("document.querySelector('#reopencomplaint-radio-button-0').click()");
         getControl("txtComment").enterText(getTestData().get("Comment"));
