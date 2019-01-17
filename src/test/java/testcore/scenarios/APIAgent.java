@@ -87,8 +87,7 @@ public class APIAgent extends FullPage {
 
 
     public String assignComplaint(){
-//        String id =   createComplaint();
-//        System.out.println("complaint number is ----"+id);
+        String id =   createComplaint();
         RestAssured.baseURI = "https://egov-micro-qa.egovernments.org";
         Response response = RestAssured.given().contentType(ContentType.JSON).body("{\n" +
                 "    \"RequestInfo\": {\n" +
@@ -133,7 +132,7 @@ public class APIAgent extends FullPage {
                 "            },\n" +
                 "            \"tenantId\": \"pb.jalandhar\",\n" +
                 "            \"serviceCode\": \"OverflowingOrBlockedDrain\",\n" +
-                "            \"serviceRequestId\": \""+createComplaint()+"\",\n" +
+                "            \"serviceRequestId\": \""+id+"\",\n" +
                 "            \"description\": \"test\",\n" +
                 "            \"addressId\": \"9372d448-1352-4b8f-a5eb-0931741cc7a6\",\n" +
                 "            \"address\": \"Jalandhar - Nakodar Rd, Shaheed Udham Singh Nagar, Jalandhar, Punjab 144001, India\",\n" +
@@ -165,13 +164,13 @@ public class APIAgent extends FullPage {
 
                 .when()
 
-                .post("/rainmaker-pgr/v1/requests/_create?tenantId=pb.jalandhar")
+                .post("/rainmaker-pgr/v1/requests/_update?tenantId=pb.jalandhar")
 
                 .then().assertThat().log().body().extract().response();
         // Change item index
-        String complaintId = response.path("actionHistory[0].businessKey");
+        String complaintId = response.path("actionHistory[0].actions[0].businessKey");
         System.out.println("Complaint id assigned is " + complaintId);
-        String lmeID = response.path("actionHistory[0].assignee");
+        String lmeID = response.path("actionHistory[0].actions[0].assignee");
         System.out.println("Complaint assigned to " + lmeID);
         return complaintId;
     }
