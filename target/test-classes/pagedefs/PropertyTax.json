@@ -1,0 +1,362 @@
+{
+  "btnAssessAndPay": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div.pt-new-property"
+  },
+  "btnAssessNewPropertyEmployee": {
+    "DESKTOP_WEB": "xpath =//div[@class='label-container '][div[contains(text(),'Assess New Property')]]"
+  },
+  "btnIncompleteAssessments": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div.pt-search-property"
+  },
+  "btnIncompleteAssessments": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div.pt-my-properties"
+  },
+  "btnAddNewProperty": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div.property-tax-card span"
+  },
+  "financialYear2018_19": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div.year-range-botton-cont #year"
+  },
+  "financialYear2017_18": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "xpath = //span[contains(text(),'2017-18')]"
+  },
+
+  "drpDwnCity": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div#city"
+  },
+  "txtHouseNo": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#house-number"
+  },
+  "txtColonyName": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#property-colony"
+  },
+  "txtStreetName": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#property-street"
+  },
+  "drpMohalla": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#mohalla"
+  },
+  "txtPincode": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#pincode"
+  },
+  "txtOldPropertyID": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#oldpid"
+  },
+  "btnNext": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "xpath = //*[contains(text(),'NEXT')]"
+  },
+  "btnGoBack": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "xpath = //*[contains(text(),'GO BACK')]"
+  },
+  "drpPropertyUsageType": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div#typeOfUsage"
+  },
+  "drpPropertyType": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div#typeOfBuilding"
+  },
+  "chkInflammable": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#inflammable"
+  },
+  "chkHeightAbove36Feet": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#heightAbove36Feet"
+  },
+  "drpSubUsageType": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div#assessment-subUsageType"
+  },
+  "drpOccupancy": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div#assessment-occupancy"
+  },
+  "drpSubUsageType": {
+    "DESKTOP_WEB": "css = div#assessment-subUsageType"
+  },
+  "txtBuildUpArea": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#assessment-built-area"
+  },
+  "txtResidentialFlatBuildUpArea": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#assessment-super-area"
+  },
+  "txtCommercialFlatBuildUpArea": {
+    "DESKTOP_WEB": "css =input#assessment-built-area"
+  },
+  "drpFloorName": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div#floorName button"
+  },
+  "txtAnnualRent": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#assessment-annual-rent"
+  },
+  "btnAddOneMoreUnit": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div.pt-add-owner-btn"
+  },
+  "txtPlotSize": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css =input#assessment-plot-size"
+  },
+  "drpNumberOfFloors": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div#assessment-number-of-floors"
+  },
+  "drpUnitUsageType": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div#assessment-usageType"
+  },
+  "drpTypeOfOwner": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div#typeOfOwnership"
+  },
+  "txtOwnerName": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#ownerName"
+  },
+  "rdoGenderMale": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#gender-selection-0"
+  },
+  "rdoGenderFemale": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#gender-selection-1"
+  },
+  "rdoGenderTransgender": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#gender-selection-2"
+  },
+  "txtMobileNo": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#ownerMobile"
+  },
+  "txtGuardianName": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#ownerGuardian"
+  },
+  "drpOwnerRelationship": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div#ownerRelationship"
+  },
+  "drpOwnerCategory": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css =div#ownerCategory"
+  },
+  "txtEMailID": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#ownerEmail"
+  },
+  "txtOwnerAddress": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#ownerAddress"
+  },
+  "chkSameAsPropertyAddres": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = input#rcpt"
+  },
+  "rdoFullPayment": {
+    "DESKTOP_WEB": "css =input[value= 'Full_Amount']"
+  },
+  "rdoPartialPayment": {
+    "DESKTOP_WEB": "css =input[value= 'Partial_Amount']"
+  },
+  "txtAmountToBePaid": {
+    "DESKTOP_WEB": "css =input#amount-to-be-paid"
+  },
+  "btnPay": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "xpath = //*[contains(text(),'PAY')]"
+  },
+  "chkDeclaration": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "css = div[class = 'undefined checkbox-container']"
+  },
+  "txtPropertyID": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "xpath = //div[contains(text(),'PT-')]"
+  },
+  "txtAssessmentID": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "xpath = //div[contains(text(),'AS-')]"
+  },
+  "txtPaybleAmount": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "xpath = //div[contains(text(),'Payable Amount:')]/../following-sibling::div/div"
+  },
+  "txtAmountPaid": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "xpath = //div[contains(text(),'Amount Paid:')]/../following-sibling::div/div"
+  },
+  "txtAmountDue": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "xpath = //div[contains(text(),'Amount Due:')]/../following-sibling::div/div"
+  },
+  "btnFinish": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "xpath = //span[contains(text(),'Finish')]"
+  },
+  "btnAddRabateOrCharges": {
+    "DESKTOP_WEB":  "xpath = //div[contains(text(),'ADD REBATE/CHARGES')]"
+  },
+  "drpAdhocRebateReason": {
+    "DESKTOP_WEB":  "css = div#adhocExemptionReason"
+  },
+  "drpAdhocPenaltyReason": {
+    "DESKTOP_WEB":  "css = div#adhocPenaltyReason"
+  },
+  "txtPenaltyChargeAmount": {
+    "DESKTOP_WEB":  "css = input#adhocPenalty"
+  },
+  "txtrebateChargeAmount": {
+    "DESKTOP_WEB":  "css = input#adhocExemption"
+  },
+  "btnSubmit": {
+    "DESKTOP_WEB":  "css = div.add-rebate-action-button"
+  },
+  "btnNext": {
+    "DESKTOP_WEB":  "xpath = //div[contains(text(),'NEXT')]"
+  },
+  "btnSearchProperty": {
+    "DESKTOP_WEB": "xpath = //div[contains(text(),'Search Property')]"
+  },
+  "txtPropertyTaxUniqueID": {
+    "DESKTOP_WEB":  "css =input#property-tax-assessment-id"
+  },
+  "btnSearch": {
+    "DESKTOP_WEB":  "css = div.search-property-btn"
+  },
+  "btnView": {
+    "DESKTOP_WEB":  "xpath =//div[contains(text(),'View')]"
+  },
+  "btnAssessmentHistory": {
+    "DESKTOP_WEB":  "xpath =//div[contains(text(),'Assessment History')]"
+  },
+  "drpSelectAction": {
+    "DESKTOP_WEB":  "css= div.pt-action-dropDown"
+  },
+  "btnReassess": {
+    "DESKTOP_WEB":  "xpath= //div[contains(text(),'Re-Assess')]"
+  },
+  "btnAssess&Pay": {
+    "DESKTOP_WEB":"xpath=//div[contains(text(),'Assess & Pay')]"
+  }
+
+
+}

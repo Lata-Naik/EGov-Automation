@@ -61,8 +61,13 @@ public class HomePage extends FullPage {
         return new TradeLicense(getConfig(),getAgent(),getTestData());
     }
 
-    public PropertyTax navigateToPropertyTax() throws Exception{
-        getControl("btnPropertyTax").click();
+    public PropertyTax CitizenNavigateToPropertyTax() throws Exception{
+        getControl("btnPropertyTaxCitizen").click();
+        return new PropertyTax(getConfig(),getAgent(),getTestData());
+    }
+
+    public PropertyTax EmployeeNavigateToPropertyTax() throws Exception{
+        getControl("btnPropertyTaxEmployee").click();
         return new PropertyTax(getConfig(),getAgent(),getTestData());
     }
 

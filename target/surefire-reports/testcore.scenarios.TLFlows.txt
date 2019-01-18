@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: testcore.scenarios.TLFlows
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 31.708 sec <<< FAILURE! - in testcore.scenarios.TLFlows
+approveTradeLicenseApprover(testcore.scenarios.TLFlows)  Time elapsed: 29.186 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at testcore.scenarios.TLFlows.approveTradeLicenseApprover(TLFlows.java:25)
+

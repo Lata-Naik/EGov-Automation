@@ -1,0 +1,10 @@
+testcore/scenarios/ScriptFlows.class
+testcore/pages/PropertyTax.class
+testcore/pages/FullPage.class
+testcore/scenarios/PGRFlows.class
+testcore/scenarios/TLFlows.class
+testcore/pages/PaymentPage.class
+testcore/pages/TradeLicense.class
+testcore/pages/ComplaintsPage.class
+testcore/scenarios/SupportTest.class
+testcore/pages/HomePage.class
