@@ -31,7 +31,6 @@ public class HomePage extends FullPage {
         getControl("txtMobileNumber").enterText(getTestData().get("MobileNumber"));
         getControl("btnContinue").click();
         getControl("txtOTP").enterText(getTestData().get("OTP"));
-//        Thread.sleep(15000);
         getControl("btnGetStarted").click();
         isUserLoggedIn();
         return this;

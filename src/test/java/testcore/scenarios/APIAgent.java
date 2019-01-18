@@ -175,8 +175,132 @@ public class APIAgent extends FullPage {
         return complaintId;
     }
 
+    public String authorizeEmployeeLME() {
+        RestAssured.baseURI = getConfig().getProperty("app_browser_url", config);
+        Response response = RestAssured.given()
+                .header("Authorization", "Basic ZWdvdi11c2VyLWNsaWVudDplZ292LXVzZXItc2VjcmV0").when()
+                .post("/user/oauth/token?username=QALME&password=12345678&grant_type=password&scope=read&tenantId=pb.jalandhar&userType=EMPLOYEE")
+                .then().assertThat().log().body().extract().response();
+        String access_token = response.path("access_token");
+        System.out.println("access_token employee is " + access_token);
+        return access_token;
+
+    }
+
+    public String resolveComplaint(){
+        RestAssured.baseURI = "https://egov-micro-qa.egovernments.org";
+        Response response = RestAssured.given().contentType(ContentType.JSON).body("{\n" +
+                "    \"RequestInfo\": {\n" +
+                "        \"apiId\": \"Rainmaker\",\n" +
+                "        \"ver\": \".01\",\n" +
+                "        \"ts\": \"\",\n" +
+                "        \"action\": \"_update\",\n" +
+                "        \"did\": \"1\",\n" +
+                "        \"key\": \"\",\n" +
+                "        \"msgId\": \"20170310130900|en_IN\",\n" +
+                "        \"authToken\": \""+authorizeEmployeeLME()+"\"\n" +
+                "    },\n" +
+                "    \"actionInfo\": [\n" +
+                "        {\n" +
+                "            \"media\": [],\n" +
+                "            \"comments\": \"Resolved\",\n" +
+                "            \"action\": \"resolve\"\n" +
+                "        }\n" +
+                "    ],\n" +
+                "    \"services\": [\n" +
+                "        {\n" +
+                "            \"citizen\": {\n" +
+                "                \"id\": 762,\n" +
+                "                \"uuid\": \"e4134081-ddf8-430f-a011-26f4895944de\",\n" +
+                "                \"name\": \"Lata\",\n" +
+                "                \"permanentAddress\": \"ATAR SINGH COLONY - Area2, amritsar\",\n" +
+                "                \"mobileNumber\": \"7829727713\",\n" +
+                "                \"aadhaarNumber\": null,\n" +
+                "                \"pan\": null,\n" +
+                "                \"emailId\": null,\n" +
+                "                \"userName\": \"7829727713\",\n" +
+                "                \"password\": null,\n" +
+                "                \"active\": true,\n" +
+                "                \"type\": \"CITIZEN\",\n" +
+                "                \"gender\": \"MALE\",\n" +
+                "                \"tenantId\": \"pb\",\n" +
+                "                \"roles\": [\n" +
+                "                    {\n" +
+                "                        \"name\": \"Citizen\",\n" +
+                "                        \"code\": \"CITIZEN\",\n" +
+                "                        \"tenantId\": null\n" +
+                "                    }\n" +
+                "                ]\n" +
+                "            },\n" +
+                "            \"tenantId\": \"pb.jalandhar\",\n" +
+                "            \"serviceCode\": \"OverflowingOrBlockedDrain\",\n" +
+                "            \"serviceRequestId\": \""+assignComplaint()+"\",\n" +
+                "            \"description\": \"test\",\n" +
+                "            \"addressId\": \"bf452c1f-8fbc-45d2-861c-ac004285449c\",\n" +
+                "            \"address\": \"Jalandhar - Nakodar Rd, Shaheed Udham Singh Nagar, Jalandhar, Punjab 144001, India\",\n" +
+                "            \"accountId\": \"762\",\n" +
+                "            \"phone\": \"7829727713\",\n" +
+                "            \"addressDetail\": {\n" +
+                "                \"uuid\": \"bf452c1f-8fbc-45d2-861c-ac004285449c\",\n" +
+                "                \"houseNoAndStreetName\": \"test\",\n" +
+                "                \"mohalla\": \"JLC216\",\n" +
+                "                \"locality\": \"40 Quarter\",\n" +
+                "                \"city\": \"pb.jalandhar\",\n" +
+                "                \"latitude\": 31.322422,\n" +
+                "                \"longitude\": 75.573419,\n" +
+                "                \"landmark\": \"test\",\n" +
+                "                \"tenantId\": \"pb.jalandhar\"\n" +
+                "            },\n" +
+                "            \"active\": true,\n" +
+                "            \"status\": \"assigned\",\n" +
+                "            \"source\": \"web\",\n" +
+                "            \"auditDetails\": {\n" +
+                "                \"createdBy\": \"762\",\n" +
+                "                \"lastModifiedBy\": \"195\",\n" +
+                "                \"createdTime\": 1543993591113,\n" +
+                "                \"lastModifiedTime\": 1543993665913\n" +
+                "            },\n" +
+                "            \"actions\": [\n" +
+                "                {\n" +
+                "                    \"uuid\": \"421c4b85-ab0a-4c24-80ac-15ca5c86e1ef\",\n" +
+                "                    \"tenantId\": \"pb.jalandhar\",\n" +
+                "                    \"by\": \"195:Grievance Routing Officer\",\n" +
+                "                    \"when\": 1543993665913,\n" +
+                "                    \"businessKey\": \"05/12/2018/000286\",\n" +
+                "                    \"action\": \"assign\",\n" +
+                "                    \"status\": \"assigned\",\n" +
+                "                    \"assignee\": \"163\"\n" +
+                "                },\n" +
+                "                {\n" +
+                "                    \"uuid\": \"2ca718ca-557e-4dcd-b98c-8dc3b63b652e\",\n" +
+                "                    \"tenantId\": \"pb.jalandhar\",\n" +
+                "                    \"by\": \"762:Citizen\",\n" +
+                "                    \"when\": 1543993591113,\n" +
+                "                    \"businessKey\": \"05/12/2018/000286\",\n" +
+                "                    \"action\": \"open\",\n" +
+                "                    \"status\": \"open\",\n" +
+                "                    \"media\": []\n" +
+                "                }\n" +
+                "            ]\n" +
+                "        }\n" +
+                "    ]\n" +
+                "}"
+        )
+
+                .when()
+
+                .post("/rainmaker-pgr/v1/requests/_update?tenantId=pb.jalandhar")
+
+                .then().assertThat().log().body().extract().response();
+        // Change item index
+        String complaintId = response.path("actionHistory[0].actions[0].businessKey");
+        System.out.println("Complaint id resolved is " + complaintId);
+        return complaintId;
+    }
+
     public String createTradeLicense() {
         return null;
 
     }
+
 }

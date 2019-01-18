@@ -24,7 +24,7 @@ public class PGRFlows extends SupportTest {
                 .isComplaintAssigned();
     }
 
-    @Test
+    //@Test
     public void assignComplaintDGRO() throws Exception{
         logger.debug(this.getTestStartInfoMessage("assignComplaintDGRO"));
         String complaintNumber=apiAgent.createComplaint();
@@ -65,9 +65,10 @@ public class PGRFlows extends SupportTest {
     @Test
     public void rateComplaintCitizen() throws Exception{
         logger.debug(this.getTestStartInfoMessage("rateComplaintCitizen"));
+        String complaintNumber=apiAgent.resolveComplaint();
         home.loginCitizen()
                 .navigateToComplaints()
-                .rateComplaint()
+                .rateComplaint(complaintNumber)
                 .isRateSubmitted();
     }
 
@@ -98,7 +99,7 @@ public class PGRFlows extends SupportTest {
                 .isComplaintReassigned();
     }
 
-    @Test
+   // @Test
     public void reassignToLMEasDGRO() throws Exception{
         logger.debug(this.getTestStartInfoMessage("reassignToLMEasDGRO"));
         home.loginEmployee()
@@ -116,7 +117,7 @@ public class PGRFlows extends SupportTest {
                 .isReassignRequestRejected();
     }
 
-    @Test
+    //@Test
     public void rejectReassignRequestDGRO() throws Exception{
         logger.debug(this.getTestStartInfoMessage("rejectReassignRequestDGRO"));
         home.loginEmployee()

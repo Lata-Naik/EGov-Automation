@@ -125,6 +125,12 @@
 	"txtResolvedComplaint": {
 		"DESKTOP_WEB": "xpath=//div[@class='label-container complaint-status-text dark-color']/div[text()='Your Complaint has been Resolved']"
 	},
+	"txtClosedComplaint": {
+		"DESKTOP_WEB": "xpath=//*[@class='label-container complaint-status-text text-bold']/div[text()='CLOSED']"
+	},
+	"txtResolvedComplaintNumber": {
+		"DESKTOP_WEB": "css=.complaint-complaint-number .label-text "
+	},
 	"btnRate": {
 		"DESKTOP_WEB": "css=.rainmaker-displayInline>div:nth-child(1)>.label-container "
 	},
