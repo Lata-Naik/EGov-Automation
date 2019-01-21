@@ -129,17 +129,9 @@ public class ComplaintsPage extends FullPage {
 
     public ComplaintsPage rateComplaint(String complaintNumber) throws Exception{
         getControl("txtMyComplaint").click();
-//        scrollDownTillElement("txtResolvedComplaint");
-//        if(getControl("txtResolvedComplaintNumber").getText().equalsIgnoreCase(complaintNumber)){
-//            getControl("txtResolvedComplaintNumber").click();
-//        }
-
-
-        do{
-            scrollDown();
-        }
-        while (!getControl("txtResolvedComplaintNumber").getText().equalsIgnoreCase(complaintNumber));
-        getControl("txtResolvedComplaintNumber").click();
+        scrollDownTillElement("txtResolvedComplaint");
+        getControl("txtResolvedComplaint").click();
+//        getControl("txtResolvedComplaintNumber").click();
         getControl("btnRate").click();
         getControl("btnStarRate4").click();
 //        getControl("txtFeedBackService").click();

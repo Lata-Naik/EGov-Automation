@@ -24,7 +24,7 @@ public class PGRFlows extends SupportTest {
                 .isComplaintAssigned();
     }
 
-    //@Test
+    @Test
     public void assignComplaintDGRO() throws Exception{
         logger.debug(this.getTestStartInfoMessage("assignComplaintDGRO"));
         String complaintNumber=apiAgent.createComplaint();
@@ -75,6 +75,7 @@ public class PGRFlows extends SupportTest {
     @Test
     public void reopenClosedComplaintCitizen() throws Exception{
         logger.debug(this.getTestStartInfoMessage("reopenClosedComplaintCitizen"));
+        apiAgent.resolveComplaint();
         home.loginCitizen()
                 .navigateToComplaints()
                 .reopenComplaintResolved()
@@ -84,6 +85,7 @@ public class PGRFlows extends SupportTest {
     @Test
     public void reopenRejectedComplaintCitizen() throws Exception{
         logger.debug(this.getTestStartInfoMessage("reopenRejectedComplaintCitizen"));
+        String complaintNumber=apiAgent.rejectComplaintGRO();
         home.loginCitizen()
                 .navigateToComplaints()
                 .reopenComplaintRejected()
@@ -93,15 +95,17 @@ public class PGRFlows extends SupportTest {
     @Test
     public void reassignToLMEasGRO() throws Exception{
         logger.debug(this.getTestStartInfoMessage("reassignToLMEasGRO"));
+        apiAgent.requestReassign();
         home.loginEmployee()
                 .navigateToComplaints()
                 .reassignComplaintToLME()
                 .isComplaintReassigned();
     }
 
-   // @Test
+    @Test
     public void reassignToLMEasDGRO() throws Exception{
         logger.debug(this.getTestStartInfoMessage("reassignToLMEasDGRO"));
+        apiAgent.requestReassign();
         home.loginEmployee()
                 .navigateToComplaints()
                 .reassignComplaintToLME()
@@ -111,15 +115,17 @@ public class PGRFlows extends SupportTest {
     @Test
     public void rejectReassignRequestGRO() throws Exception{
         logger.debug(this.getTestStartInfoMessage("rejectReassignRequestGRO"));
+        apiAgent.requestReassign();
         home.loginEmployee()
                 .navigateToComplaints()
                 .rejectReassignRequest()
                 .isReassignRequestRejected();
     }
 
-    //@Test
+    @Test
     public void rejectReassignRequestDGRO() throws Exception{
         logger.debug(this.getTestStartInfoMessage("rejectReassignRequestDGRO"));
+        apiAgent.requestReassign();
         home.loginEmployee()
                 .navigateToComplaints()
                 .rejectReassignRequest()

@@ -49,7 +49,7 @@ public class APIAgent extends FullPage {
                         + "        \"authToken\": \"" + authorizeCitizen() + "\"\n" + "    },\n"
                         + "    \"actionInfo\": [\n" + "        {\n" + "            \"media\": []\n" + "        }\n"
                         + "    ],\n" + "    \"services\": [\n" + "        {\n"
-                        + "            \"serviceCode\": \"OverflowingOrBlockedDrain\",\n"
+                        + "            \"serviceCode\": \"GarbageNeedsTobeCleared\",\n"
                         + "            \"description\": \"test from api of postman client\",\n"
                         + "            \"addressDetail\": {\n" + "                \"latitude\": \"31.322422\",\n"
                         + "                \"longitude\": \"75.573419\",\n"
@@ -88,7 +88,7 @@ public class APIAgent extends FullPage {
 
     public String assignComplaint(){
         String id =   createComplaint();
-        RestAssured.baseURI = "https://egov-micro-qa.egovernments.org";
+        RestAssured.baseURI = getConfig().getProperty("app_browser_url", config);
         Response response = RestAssured.given().contentType(ContentType.JSON).body("{\n" +
                 "    \"RequestInfo\": {\n" +
                 "        \"apiId\": \"Rainmaker\",\n" +
@@ -188,7 +188,7 @@ public class APIAgent extends FullPage {
     }
 
     public String resolveComplaint(){
-        RestAssured.baseURI = "https://egov-micro-qa.egovernments.org";
+        RestAssured.baseURI = getConfig().getProperty("app_browser_url", config);
         Response response = RestAssured.given().contentType(ContentType.JSON).body("{\n" +
                 "    \"RequestInfo\": {\n" +
                 "        \"apiId\": \"Rainmaker\",\n" +
@@ -295,6 +295,214 @@ public class APIAgent extends FullPage {
         // Change item index
         String complaintId = response.path("actionHistory[0].actions[0].businessKey");
         System.out.println("Complaint id resolved is " + complaintId);
+        return complaintId;
+    }
+
+    public String rejectComplaintGRO() {
+        RestAssured.baseURI = getConfig().getProperty("app_browser_url", config);
+        Response response = RestAssured.given().contentType(ContentType.JSON).body("{\n" +
+                "    \"RequestInfo\": {\n" +
+                "        \"apiId\": \"Rainmaker\",\n" +
+                "        \"ver\": \".01\",\n" +
+                "        \"ts\": \"\",\n" +
+                "        \"action\": \"_update\",\n" +
+                "        \"did\": \"1\",\n" +
+                "        \"key\": \"\",\n" +
+                "        \"msgId\": \"20170310130900|en_IN\",\n" +
+                "        \"authToken\": \""+authorizeEmployeeGRO()+"\"\n" +
+                "    },\n" +
+                "    \"actionInfo\": [\n" +
+                "        {\n" +
+                "            \"comments\": \"Out of operational scope;\",\n" +
+                "            \"action\": \"reject\"\n" +
+                "        }\n" +
+                "    ],\n" +
+                "    \"services\": [\n" +
+                "        {\n" +
+                "            \"citizen\": {\n" +
+                "                \"id\": 762,\n" +
+                "                \"uuid\": \"e4134081-ddf8-430f-a011-26f4895944de\",\n" +
+                "                \"name\": \"Lata\",\n" +
+                "                \"permanentAddress\": \"ATAR SINGH COLONY - Area2, amritsar\",\n" +
+                "                \"mobileNumber\": \"7829727713\",\n" +
+                "                \"aadhaarNumber\": null,\n" +
+                "                \"pan\": null,\n" +
+                "                \"emailId\": null,\n" +
+                "                \"userName\": \"7829727713\",\n" +
+                "                \"password\": null,\n" +
+                "                \"active\": true,\n" +
+                "                \"type\": \"CITIZEN\",\n" +
+                "                \"gender\": \"MALE\",\n" +
+                "                \"tenantId\": \"pb\",\n" +
+                "                \"roles\": [\n" +
+                "                    {\n" +
+                "                        \"name\": \"Citizen\",\n" +
+                "                        \"code\": \"CITIZEN\",\n" +
+                "                        \"tenantId\": null\n" +
+                "                    }\n" +
+                "                ]\n" +
+                "            },\n" +
+                "            \"tenantId\": \"pb.jalandhar\",\n" +
+                "            \"serviceCode\": \"OverflowingOrBlockedDrain\",\n" +
+                "            \"serviceRequestId\": \""+createComplaint()+"\",\n" +
+                "            \"description\": \"Teat\",\n" +
+                "            \"addressId\": \"4686acb1-a05f-44b0-b507-0e991a75090e\",\n" +
+                "            \"address\": \"Jalandhar - Nakodar Rd, Shaheed Udham Singh Nagar, Jalandhar, Punjab 144001, India\",\n" +
+                "            \"accountId\": \"762\",\n" +
+                "            \"phone\": \"7829727713\",\n" +
+                "            \"addressDetail\": {\n" +
+                "                \"uuid\": \"4686acb1-a05f-44b0-b507-0e991a75090e\",\n" +
+                "                \"houseNoAndStreetName\": \"test\",\n" +
+                "                \"mohalla\": \"JLC485\",\n" +
+                "                \"locality\": \"Avtar Nagar\",\n" +
+                "                \"city\": \"pb.jalandhar\",\n" +
+                "                \"latitude\": 31.322422,\n" +
+                "                \"longitude\": 75.573419,\n" +
+                "                \"landmark\": \"test\",\n" +
+                "                \"tenantId\": \"pb.jalandhar\"\n" +
+                "            },\n" +
+                "            \"active\": true,\n" +
+                "            \"status\": \"open\",\n" +
+                "            \"source\": \"web\",\n" +
+                "            \"auditDetails\": {\n" +
+                "                \"createdBy\": \"762\",\n" +
+                "                \"lastModifiedBy\": \"762\",\n" +
+                "                \"createdTime\": 1543575486163,\n" +
+                "                \"lastModifiedTime\": 1543575486163\n" +
+                "            },\n" +
+                "            \"actions\": [\n" +
+                "                {\n" +
+                "                    \"uuid\": \"fffce919-a9fc-446b-a838-e117840a8efe\",\n" +
+                "                    \"tenantId\": \"pb.jalandhar\",\n" +
+                "                    \"by\": \"762:Citizen\",\n" +
+                "                    \"when\": 1543575486163,\n" +
+                "                    \"businessKey\": \"30/11/2018/000237\",\n" +
+                "                    \"action\": \"open\",\n" +
+                "                    \"status\": \"open\",\n" +
+                "                    \"media\": []\n" +
+                "                }\n" +
+                "            ]\n" +
+                "        }\n" +
+                "    ]\n" +
+                "}")
+
+                .when()
+
+                .post("/rainmaker-pgr/v1/requests/_update?tenantId=pb.jalandhar")
+
+                .then().assertThat().log().body().extract().response();
+        // Change item index
+        String complaintId = response.path("actionHistory[0].actions[0].businessKey");
+        System.out.println("Rejected complaint is " + complaintId);
+        return complaintId;
+    }
+
+    public String requestReassign(){
+        RestAssured.baseURI = getConfig().getProperty("app_browser_url", config);
+        Response response = RestAssured.given().contentType(ContentType.JSON).body("{\n" +
+                "    \"RequestInfo\": {\n" +
+                "        \"apiId\": \"Rainmaker\",\n" +
+                "        \"ver\": \".01\",\n" +
+                "        \"ts\": \"\",\n" +
+                "        \"action\": \"_update\",\n" +
+                "        \"did\": \"1\",\n" +
+                "        \"key\": \"\",\n" +
+                "        \"msgId\": \"20170310130900|en_IN\",\n" +
+                "        \"authToken\": \""+authorizeEmployeeLME()+"\"\n" +
+                "    },\n" +
+                "    \"actionInfo\": [\n" +
+                "        {\n" +
+                "            \"comments\": \"Other;test\",\n" +
+                "            \"action\": \"requestforreassign\"\n" +
+                "        }\n" +
+                "    ],\n" +
+                "    \"services\": [\n" +
+                "        {\n" +
+                "            \"citizen\": {\n" +
+                "                \"id\": 762,\n" +
+                "                \"uuid\": \"e4134081-ddf8-430f-a011-26f4895944de\",\n" +
+                "                \"name\": \"Lata\",\n" +
+                "                \"permanentAddress\": \"ATAR SINGH COLONY - Area2, amritsar\",\n" +
+                "                \"mobileNumber\": \"7829727713\",\n" +
+                "                \"aadhaarNumber\": null,\n" +
+                "                \"pan\": null,\n" +
+                "                \"emailId\": null,\n" +
+                "                \"userName\": \"7829727713\",\n" +
+                "                \"password\": null,\n" +
+                "                \"active\": true,\n" +
+                "                \"type\": \"CITIZEN\",\n" +
+                "                \"gender\": \"MALE\",\n" +
+                "                \"tenantId\": \"pb\",\n" +
+                "                \"roles\": [\n" +
+                "                    {\n" +
+                "                        \"name\": \"Citizen\",\n" +
+                "                        \"code\": \"CITIZEN\",\n" +
+                "                        \"tenantId\": null\n" +
+                "                    }\n" +
+                "                ]\n" +
+                "            },\n" +
+                "            \"tenantId\": \"pb.jalandhar\",\n" +
+                "            \"serviceCode\": \"OverflowingOrBlockedDrain\",\n" +
+                "            \"serviceRequestId\": \""+assignComplaint()+"\",\n" +
+                "            \"description\": \"test\",\n" +
+                "            \"addressId\": \"9372d448-1352-4b8f-a5eb-0931741cc7a6\",\n" +
+                "            \"address\": \"Jalandhar - Nakodar Rd, Shaheed Udham Singh Nagar, Jalandhar, Punjab 144001, India\",\n" +
+                "            \"accountId\": \"762\",\n" +
+                "            \"phone\": \"7829727713\",\n" +
+                "            \"addressDetail\": {\n" +
+                "                \"uuid\": \"9372d448-1352-4b8f-a5eb-0931741cc7a6\",\n" +
+                "                \"houseNoAndStreetName\": \"test\",\n" +
+                "                \"mohalla\": \"JLC487\",\n" +
+                "                \"locality\": \"New Suraj Ganj\",\n" +
+                "                \"city\": \"pb.jalandhar\",\n" +
+                "                \"latitude\": 31.322422,\n" +
+                "                \"longitude\": 75.573419,\n" +
+                "                \"landmark\": \"test\",\n" +
+                "                \"tenantId\": \"pb.jalandhar\"\n" +
+                "            },\n" +
+                "            \"active\": true,\n" +
+                "            \"status\": \"assigned\",\n" +
+                "            \"source\": \"web\",\n" +
+                "            \"auditDetails\": {\n" +
+                "                \"createdBy\": \"762\",\n" +
+                "                \"lastModifiedBy\": \"195\",\n" +
+                "                \"createdTime\": 1543575667842,\n" +
+                "                \"lastModifiedTime\": 1543770230295\n" +
+                "            },\n" +
+                "            \"actions\": [\n" +
+                "                {\n" +
+                "                    \"uuid\": \"4b4276eb-a6e9-450b-a46d-0dccbd5f0761\",\n" +
+                "                    \"tenantId\": \"pb.jalandhar\",\n" +
+                "                    \"by\": \"195:Grievance Routing Officer\",\n" +
+                "                    \"when\": 1543770230295,\n" +
+                "                    \"businessKey\": \"02/12/2018/000240\",\n" +
+                "                    \"action\": \"assign\",\n" +
+                "                    \"status\": \"assigned\",\n" +
+                "                    \"assignee\": \"163\"\n" +
+                "                },\n" +
+                "                {\n" +
+                "                    \"uuid\": \"fe7b7b96-0ae8-48f3-b3b0-20affb2e8529\",\n" +
+                "                    \"tenantId\": \"pb.jalandhar\",\n" +
+                "                    \"by\": \"762:Citizen\",\n" +
+                "                    \"when\": 1543575667842,\n" +
+                "                    \"businessKey\": \"02/12/2018/000240\",\n" +
+                "                    \"action\": \"open\",\n" +
+                "                    \"status\": \"open\",\n" +
+                "                    \"media\": []\n" +
+                "                }\n" +
+                "            ]\n" +
+                "        }\n" +
+                "    ]\n" +
+                "}")
+
+                .when()
+
+                .post("/rainmaker-pgr/v1/requests/_update?tenantId=pb.jalandhar")
+
+                .then().assertThat().log().body().extract().response();
+        // Change item index
+        String complaintId = response.path("actionHistory[0].actions[0].businessKey");
+        System.out.println("Requested for reassign Complaint number" + complaintId);
         return complaintId;
     }
 
