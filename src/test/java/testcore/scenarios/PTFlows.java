@@ -59,5 +59,17 @@ public class PTFlows extends SupportTest {
                 .getDataAfterPaymentSucessfull();
     }
 
+    @Test
+    public void createResidentialPropertyTaxAndPayByChequeEmployee() throws Exception {
+        home.loginEmployee()
+                .EmployeeNavigateToPropertyTax()
+                .applyPropertyTaxEmployee()
+                .fillResidentialPropertyTaxFormAndMakeFullPaymentWithChequeEmployee()
+                .makePaymentCounterEmployeePT()
+                .getDataAfterPaymentSucessfull();
 
+    }
 }
+
+
+

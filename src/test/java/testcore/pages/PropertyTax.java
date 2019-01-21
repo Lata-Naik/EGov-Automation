@@ -56,6 +56,14 @@ public class PropertyTax extends FullPage {
         return new PaymentPage(getConfig(), getAgent(), getTestData());
 
     }
+
+    public PaymentPage fillResidentialPropertyTaxFormAndMakeFullPaymentWithChequeEmployee() throws Exception{
+        fillPropertyAddressEmployee();
+        fillResidentialAssessmentInformation();
+        fillOwnerInformation();
+        reviewAndPayPageEmployee();
+        return new PaymentPage(getConfig(), getAgent(), getTestData());
+    }
     public PaymentPage fillCommercialPropertyTaxFormAndMakeFullPaymentWithCashEmployee() throws Exception{
         fillPropertyAddressEmployee();
         fillCommercialAssessmentInformation();
