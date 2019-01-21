@@ -77,7 +77,7 @@ public class PaymentPage extends FullPage {
         Thread.sleep(2000);
         if(getTestData().get("ModeOfPayment").equalsIgnoreCase("Cash")){
             payByCashPT();
-            Thread.sleep(10000);
+            Thread.sleep(2000);
         }
         else if(getTestData().get("ModeOfPayment").equalsIgnoreCase("Cheque")){
             payByChequePT();
@@ -89,7 +89,7 @@ public class PaymentPage extends FullPage {
             getControl("txtCreditDebitCard").click();
             payByCreditDebitCardPT();
         }
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         getControl("btnPayPT").click();
         Thread.sleep(10000);
         return new PropertyTax(getConfig(),getAgent(),getTestData());
@@ -155,13 +155,13 @@ public class PaymentPage extends FullPage {
         getControl("txtPayerMobileNumber").enterText(getTestData().get("PayerMobileNumber"));
     }
     public void addPayerDetailsPT() throws Exception{
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         scrollUp(1);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         getControl("drpPaidByPT").scrollTo();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         selectfromDropDown(getTestData().get("PaidBy"));
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         getControl("txtPayerNamePT").enterText(getTestData().get("PayerName"));
         getControl("txtPayerMobileNumberPT").enterText(getTestData().get("PayerMobileNumber"));
     }

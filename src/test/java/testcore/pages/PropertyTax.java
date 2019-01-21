@@ -47,11 +47,19 @@ public class PropertyTax extends FullPage {
 
     }
 
-    public PaymentPage fillPropertyTaxFormAndMakeFullPaymentWithRebateOrChargesEmployee() throws Exception {
+    public PaymentPage fillResidentialPropertyTaxFormAndMakeFullPaymentWithRebateOrChargesEmployee() throws Exception {
         fillPropertyAddressEmployee();
         fillResidentialAssessmentInformation();
         fillOwnerInformation();
         addRebateOrCharges();
+        reviewAndPayPageEmployee();
+        return new PaymentPage(getConfig(), getAgent(), getTestData());
+
+    }
+    public PaymentPage fillCommercialPropertyTaxFormAndMakeFullPaymentWithCashEmployee() throws Exception{
+        fillPropertyAddressEmployee();
+        fillCommercialAssessmentInformation();
+        fillOwnerInformation();
         reviewAndPayPageEmployee();
         return new PaymentPage(getConfig(), getAgent(), getTestData());
 
@@ -244,7 +252,6 @@ public class PropertyTax extends FullPage {
         scrollDown();
         Thread.sleep(1000);
         getControl("txtCommercialFlatBuildUpArea").enterText(getTestData().get("BuildUpArea"));
-        Thread.sleep(9000);
         scrollDown();
         Thread.sleep(1000);
         getControl("drpFloorName").click();

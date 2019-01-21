@@ -26,30 +26,38 @@ public class PTFlows extends SupportTest {
     }
 
     @Test
-    public void createResidenatlPropertyTaxAndPayByCheckAndReassesEmployee() throws Exception{
+    public void createResidenatlPropertyTaxAndPayByChequeAndReassesEmployee() throws Exception {
         home.loginEmployee()
                 .EmployeeNavigateToPropertyTax()
                 .applyPropertyTaxEmployee()
-                .fillPropertyTaxFormAndMakeFullPaymentWithRebateOrChargesEmployee()
+                .fillResidentialPropertyTaxFormAndMakeFullPaymentWithRebateOrChargesEmployee()
                 .makePaymentCounterEmployeePT()
                 .getDataAfterSucessfulPaymentAndReassessChangeBuildUpArea()
                 .makePaymentCounterEmployeePT();
 
 
-
     }
 
     @Test
-    public void createResidentialPropertyTaxAndPayByCheckAndAssessAndPayEmployee() throws Exception{
+    public void createResidentialPropertyTaxAndPayByChequeAndAssessAndPayEmployee() throws Exception {
         home.loginEmployee()
                 .EmployeeNavigateToPropertyTax()
                 .applyPropertyTaxEmployee()
-                .fillPropertyTaxFormAndMakeFullPaymentWithRebateOrChargesEmployee()
+                .fillResidentialPropertyTaxFormAndMakeFullPaymentWithRebateOrChargesEmployee()
                 .makePaymentCounterEmployeePT()
                 .getDataAfterSucessfulPaymentAndAssessAndPay()
                 .makePaymentCounterEmployeePT();
-
-
-
     }
+
+    @Test
+    public void createCommercialPropertyTaxAndPayByCashEmployee() throws Exception {
+        home.loginEmployee()
+                .EmployeeNavigateToPropertyTax()
+                .applyPropertyTaxEmployee()
+                .fillCommercialPropertyTaxFormAndMakeFullPaymentWithCashEmployee()
+                .makePaymentCounterEmployeePT()
+                .getDataAfterPaymentSucessfull();
+    }
+
+
 }
