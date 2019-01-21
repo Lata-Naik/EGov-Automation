@@ -126,7 +126,7 @@ public class PropertyTax extends FullPage {
     private void fillReviewAndFullPaymentCitizen() throws Exception {
         scrollDown(20); // #TODO
         Thread.sleep(3000);
-//        getControl("chkDeclaration").click(); #TODO
+//        getControl("chkDeclaration").click(); //#TODO
         getControl("rdoFullPayment").click();
         getControl("btnPay").waitUntilClickable();
         getControl("btnPay").click();
