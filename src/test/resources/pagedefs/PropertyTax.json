@@ -5,6 +5,9 @@
     "MWEB": "locator=value",
     "DESKTOP_WEB": "css = div.pt-new-property"
   },
+  "btnAssessNewPropertyEmployee": {
+    "DESKTOP_WEB": "xpath =//div[@class='label-container '][div[contains(text(),'Assess New Property')]]"
+  },
   "btnIncompleteAssessments": {
     "ANDROID": "locator=value",
     "IOS": "locator=value",
@@ -29,6 +32,13 @@
     "MWEB": "locator=value",
     "DESKTOP_WEB": "css = div.year-range-botton-cont #year"
   },
+  "financialYear2017_18": {
+    "ANDROID": "locator=value",
+    "IOS": "locator=value",
+    "MWEB": "locator=value",
+    "DESKTOP_WEB": "xpath = //span[contains(text(),'2017-18')]"
+  },
+
   "drpDwnCity": {
     "ANDROID": "locator=value",
     "IOS": "locator=value",
@@ -301,6 +311,51 @@
     "IOS": "locator=value",
     "MWEB": "locator=value",
     "DESKTOP_WEB": "xpath = //span[contains(text(),'Finish')]"
+  },
+  "btnAddRabateOrCharges": {
+    "DESKTOP_WEB":  "xpath = //div[contains(text(),'ADD REBATE/CHARGES')]"
+  },
+  "drpAdhocRebateReason": {
+    "DESKTOP_WEB":  "css = div#adhocExemptionReason"
+  },
+  "drpAdhocPenaltyReason": {
+    "DESKTOP_WEB":  "css = div#adhocPenaltyReason"
+  },
+  "txtPenaltyChargeAmount": {
+    "DESKTOP_WEB":  "css = input#adhocPenalty"
+  },
+  "txtrebateChargeAmount": {
+    "DESKTOP_WEB":  "css = input#adhocExemption"
+  },
+  "btnSubmit": {
+    "DESKTOP_WEB":  "css = div.add-rebate-action-button"
+  },
+  "btnNext": {
+    "DESKTOP_WEB":  "xpath = //div[contains(text(),'NEXT')]"
+  },
+  "btnSearchProperty": {
+    "DESKTOP_WEB": "xpath = //div[contains(text(),'Search Property')]"
+  },
+  "txtPropertyTaxUniqueID": {
+    "DESKTOP_WEB":  "css =input#property-tax-assessment-id"
+  },
+  "btnSearch": {
+    "DESKTOP_WEB":  "css = div.search-property-btn"
+  },
+  "btnView": {
+    "DESKTOP_WEB":  "xpath =//div[contains(text(),'View')]"
+  },
+  "btnAssessmentHistory": {
+    "DESKTOP_WEB":  "xpath =//div[contains(text(),'Assessment History')]"
+  },
+  "drpSelectAction": {
+    "DESKTOP_WEB":  "css= div.pt-action-dropDown"
+  },
+  "btnReassess": {
+    "DESKTOP_WEB":  "xpath= //div[contains(text(),'Re-Assess')]"
+  },
+  "btnAssess&Pay": {
+    "DESKTOP_WEB":"xpath=//div[contains(text(),'Assess & Pay')]"
   }
 
 

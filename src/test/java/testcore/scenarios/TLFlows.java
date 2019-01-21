@@ -39,7 +39,7 @@ public class TLFlows extends SupportTest {
         home.loginEmployee()
                 .navigateToTradeLicense()
                 .addNewTradeLicense()
-                .makePaymentCounterEmployee()
+                .makePaymentCounterEmployeeTL()
                 .isApplicationPlaced();
     }
 

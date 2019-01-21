@@ -44,11 +44,17 @@
 	"txtCitySearchResult": {
 		"DESKTOP_WEB": "xpath=//div[@class='list-main-card']"
 	},
-	"btnPropertyTax": {
+	"btnPropertyTaxCitizen": {
 		"ANDROID": "locator=value",
 		"IOS": "locator=value",
 		"MWEB": "locator=value",
 		"DESKTOP_WEB": "css=div.pt-landing-card .landing-page-button button"
+	},
+	"btnPropertyTaxEmployee": {
+		"ANDROID": "locator=value",
+		"IOS": "locator=value",
+		"MWEB": "locator=value",
+		"DESKTOP_WEB": "xpath = //div[@class='label-container '][div[contains(text(),'Property Tax')]]"
 	}
 
 

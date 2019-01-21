@@ -1,5 +1,4 @@
 screenshots/
 log/
-target/**/*
+*/target/**/*
 .idea/*
-test-output/**/*
