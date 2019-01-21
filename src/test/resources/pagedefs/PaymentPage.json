@@ -24,7 +24,7 @@
 		"DESKTOP_WEB": "id=Paybutton"
 	},
 	"btnSubmit": {
-		"DESKTOP_WEB": "css = input[type='submit']"
+		"DESKTOP_WEB": "css = #custom-containers-submitButtonLabel"
 	},
 	"txtCash": {
 		"DESKTOP_WEB": "css=[role='tablist']>div>button:nth-child(1)"

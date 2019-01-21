@@ -129,7 +129,7 @@
 		"DESKTOP_WEB": "id=material-ui-newApplicationButton"
 	},
 	"btnCancelTradeLicense": {
-		"DESKTOP_WEB": "id=custom-containers-nextButtonLabel"
+		"DESKTOP_WEB": "xpath=//*[contains(text(),'CANCEL TRADE LICENSE')]"
 	},
 	"txtLicenseCancelled": {
 		"DESKTOP_WEB": "css=#custom-atoms-applicationSuccessCard #material-ui-header #custom-containers-key"

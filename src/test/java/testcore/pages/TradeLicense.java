@@ -43,8 +43,10 @@ public class TradeLicense extends FullPage {
 		Thread.sleep(2000);
 		getControl("drpSelectStructureType").click();
 		selectOptionFromDropDownList(getTestData().get("StructureType"));
+		Thread.sleep(1000);
 		getControl("drpSelectSubStructureType").click();
 		selectOptionFromDropDownList(getTestData().get("SubStructureType"));
+		Thread.sleep(1000);
 		getControl("txtTradeCommencementDate").enterText(getTestData().get("TradeCommencementDate"));
 
 	}
@@ -54,13 +56,16 @@ public class TradeLicense extends FullPage {
 		scrollDown(2);
 		getControl("txtTradeCategory").click();
 		selectOptionFromDropDownList(getTestData().get("TradeCategory"));
+		Thread.sleep(1000);
 		getControl("txtTradeType").click();
 		selectOptionFromDropDownList(getTestData().get("TradeType"));
+		Thread.sleep(1000);
 		getControl("txtTradeSubType").click();
 		selectOptionFromDropDownByEnter(getTestData().get("TradeSubType"));
 		scrollDown(2);
 		getControl("txtAccessories").click();
 		selectOptionFromDropDownList(getTestData().get("Accessories"));
+		Thread.sleep(1000);
 		getControl("txtUOMValue").enterText(getTestData().get("UOM"));
 		scrollDown(4);
 		getControl("txtMohalla").click();
@@ -70,16 +75,18 @@ public class TradeLicense extends FullPage {
 	}
 
 	public void fillOwnerInformation() throws Exception {
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
 		getControl("drpOwnerShipType").click();
 		selectOptionFromDropDownList(getTestData().get("OwnerShipType"));
+		Thread.sleep(500);
 		getControl("txtMobileNo").enterText(getTestData().get("MobileNo"));
 		getControl("txtName").enterText(getTestData().get("Name"));
 		getControl("txtFatherHusbandName").enterText(getTestData().get("FatherHusbandName"));
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
 		getControl("txtDOB").enterText(getTestData().get("DOB"));
 		getControl("txtGender").click();
 		selectOptionFromDropDownList(getTestData().get("Gender"));
+		Thread.sleep(500);
 		getControl("txtAddress").enterText(getTestData().get("Address"));
 		getControl("btnNextStep").click();
 		switchToDefaultFrame();
@@ -87,11 +94,11 @@ public class TradeLicense extends FullPage {
 
 	public void uploadFiles() throws Exception {
 		switchToIFrame();
-		Thread.sleep(5000);
-		 getControl("btnUploadProof").enterText(getTestData().get("IDProof"));
 		Thread.sleep(10000);
-		 getControl("icnUploadClose","isVisible");
-		 getControl("btnUploadOwnershipProof").enterText(getTestData().get("OwnershipProof"));
+//		 getControl("btnUploadProof").enterText(getTestData().get("IDProof"));
+		Thread.sleep(10000);
+//		 getControl("icnUploadClose","isVisible");
+//		 getControl("btnUploadOwnershipProof").enterText(getTestData().get("OwnershipProof"));
 		Thread.sleep(1000);
 		getControl("btnNextStep").click();
 	}

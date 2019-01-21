@@ -12,7 +12,7 @@ public class TLFlows extends SupportTest {
                 .navigateToTradeLicense()
                 .applyTradeLicense()
                 .fillTradeLicenseForm()
-                .makePayment()
+                .makePaymentTL()
                 .isApplicationPlaced();
     }
 
@@ -51,4 +51,5 @@ public class TLFlows extends SupportTest {
                 .cancelTradeLicense()
                 .isApprovedTradeLicenseCancelled();
     }
+
 }

@@ -21,6 +21,7 @@ public enum AppachhiCentral {
 	private Map<String, IniReader> contextTestData = new HashMap<String, IniReader>();
 	private ObjectRepository pageDefs = null;
 	private String screenDateFormat = null;
+	String testDataFilePath=null;
 
 	public void init() throws Exception {
 		String log4jConfigFile = getPath("conf/log4j.properties");
@@ -65,8 +66,22 @@ public enum AppachhiCentral {
 	registerContext(ITestContext context) throws Exception {
 		Configuration contextConf = new Configuration(centralConf, context);
 		this.contextConfigs.put(context.getName().toLowerCase(), contextConf);
-		String testDataFilePath = String.format("%s/%s/testdata.ini", getDirPathForConf(ConfigType.DATA_DIR),
-				getProperty("platform", contextConf));
+//		String testDataFilePath = String.format("%s/%s/testdata.ini", getDirPathForConf(ConfigType.DATA_DIR),
+//				getProperty("platform", contextConf));
+
+		String environment = centralConf.getValue((ConfigType.ENV));
+
+
+		if(environment.equalsIgnoreCase("QA")){
+			testDataFilePath = String.format("%s/%s/QA/testdata.ini", getDirPathForConf(ConfigType.DATA_DIR),
+					getProperty("platform", contextConf));
+		}
+		else if (environment.equalsIgnoreCase("UAT")){
+			testDataFilePath = String.format("%s/%s/UAT/testdata.ini", getDirPathForConf(ConfigType.DATA_DIR),
+					getProperty("platform", contextConf));
+		}
+		else logger.info("testdata file not found");
+
 		logger.debug(String.format("Loading Test Data File at Path :: %s", testDataFilePath));
 		IniReader reader = new IniReader(testDataFilePath);
 		this.contextTestData.put(context.getName().toLowerCase(), reader);
@@ -103,8 +118,22 @@ public enum AppachhiCentral {
                 ret_val=System.getProperty("platform");
             else
                 ret_val=config.getValue(ConfigType.PLATFORM);
-        } 
-        return ret_val;
+        }
+
+		if ( arg.equalsIgnoreCase("platform") ) {
+			if ( System.getProperty("platform") != null )
+				ret_val=System.getProperty("platform");
+			else
+				ret_val=config.getValue(ConfigType.PLATFORM);
+		}
+
+		if ( arg.equalsIgnoreCase("env") ) {
+			if ( System.getProperty("env") != null )
+				ret_val=System.getProperty("env");
+			else
+				ret_val=config.getValue(ConfigType.ENV);
+		}
+		return ret_val;
     }
 }
 

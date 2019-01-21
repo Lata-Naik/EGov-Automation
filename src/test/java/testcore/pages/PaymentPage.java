@@ -20,12 +20,12 @@ public class PaymentPage extends FullPage {
         return PaymentPage.class.getSimpleName();
     }
 
-    public PaymentPage makePayment() throws Exception{
+    public PaymentPage makePaymentTL() throws Exception{
+        getControl("btnProceedToPayment").click();
+        getControl("btnMakePayment").click();
+        logger.info("Amount to be paid "+getControl("txtAmount").getText());
         getControl("txtMasterCard").waitUntilClickable();
         getControl("txtMasterCard").click();
-//        getControl("btnProceedToPayment").click();
-//        getControl("btnMakePayment").click();
-//        logger.info("Amount to be paid "+getControl("txtAmount").getText());
         getControl("txtCardNumber").enterText(getTestData().get("CardNumber"));
         getControl("txtCardMonth").enterText(getTestData().get("CardMonth"));
         getControl("txtCardYear").enterText(getTestData().get("CardYear"));
