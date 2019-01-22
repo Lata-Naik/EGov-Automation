@@ -13,7 +13,8 @@ public class TLFlows extends SupportTest {
                 .applyTradeLicense()
                 .fillTradeLicenseForm()
                 .makePaymentTL()
-                .isApplicationPlaced();
+                .isApplicationPlaced()
+                .navigateToHomeAndVerifyApplicationStatus();
     }
 
     @Test
@@ -34,13 +35,47 @@ public class TLFlows extends SupportTest {
     }
 
     @Test
-    public void createTradeLicenseCounterEmployee() throws Exception{
-        logger.debug(this.getTestStartInfoMessage("createTradeLicenseCounterEmployee"));
+    public void createTradeLicenseCounterEmployeePayByCash() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("createTradeLicenseCounterEmployeePayByCash"));
         home.loginEmployee()
                 .navigateToTradeLicense()
                 .addNewTradeLicense()
                 .makePaymentCounterEmployeeTL()
-                .isApplicationPlaced();
+                .isApplicationPlaced()
+                .navigateToHomeAndVerifyApplicationStatus();
+    }
+
+    @Test
+    public void createTradeLicenseCounterEmployeePayByCheque() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("createTradeLicenseCounterEmployeePayByCheque"));
+        home.loginEmployee()
+                .navigateToTradeLicense()
+                .addNewTradeLicense()
+                .makePaymentCounterEmployeeTL()
+                .isApplicationPlaced()
+                .navigateToHomeAndVerifyApplicationStatus();
+    }
+
+    @Test
+    public void createTradeLicenseCounterEmployeePayByDD() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("createTradeLicenseCounterEmployeePayByDD"));
+        home.loginEmployee()
+                .navigateToTradeLicense()
+                .addNewTradeLicense()
+                .makePaymentCounterEmployeeTL()
+                .isApplicationPlaced()
+                .navigateToHomeAndVerifyApplicationStatus();
+    }
+
+    @Test
+    public void createTradeLicenseCounterEmployeePayByCard() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("createTradeLicenseCounterEmployeePayByCard"));
+        home.loginEmployee()
+                .navigateToTradeLicense()
+                .addNewTradeLicense()
+                .makePaymentCounterEmployeeTL()
+                .isApplicationPlaced()
+                .navigateToHomeAndVerifyApplicationStatus();
     }
 
     @Test
@@ -51,5 +86,4 @@ public class TLFlows extends SupportTest {
                 .cancelTradeLicense()
                 .isApprovedTradeLicenseCancelled();
     }
-
 }

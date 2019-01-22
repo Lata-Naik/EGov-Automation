@@ -52,22 +52,23 @@ public class PaymentPage extends FullPage {
         logger.info("Amount to be paid "+getControl("txtAmount").getText());
         if(getTestData().get("ModeOfPayment").equalsIgnoreCase("Cash")){
 //            getControl("txtCash").click();
-            payByCash();
+            payByCashTL();
             Thread.sleep(10000);
         }
         else if(getTestData().get("ModeOfPayment").equalsIgnoreCase("Cheque")){
             getControl("txtCheque").click();
-            payByCheque();
+            payByChequeTL();
         }
         else if(getTestData().get("ModeOfPayment").equalsIgnoreCase("DD")){
             getControl("txtDD").click();
-            payByDD();
+            payByDDTL();
         }
         else {
             getControl("txtCreditDebitCard").click();
-            payByCreditDebitCard();
+            payByCreditDebitCardTL();
         }
-        getControl("btnSubmit").click();
+        Thread.sleep(1000);
+        getControl("btnSubmitTL").click();
         return this;
     }
 
@@ -97,19 +98,23 @@ public class PaymentPage extends FullPage {
 
 
 
-    public void payByCash()throws Exception{
+    public void payByCashTL()throws Exception{
         addPayerDetails();
     }
     public void payByCashPT()throws Exception{
         addPayerDetailsPT();
     }
-    public void payByCheque()throws Exception{
-        addPayerDetails();
-        getControl("txtChequeNumber").enterText(getTestData().get("ChequeNumber"));
-        getControl("txtChequeDate").enterText(getTestData().get("ChequeDate"));
-        getControl("txtChequeIFSC").enterText(getTestData().get("ChequeIFSC"));
-        getControl("txtChequeBankName").enterText(getTestData().get("ChequeBankName"));
-        getControl("txtChequeBankBranch").enterText(getTestData().get("ChequeBankBranch"));
+    public void payByChequeTL()throws Exception{
+        getControl("drpPaidByChequeTL").click();
+        selectOptionFromDropDownList(getTestData().get("PaidBy"));
+        Thread.sleep(2000);
+        getControl("txtPayerNameChequeTL").enterText(getTestData().get("PayerName"));
+        getControl("txtPayerMobileNumberChequeTL").enterText(getTestData().get("PayerMobileNumber"));
+        getControl("txtChequeNumberTL").enterText(getTestData().get("ChequeNumber"));
+        getControl("txtChequeDateTL").enterText(getTestData().get("ChequeDate"));
+        scrollDown(2);
+        getControl("txtChequeIFSCTL").enterText(getTestData().get("ChequeIFSC"));
+        getControl("icnSearchIFSCChequeTL").click();
     }
     public void payByChequePT()throws Exception{
         addPayerDetailsPT();
@@ -120,13 +125,17 @@ public class PaymentPage extends FullPage {
         getControl("btnChequeDateOKPT").click();
         Thread.sleep(1000);
     }
-    public void payByDD()throws Exception{
-        addPayerDetails();
+    public void payByDDTL()throws Exception{
+        getControl("drpPaidByDDTL").click();
+        selectOptionFromDropDownList(getTestData().get("PaidBy"));
+        Thread.sleep(5000);
+        getControl("txtPayerNameDDTL").enterText(getTestData().get("PayerName"));
+        getControl("txtPayerMobileNumberDDTL").enterText(getTestData().get("PayerMobileNumber"));
         getControl("txtDDNumber").enterText(getTestData().get("DDNumber"));
         getControl("txtDDDate").enterText(getTestData().get("DDDate"));
+        scrollDown(2);
         getControl("txtDDIFSC").enterText(getTestData().get("DDIFSC"));
-        getControl("txtDDBankName").enterText(getTestData().get("DDBankName"));
-        getControl("txtDDBankBranch").enterText(getTestData().get("DDBankBranch"));
+        getControl("icnSearchIFSCDDTL").click();
     }
     public void payByDDPT()throws Exception{
         addPayerDetailsPT();
@@ -134,9 +143,13 @@ public class PaymentPage extends FullPage {
         getControl("txtDDDatePT").enterText(getTestData().get("DDDate"));
         getControl("txtDDIFSCPT").enterText(getTestData().get("DDIFSC"));
     }
-    public void payByCreditDebitCard()throws Exception{
-        addPayerDetails();
-        getControl("txtCardNumber").enterText(getTestData().get("CardNumber"));
+    public void payByCreditDebitCardTL()throws Exception{
+        getControl("drpPaidByCardTL").click();
+        selectOptionFromDropDownList(getTestData().get("PaidBy"));
+        Thread.sleep(2000);
+        getControl("txtPayerNameCardTL").enterText(getTestData().get("PayerName"));
+        getControl("txtPayerMobileNumberCardTL").enterText(getTestData().get("PayerMobileNumber"));
+        getControl("txtCardNumberTL").enterText(getTestData().get("CardNumber"));
         getControl("txtTransactionNumber").enterText(getTestData().get("TransactionNumber"));
         getControl("txtRepeatTransactionNumber").enterText(getTestData().get("TransactionNumber"));
     }
@@ -148,11 +161,11 @@ public class PaymentPage extends FullPage {
     }
 
     public void addPayerDetails() throws Exception{
-        getControl("drpPaidBy").click();
+        getControl("drpPaidByCash").click();
         selectOptionFromDropDownList(getTestData().get("PaidBy"));
         Thread.sleep(5000);
-        getControl("txtPayerName").enterText(getTestData().get("PayerName"));
-        getControl("txtPayerMobileNumber").enterText(getTestData().get("PayerMobileNumber"));
+        getControl("txtPayerNameCash").enterText(getTestData().get("PayerName"));
+        getControl("txtPayerMobileNumberCash").enterText(getTestData().get("PayerMobileNumber"));
     }
     public void addPayerDetailsPT() throws Exception{
         Thread.sleep(1000);
@@ -166,15 +179,33 @@ public class PaymentPage extends FullPage {
         getControl("txtPayerMobileNumberPT").enterText(getTestData().get("PayerMobileNumber"));
     }
 
-    public void isApplicationPlaced() throws Exception{
+    public PaymentPage isApplicationPlaced() throws Exception{
         boolean applicationApproved = getControl("txtSuccessMessage").getText().equalsIgnoreCase("Payment has been collected successfully!");
         logger.info(getControl("txtApplicationNumber").getText());
         Assert.assertTrue(applicationApproved, "Application not placed");
-        }
+        return new PaymentPage(getConfig(),getAgent(),getTestData());
+    }
 
     public void selectfromDropDown(String drpValue) throws Exception {
         String xpathCity = "//span[@class='menu-class']/*/*/div[text()='" + drpValue + "']";
 //        getControl(xpathCity).click();
         getAgent().getWebDriver().findElement(By.xpath(xpathCity)).click();
+    }
+
+    public void navigateToHomeAndVerifyApplicationStatus() throws Exception{
+        String number = getControl("txtApplicationNumber").getText();
+        String[] application=number.split(" ");
+        String applicationNumber=application[2];
+        getControl("btnGoToHome").click();
+        isApplicationIsInPendingStatus(applicationNumber);
+    }
+
+    public void isApplicationIsInPendingStatus(String applicationNumber) throws Exception {
+        getControl("txtEnterApplicationNumber").enterText(applicationNumber);
+        getControl("btnSearch").click();
+        logger.info("Application Status "+getControl("txtApplicationStatus").getText());
+        boolean applicationStatus = getControl("txtApplicationStatus").getText()
+                .equalsIgnoreCase("Pending Approval");
+        Assert.assertTrue(applicationStatus, "Application is not in Pending Status");
     }
 }

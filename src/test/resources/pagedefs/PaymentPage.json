@@ -56,6 +56,9 @@
   "btnSubmit": {
     "DESKTOP_WEB": "css = input[type='submit']"
   },
+  "btnSubmitTL": {
+    "DESKTOP_WEB": "id =custom-containers-submitButtonLabel"
+  },
   "txtCash": {
     "DESKTOP_WEB": "css=[role='tablist']>div>button:nth-child(1)"
   },
@@ -68,31 +71,58 @@
   "txtCreditDebitCard": {
     "DESKTOP_WEB": "css=[role='tablist']>div>button:nth-child(4)"
   },
-  "drpPaidBy": {
-    "DESKTOP_WEB": "xpath=//div[@class='select-field-placeholder']/../.."
+  "drpPaidByCashTL": {
+    "DESKTOP_WEB": "css=#material-ui-cash .select-field-placeholder"
   },
   "drpPaidByPT": {
     "DESKTOP_WEB": "css = div#paidBy"
   },
-  "txtPayerName": {
-    "DESKTOP_WEB": "xpath=//input[@id='custom-containers-payerName']"
+  "txtPayerNameCashTL": {
+    "DESKTOP_WEB": "css=#material-ui-cash #custom-containers-payerName"
   },
   "txtPayerNamePT": {
     "DESKTOP_WEB": "css = input#payerName"
   },
-  "txtPayerMobileNumber": {
-    "DESKTOP_WEB": "xpath=//input[@id='custom-containers-payerMobileNo']"
+  "txtPayerMobileNumberCashTL": {
+    "DESKTOP_WEB": "css=#material-ui-cash #custom-containers-payerMobileNo"
   },
   "txtPayerMobileNumberPT": {
     "DESKTOP_WEB": "css =input#ownerMobile"
   },
-  "txtChequeNumber": {
+  "drpPaidByChequeTL": {
+    "DESKTOP_WEB": "css=#material-ui-cheque .select-field-placeholder"
+  },
+  "txtPayerNameChequeTL": {
+    "DESKTOP_WEB": "css=#material-ui-cheque #custom-containers-payerName"
+  },
+  "txtPayerMobileNumberChequeTL": {
+    "DESKTOP_WEB": "css=#material-ui-cheque #custom-containers-payerMobileNo"
+  },
+  "drpPaidByDDTL": {
+    "DESKTOP_WEB": "css=#material-ui-demandDraft .select-field-placeholder"
+  },
+  "txtPayerNameDDTL": {
+    "DESKTOP_WEB": "css=#material-ui-demandDraft #custom-containers-payerName"
+  },
+  "txtPayerMobileNumberDDTL": {
+    "DESKTOP_WEB": "css=#material-ui-demandDraft #custom-containers-payerMobileNo"
+  },
+  "drpPaidByCardTL": {
+    "DESKTOP_WEB": "css=#material-ui-card .select-field-placeholder"
+  },
+  "txtPayerNameCardTL": {
+    "DESKTOP_WEB": "css=#material-ui-card #custom-containers-payerName"
+  },
+  "txtPayerMobileNumberCardTL": {
+    "DESKTOP_WEB": "css=#material-ui-card #custom-containers-payerMobileNo"
+  },
+  "txtChequeNumberTL": {
     "DESKTOP_WEB": "id=custom-containers-chequeNo"
   },
   "txtChequeNumberPT": {
     "DESKTOP_WEB": "css = input#chequeNo"
   },
-  "txtChequeDate": {
+  "txtChequeDateTL": {
     "DESKTOP_WEB": "id=custom-containers-chequeDate"
   },
   "txtChequeDatePT": {
@@ -101,7 +131,7 @@
   "btnChequeDateOKPT": {
     "DESKTOP_WEB": "xpath=//span[contains(text(),'OK')]"
   },
-  "txtChequeIFSC": {
+  "txtChequeIFSCTL": {
     "DESKTOP_WEB": "id=custom-containers-chequeIFSC"
   },
   "txtChequeIFSCPT": {
@@ -112,6 +142,12 @@
   },
   "txtChequeBankBranch": {
     "DESKTOP_WEB": "id=custom-containers-chequeBranch"
+  },
+  "icnSearchIFSCChequeTL": {
+    "DESKTOP_WEB": "css=#material-ui-chequeDetails .material-icons"
+  },
+  "icnSearchIFSCDDTL": {
+    "DESKTOP_WEB": "css=#material-ui-demandDraftDetails .material-icons"
   },
   "txtDDNumber": {
     "DESKTOP_WEB": "id=custom-containers-ddNo"
@@ -128,6 +164,9 @@
   "txtDDBankBranch": {
     "DESKTOP_WEB": "id=custom-containers-ddBranch"
   },
+  "txtCardNumberTL": {
+    "DESKTOP_WEB": "id=custom-containers-last4Digits"
+  },
   "txtTransactionNumber": {
     "DESKTOP_WEB": "id=custom-containers-TrxNo"
   },
@@ -142,6 +181,18 @@
   },
   "drpPaymentMode": {
     "DESKTOP_WEB": "css= div.payment-mode-info>div"
+  },
+  "btnGoToHome": {
+    "DESKTOP_WEB": "id=material-ui-gotoHome"
+  },
+  "btnSearch": {
+    "DESKTOP_WEB": "id=material-ui-searchButton"
+  },
+  "txtApplicationStatus": {
+    "DESKTOP_WEB": "css=td:nth-child(12)"
+  },
+  "txtEnterApplicationNumber": {
+    "DESKTOP_WEB": "css=#material-ui-appTradeAndMobNumContainer #custom-containers-applicationNo"
   }
 }
 
