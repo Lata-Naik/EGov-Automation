@@ -15,5 +15,4 @@ initDriverinCloud();
 
 and comment
 initDriver(config, browser);
-
 If you wants to run in local you should do vice versa.
