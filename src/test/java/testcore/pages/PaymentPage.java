@@ -48,7 +48,6 @@ public class PaymentPage extends FullPage {
     }
 
     public PaymentPage makePaymentCounterEmployeeTL() throws Exception{
-        getControl("btnProceedToPayment").click();
         logger.info("Amount to be paid "+getControl("txtAmount").getText());
         if(getTestData().get("ModeOfPayment").equalsIgnoreCase("Cash")){
 //            getControl("txtCash").click();
@@ -161,11 +160,11 @@ public class PaymentPage extends FullPage {
     }
 
     public void addPayerDetails() throws Exception{
-        getControl("drpPaidByCash").click();
+        getControl("drpPaidByCashTL").click();
         selectOptionFromDropDownList(getTestData().get("PaidBy"));
         Thread.sleep(5000);
-        getControl("txtPayerNameCash").enterText(getTestData().get("PayerName"));
-        getControl("txtPayerMobileNumberCash").enterText(getTestData().get("PayerMobileNumber"));
+        getControl("txtPayerNameCashTL").enterText(getTestData().get("PayerName"));
+        getControl("txtPayerMobileNumberCashTL").enterText(getTestData().get("PayerMobileNumber"));
     }
     public void addPayerDetailsPT() throws Exception{
         Thread.sleep(1000);

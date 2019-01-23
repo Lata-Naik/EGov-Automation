@@ -75,7 +75,7 @@
 		"DESKTOP_WEB": "css=#material-ui-cardContent>div:nth-child(3) #contained-button-file"
 	},
 	"btnSubmit": {
-		"DESKTOP_WEB": "id=custom-containers-submitButtonLabel"
+		"DESKTOP_WEB": "id=material-ui-payButton"
 	},
 	"icnUploadClose": {
 		"DESKTOP_WEB": "css=#material-ui-tradeDocumentDetails button .material-icons"
@@ -136,6 +136,33 @@
 	},
 	"txtApplicationNumber": {
 		"DESKTOP_WEB": "css=#custom-atoms-div #material-ui-header>div"
+	},
+	"btnAddRebatePenalty": {
+		"DESKTOP_WEB": "id=material-ui-addPenaltyRebateButton"
+	},
+	"txtPenaltyAmount": {
+		"DESKTOP_WEB": "id=custom-containers-penaltyAmount"
+	},
+	"txtRebateAmount": {
+		"DESKTOP_WEB": "id=custom-containers-rebateAmount"
+	},
+	"txtPenaltyReason": {
+		"DESKTOP_WEB": "css=#material-ui-penaltyAmountAndReasonContainer .select-field-placeholder"
+	},
+	"txtRebateReason": {
+		"DESKTOP_WEB": "css=#material-ui-rebateAmountAndReasonContainer .select-field-placeholder"
+	},
+	"txtPenaltyComment": {
+		"DESKTOP_WEB": "id=custom-containers-commentsField"
+	},
+	"txtRebateComment": {
+		"DESKTOP_WEB": "id=custom-containers-rebateCommentsField"
+	},
+	"btnAddPenaltyRebate": {
+		"DESKTOP_WEB": "id=material-ui-addButton"
+	},
+	"btnProceedToPayment": {
+		"DESKTOP_WEB": "id=custom-containers-collectPaymentButtonLabel"
 	}
 }
 

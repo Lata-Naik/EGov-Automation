@@ -94,7 +94,7 @@ public class TradeLicense extends FullPage {
 
 	public void uploadFiles() throws Exception {
 		switchToIFrame();
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 //		 getControl("btnUploadProof").enterText(getTestData().get("IDProof"));
 		Thread.sleep(10000);
 //		 getControl("icnUploadClose","isVisible");
@@ -105,6 +105,7 @@ public class TradeLicense extends FullPage {
 
 	public void submitForm() throws Exception {
 		getControl("btnSubmit").click();
+		getControl("btnProceedToPayment").click();
 	}
 
 	public TradeLicense approveTradeLicense() throws Exception {
@@ -187,5 +188,40 @@ public class TradeLicense extends FullPage {
 				.equalsIgnoreCase("Trade License Cancelled");
 		logger.info("Cancelled "+getControl("txtApplicationNumber").getText());
 		Assert.assertTrue(applicationApproved, "Application not cancelled");
+	}
+
+	public PaymentPage addNewTradeLicenseAddPenaltyRebate()throws Exception{
+		switchToIFrame();
+		getControl("btnAddNewApplication").click();
+		fillTradeLicenseForm();
+		getControl("btnAddRebatePenalty").click();
+		if(getTestData().get("CompositionType").equalsIgnoreCase("Penalty")){
+			addPenalty();
+		}
+		else if(getTestData().get("CompositionType").equalsIgnoreCase("Rebate")){
+			addRebate();
+		}
+		else if(getTestData().get("CompositionType").equalsIgnoreCase("Penalty/Rebate")){
+			addPenalty();
+			addRebate();
+		}
+		getControl("btnAddPenaltyRebate").click();
+		return new PaymentPage(getConfig(),getAgent(),getTestData());
+	}
+
+	public void addPenalty() throws Exception {
+		getControl("txtPenaltyAmount").enterText(getTestData().get("PenaltyAmount"));
+		getControl("txtPenaltyReason").click();
+		selectOptionFromDropDownList(getTestData().get("PenaltyReason"));
+		Thread.sleep(1000);
+		getControl("txtPenaltyComment").enterText(getTestData().get("PenaltyComment"));
+	}
+
+	public void addRebate() throws Exception {
+		getControl("txtRebateAmount").enterText(getTestData().get("RebateAmount"));
+		getControl("txtRebateReason").click();
+		selectOptionFromDropDownList(getTestData().get("RebateReason"));
+		Thread.sleep(1000);
+		getControl("txtRebateComment").enterText(getTestData().get("RebateComment"));
 	}
 }

@@ -79,6 +79,39 @@ public class TLFlows extends SupportTest {
     }
 
     @Test
+    public void createTradeLicenseCounterEmployeeAdhocPenalty() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("createTradeLicenseCounterEmployeeAdhocPenalty"));
+        home.loginEmployee()
+                .navigateToTradeLicense()
+                .addNewTradeLicenseAddPenaltyRebate()
+                .makePaymentCounterEmployeeTL()
+                .isApplicationPlaced()
+                .navigateToHomeAndVerifyApplicationStatus();
+    }
+
+    @Test
+    public void createTradeLicenseCounterEmployeeAdhocRebate() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("createTradeLicenseCounterEmployeeAdhocRebate"));
+        home.loginEmployee()
+                .navigateToTradeLicense()
+                .addNewTradeLicenseAddPenaltyRebate()
+                .makePaymentCounterEmployeeTL()
+                .isApplicationPlaced()
+                .navigateToHomeAndVerifyApplicationStatus();
+    }
+
+    @Test
+    public void createTradeLicenseCounterEmployeeAdhocPenaltyRebate() throws Exception{
+        logger.debug(this.getTestStartInfoMessage("createTradeLicenseCounterEmployeeAdhocPenaltyRebate"));
+        home.loginEmployee()
+                .navigateToTradeLicense()
+                .addNewTradeLicenseAddPenaltyRebate()
+                .makePaymentCounterEmployeeTL()
+                .isApplicationPlaced()
+                .navigateToHomeAndVerifyApplicationStatus();
+    }
+
+    @Test
     public void cancelApprovedLicenseApprover() throws Exception{
         logger.debug(this.getTestStartInfoMessage("cancelApprovedLicenseApprover"));
         home.loginEmployee()
