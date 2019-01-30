@@ -22,6 +22,7 @@ public class PaymentPage extends FullPage {
 
     public PaymentPage makePaymentTL() throws Exception{
         getControl("btnProceedToPayment").click();
+        Thread.sleep(1000);
         getControl("btnMakePayment").click();
         logger.info("Amount to be paid "+getControl("txtAmount").getText());
         getControl("txtMasterCard").waitUntilClickable();
