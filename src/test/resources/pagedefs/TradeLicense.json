@@ -65,14 +65,11 @@
 	"txtAddress": {
 		"DESKTOP_WEB": "xpath=//input[@id='custom-containers-ownerAddress']"
 	},
-	"btnUploadProof": {
-		"DESKTOP_WEB": "css=#material-ui-cardContent>div:nth-child(3) input"
-	},
 	"btnUploadIDProof": {
-		"DESKTOP_WEB": "css=#material-ui-cardContent>div:nth-child(3)>div:nth-child(1) #contained-button-file"
+		"DESKTOP_WEB": "#document-upload-0 input"
 	},
 	"btnUploadOwnershipProof": {
-		"DESKTOP_WEB": "css=#material-ui-cardContent>div:nth-child(3) #contained-button-file"
+		"DESKTOP_WEB": "#document-upload-1 input"
 	},
 	"btnSubmit": {
 		"DESKTOP_WEB": "id=custom-containers-submitButtonLabel"
