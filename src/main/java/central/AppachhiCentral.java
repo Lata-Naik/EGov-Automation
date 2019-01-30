@@ -69,8 +69,7 @@ public enum AppachhiCentral {
 //		String testDataFilePath = String.format("%s/%s/testdata.ini", getDirPathForConf(ConfigType.DATA_DIR),
 //				getProperty("platform", contextConf));
 
-		String environment = centralConf.getValue((ConfigType.ENV));
-
+		String environment=getProperty("env",centralConf);
 
 		if(environment.equalsIgnoreCase("QA")){
 			testDataFilePath = String.format("%s/%s/QA/testdata.ini", getDirPathForConf(ConfigType.DATA_DIR),
