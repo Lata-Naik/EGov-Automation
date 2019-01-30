@@ -95,10 +95,10 @@ public class TradeLicense extends FullPage {
 	public void uploadFiles() throws Exception {
 		switchToIFrame();
 		Thread.sleep(10000);
-//		 getControl("btnUploadProof").enterText(getTestData().get("IDProof"));
+		 getControl("btnUploadIDProof").enterText(getTestData().get("IDProof"));
 		Thread.sleep(10000);
-//		 getControl("icnUploadClose","isVisible");
-//		 getControl("btnUploadOwnershipProof").enterText(getTestData().get("OwnershipProof"));
+		 getControl("icnUploadClose","isVisible");
+		 getControl("btnUploadOwnershipProof").enterText(getTestData().get("OwnershipProof"));
 		Thread.sleep(1000);
 		getControl("btnNextStep").click();
 	}
