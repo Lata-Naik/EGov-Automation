@@ -35,7 +35,7 @@ public class HomePage extends FullPage {
         getControl("txtOTP").enterText(getTestData().get("OTP"));
 //        Thread.sleep(15000);
         getControl("btnGetStarted").click();
-        isUserLoggedIn();
+        // isUserLoggedIn();
         return this;
     }
 
@@ -47,7 +47,7 @@ public class HomePage extends FullPage {
         getControl("txtSearchCity").enterText(getTestData().get("City"));
         getControl("txtCitySearchResult").click();
         getControl("btnLogin").click();
-        isUserLoggedIn();
+        // isUserLoggedIn();
         return this;
     }
 

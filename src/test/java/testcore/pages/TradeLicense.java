@@ -21,7 +21,7 @@ public class TradeLicense extends FullPage {
 	}
 
 	public TradeLicense applyTradeLicense() throws Exception {
-		switchToIFrame();
+		// switchToIFrame();
 		getControl("btnApply").click();
 		getControl("txtSelectCity").enterText(getTestData().get("City"));
 		getControl("txtSelectCity").enterText(Keys.ENTER);
@@ -93,7 +93,10 @@ public class TradeLicense extends FullPage {
 	}
 
 	public void uploadFiles() throws Exception {
-		switchToIFrame();
+		// switchToIFrame();
+
+		Thread.sleep(10000);
+		executeJavascript("document.querySelector('#document-upload-0 #contained-button-file.jss385').style.display='inherit'");
 		Thread.sleep(10000);
 		 getControl("btnUploadIDProof").enterText(getTestData().get("IDProof"));
 		Thread.sleep(10000);
@@ -114,7 +117,7 @@ public class TradeLicense extends FullPage {
 	}
 
 	public void selectApplication() throws Exception {
-		switchToIFrame();
+		// switchToIFrame();
 		// getControl("txtLicenseApplicationNo").enterText(getTestData().get("ApplicationNumber"));
 		// getControl("txtTradeLicenseNo").enterText(getTestData().get("TradeLicenseNo"));
 		// getControl("txtOwnerMobileNo").enterText(getTestData().get("OwnerMobileNumber"));
@@ -168,7 +171,7 @@ public class TradeLicense extends FullPage {
 	}
 
 	public PaymentPage addNewTradeLicense()throws Exception{
-        switchToIFrame();
+        // switchToIFrame();
         getControl("btnAddNewApplication").click();
         fillTradeLicenseForm();
         return new PaymentPage(getConfig(),getAgent(),getTestData());
