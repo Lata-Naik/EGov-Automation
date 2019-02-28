@@ -25,7 +25,6 @@ public class HomePage extends FullPage {
         String newURL =  getConfig().getProperty("app_browser_url", config)+userType+"/user/login";
 //        logger.info("Actual url: "+getConfig().getProperty("app_browser_url", config));
         logger.info("New URL: "+newURL);
-        Thread.sleep(10000);
         getAgent().getWebDriver().navigate().to(newURL);
     }
 
