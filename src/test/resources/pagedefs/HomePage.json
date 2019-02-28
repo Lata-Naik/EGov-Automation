@@ -6,13 +6,13 @@
 		"DESKTOP_WEB": "xpath=//input[@type='number']"
 	},
 	"btnContinue": {
-		"DESKTOP_WEB": "xpath=//span[text()='Continue']"
+		"DESKTOP_WEB": "id=login-submit-action"
 	},
 	"txtOTP": {
 		"DESKTOP_WEB": "xpath=//input[@type='number']"
 	},
 	"btnGetStarted": {
-		"DESKTOP_WEB": "xpath=//span[text()='GET STARTED']"
+		"DESKTOP_WEB": "id=otp-start"
 	},
 	"btnLogin": {
 		"DESKTOP_WEB": "id=login-submit-action"

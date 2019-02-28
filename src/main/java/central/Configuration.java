@@ -87,6 +87,12 @@ public class Configuration {
 			else
 				ret_val=String.format("%s%s%s",  File.separator,System.getProperty("user.dir"),this.getValue(ConfigType.BROWSER_RESOLUTION_WIDTH));
 		}
+		if(arg.equalsIgnoreCase("tenant_name")){
+			if (System.getProperty("tenant_name")!=null)
+				ret_val=System.getProperty("tenant_name");
+			else
+				ret_val=getValue(ConfigType.TENANT_NAME);
+		}
         return ret_val;
     }
 }

@@ -25,6 +25,7 @@ public class HomePage extends FullPage {
         String newURL =  getConfig().getProperty("app_browser_url", config)+userType+"/user/login";
 //        logger.info("Actual url: "+getConfig().getProperty("app_browser_url", config));
         logger.info("New URL: "+newURL);
+        Thread.sleep(10000);
         getAgent().getWebDriver().navigate().to(newURL);
     }
 
@@ -37,14 +38,18 @@ public class HomePage extends FullPage {
         getControl("btnGetStarted").click();
         // isUserLoggedIn();
         return this;
+
     }
 
     public HomePage loginEmployee()throws Exception{
         navigateToURL(getTestData().get("UserType"));
+        Thread.sleep(5000);
         getControl("txtUserIdEmployee").enterText(getTestData().get("UserID"));
         getControl("txtPasswordEmployee").enterText(getTestData().get("Password"));
         getControl("txtCityEmployee").click();
-        getControl("txtSearchCity").enterText(getTestData().get("City"));
+//        getControl("txtSearchCity").enterText(getTestData().get("City"));
+
+        getControl("txtSearchCity").enterText(getConfig().getProperty("tenant_name", config));
         getControl("txtCitySearchResult").click();
         getControl("btnLogin").click();
         // isUserLoggedIn();

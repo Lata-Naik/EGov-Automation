@@ -48,9 +48,6 @@
 		"DESKTOP_WEB": "xpath=//div[@class='label-text complaint-submitted-label']"
 	},
 	"txtComplaintNumber": {
-		"ANDROID": "locator=value",
-		"IOS": "locator=value",
-		"MWEB": "locator=value",
 		"DESKTOP_WEB": "css=.complaint-number-value-label"
 	},
 	"txtFirstComplaint": {
@@ -66,9 +63,6 @@
 		"DESKTOP_WEB": "id=employee-search"
 	},
 	"txtLMEName": {
-		"ANDROID": "locator=value",
-		"IOS": "locator=value",
-		"MWEB": "locator=value",
 		"DESKTOP_WEB": "xpath=//div[text()='Manju']"
 	},
 	"txtAssignedToLMEmsg": {
@@ -172,9 +166,6 @@
 	},
 	"btnLogout": {
 		"DESKTOP_WEB": "xpath=//div[text()='LOGOUT']"
-	},
-	"icnProfile": {
-		"DESKTOP_WEB": "xpath=//div[text()='LOGIN']"
 	},
 	"btnReopen": {
 		"DESKTOP_WEB": "xpath=//div[text()='RE-OPEN']"
