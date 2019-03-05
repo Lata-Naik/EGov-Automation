@@ -42,7 +42,6 @@ public class HomePage extends FullPage {
 
     public HomePage loginEmployee()throws Exception{
         navigateToURL(getTestData().get("UserType"));
-        Thread.sleep(5000);
         getControl("txtUserIdEmployee").enterText(getTestData().get("UserID"));
         getControl("txtPasswordEmployee").enterText(getTestData().get("Password"));
         getControl("txtCityEmployee").click();
