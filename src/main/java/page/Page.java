@@ -1,11 +1,16 @@
 package page;
 
+import java.io.FileReader;
 import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
+
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 import io.appium.java_client.MobileDriver;
 import io.appium.java_client.PressesKeyCode;
@@ -20,6 +25,7 @@ import control.IControl;
 import enums.Platform;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import pagedef.Identifier;
 import pagedef.PageDef;
 
@@ -50,6 +56,22 @@ public abstract class Page implements IPage {
 
 	protected Map<String, String> getTestData() {
 		return this.testData;
+	}
+
+	public String getLocator(String locatorName) throws Exception{
+		String jsonFilePath = getTestData().get("jsonFilePath");
+		String locatorEnviroment = getTestData().get("locatorEnviroment");
+		JSONParser parser = new JSONParser();
+		Object obj = parser.parse(new FileReader(jsonFilePath));
+		JSONObject jsonObject = (JSONObject) obj;
+		JSONObject name = (JSONObject) jsonObject.get(locatorName);
+		String value = (String) name.get(locatorEnviroment);
+		System.out.println(value);
+		return value;
+	}
+
+	public String getLoacatorWithOutLocatorType(String locatorName) throws Exception{
+		return getLocator(locatorName).split("=")[1].trim();
 	}
 
 	public IControl getControl(String name) throws Exception {

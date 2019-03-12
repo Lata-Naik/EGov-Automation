@@ -14,7 +14,7 @@
     "MWEB": "locator=value",
     "DESKTOP_WEB": "css = div.pt-search-property"
   },
-  "btnIncompleteAssessments": {
+  "btnMyProperty": {
     "ANDROID": "locator=value",
     "IOS": "locator=value",
     "MWEB": "locator=value",
@@ -116,12 +116,6 @@
     "IOS": "locator=value",
     "MWEB": "locator=value",
     "DESKTOP_WEB": "css = input#heightAbove36Feet"
-  },
-  "drpSubUsageType": {
-    "ANDROID": "locator=value",
-    "IOS": "locator=value",
-    "MWEB": "locator=value",
-    "DESKTOP_WEB": "css = div#assessment-subUsageType"
   },
   "drpOccupancy": {
     "ANDROID": "locator=value",
@@ -274,7 +268,7 @@
     "ANDROID": "locator=value",
     "IOS": "locator=value",
     "MWEB": "locator=value",
-    "DESKTOP_WEB": "p.declaration-main-header+div #rcpt"
+    "DESKTOP_WEB": "css = p.declaration-main-header+div #rcpt"
   },
   "txtPropertyID": {
     "ANDROID": "locator=value",
@@ -356,6 +350,12 @@
   },
   "btnAssess&Pay": {
     "DESKTOP_WEB":"xpath=//div[contains(text(),'Assess & Pay')]"
+  },
+  "txtDocumentIdNo": {
+    "DESKTOP_WEB":"css = input#ownerCategoryId"
+  },
+  "lblTotalDueAmount": {
+    "DESKTOP_WEB":"css = div.property-dues-total-amount>div"
   }
 
 

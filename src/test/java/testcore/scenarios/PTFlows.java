@@ -1,6 +1,17 @@
 package testcore.scenarios;
 
+
+
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.testng.annotations.Test;
+
 
 public class PTFlows extends SupportTest {
     @Test
@@ -9,7 +20,6 @@ public class PTFlows extends SupportTest {
                 .CitizenNavigateToPropertyTax()
                 .applyPropertyTaxCitizen()
                 .fillPropertyTaxFormAndMakeFullPaymentCitizen()
-                .PTmakePayment()
                 .getDataAfterPaymentSucessfull();
         Thread.sleep(9000);
     }
@@ -69,7 +79,38 @@ public class PTFlows extends SupportTest {
                 .getDataAfterPaymentSucessfull();
 
     }
+
+    @Test
+    public void createResidentialPropertyTaxForFullExemption() throws Exception {
+        home.loginCitizen()
+                .CitizenNavigateToPropertyTax()
+                .applyPropertyTaxCitizen()
+                .fillPropertyTaxFormAndMakeFullPaymentCitizen()
+                .getDataAfterPaymentSucessfull();
+    }
+
+    @Test
+    public void createCommercialPropertyTaxForMultipleOwner() throws Exception {
+        home.loginCitizen()
+                .CitizenNavigateToPropertyTax()
+                .applyPropertyTaxCitizen()
+                .fillCommercialPropertyTaxFormAndMakeFullPaymentCitizen()
+                .getDataAfterPaymentSucessfull();
+    }
+
+    @Test
+    public void createResidentialPropertyTaxExemptionUpTo5000() throws Exception {
+        home.loginCitizen()
+                .CitizenNavigateToPropertyTax()
+                .applyPropertyTaxCitizen()
+                .fillPropertyTaxFormAndMakeFullPaymentCitizen()
+                .getDataAfterPaymentSucessfull();
+    }
+
+
+
 }
+
 
 
 

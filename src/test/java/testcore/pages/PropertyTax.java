@@ -2,8 +2,12 @@ package testcore.pages;
 
 import agent.IAgent;
 import central.Configuration;
+import control.IControl;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.Map;
 
@@ -38,36 +42,61 @@ public class PropertyTax extends FullPage {
         return this;
     }
 
-    public PaymentPage fillPropertyTaxFormAndMakeFullPaymentCitizen() throws Exception {
+    public PropertyTax fillPropertyTaxFormAndMakeFullPaymentCitizen() throws Exception {
         fillPropertyAddressCitizen();
         fillResidentialAssessmentInformation();
         fillOwnerInformation();
         fillReviewAndFullPaymentCitizen();
-        return new PaymentPage(getConfig(), getAgent(), getTestData());
-
+        return this;
     }
+    public PropertyTax fillCommercialPropertyTaxFormAndMakeFullPaymentCitizen() throws Exception {
+        fillPropertyAddressCitizen();
+        fillCommercialAssessmentInformation();
+        fillOwnerInformation();
+        fillReviewAndFullPaymentCitizen();
+        return this;
+    }
+
+    private void fillOwnerInformation() throws Exception {
+        System.out.println(getTestData().get("typeOfOwnership"));
+        if (getTestData().get("typeOfOwnership").equalsIgnoreCase("Single Owner")) {
+            fillSingleOwnerInformation();
+        } else if (getTestData().get("typeOfOwnership").equalsIgnoreCase("Multiple Owners")) {
+            getControl("drpTypeOfOwner").click();
+            selectfromDropDown(getTestData().get("typeOfOwnership"));
+            int noOfOwner = Integer.parseInt(getTestData().get("NoOfOwner"));
+            for (int i = 0; i < noOfOwner; i++) {
+                String ownerInformationCardLocator = "form#ownerInfo_" + i + " ";
+                fillMultipleOwnerInformation(ownerInformationCardLocator , i);
+            }
+            //owner 1 name = form#ownerInfo_0  input#ownerName
+            //owner 2 name = form#ownerInfo_1  input#ownerName
+        }
+    }
+
 
     public PaymentPage fillResidentialPropertyTaxFormAndMakeFullPaymentWithRebateOrChargesEmployee() throws Exception {
         fillPropertyAddressEmployee();
         fillResidentialAssessmentInformation();
-        fillOwnerInformation();
+        fillSingleOwnerInformation();
         addRebateOrCharges();
         reviewAndPayPageEmployee();
         return new PaymentPage(getConfig(), getAgent(), getTestData());
 
     }
 
-    public PaymentPage fillResidentialPropertyTaxFormAndMakeFullPaymentWithChequeEmployee() throws Exception{
+    public PaymentPage fillResidentialPropertyTaxFormAndMakeFullPaymentWithChequeEmployee() throws Exception {
         fillPropertyAddressEmployee();
         fillResidentialAssessmentInformation();
-        fillOwnerInformation();
+        fillSingleOwnerInformation();
         reviewAndPayPageEmployee();
         return new PaymentPage(getConfig(), getAgent(), getTestData());
     }
-    public PaymentPage fillCommercialPropertyTaxFormAndMakeFullPaymentWithCashEmployee() throws Exception{
+
+    public PaymentPage fillCommercialPropertyTaxFormAndMakeFullPaymentWithCashEmployee() throws Exception {
         fillPropertyAddressEmployee();
         fillCommercialAssessmentInformation();
-        fillOwnerInformation();
+        fillSingleOwnerInformation();
         reviewAndPayPageEmployee();
         return new PaymentPage(getConfig(), getAgent(), getTestData());
 
@@ -85,13 +114,13 @@ public class PropertyTax extends FullPage {
         Thread.sleep(2000);
     }
 
-    private void fillAdditionalCharges (String chargeType) throws Exception {
-        if(chargeType.equalsIgnoreCase("Rebate")){
+    private void fillAdditionalCharges(String chargeType) throws Exception {
+        if (chargeType.equalsIgnoreCase("Rebate")) {
             getControl("txtrebateChargeAmount").enterText(getTestData().get("ChargeAmount"));
             getControl("drpAdhocRebateReason").click();
             selectfromDropDown(getTestData().get("rebateReason"));
         }
-        if(chargeType.equalsIgnoreCase("Penalty")){
+        if (chargeType.equalsIgnoreCase("Penalty")) {
             getControl("txtPenaltyChargeAmount").enterText(getTestData().get("ChargeAmount"));
             getControl("drpAdhocPenaltyReason").click();
             selectfromDropDown(getTestData().get("penaltyReason"));
@@ -101,7 +130,7 @@ public class PropertyTax extends FullPage {
     public PaymentPage fillPropertyTaxFormAndMakePartialPayment() throws Exception {
         fillPropertyAddressCitizen();
         fillCommercialAssessmentInformation();
-        fillOwnerInformation();
+        fillSingleOwnerInformation();
         fillReviewAndPartialPaymentCitizen();
         return new PaymentPage(getConfig(), getAgent(), getTestData());
     }
@@ -124,13 +153,39 @@ public class PropertyTax extends FullPage {
     }
 
     private void fillReviewAndFullPaymentCitizen() throws Exception {
-        scrollDown(20); // #TODO
-        Thread.sleep(3000);
+        scrollDown(5);
+        scrollToBottom();
+        Thread.sleep(5000);
+
 //        getControl("chkDeclaration").click(); //#TODO
-        getControl("rdoFullPayment").click();
+        int totalAmountToBePaid = getTotalAmountToBePaid();
+        boolean amountMoreThanZero = takeActionOnBasisOfAmountToBePaidFullPayment(totalAmountToBePaid);
+        if (amountMoreThanZero) {
+            new PaymentPage(getConfig(), getAgent(), getTestData()).PTmakePayment();
+        }
+    }
+
+    private boolean takeActionOnBasisOfAmountToBePaidFullPayment(int totalAmountToBePaid) throws Exception {
+        if (totalAmountToBePaid > 100) {
+            getControl("rdoFullPayment").click();
+            getControl("btnPay").waitUntilClickable();
+            getControl("btnPay").click();
+            return true;
+        } else if (totalAmountToBePaid > 0) {
+            getControl("btnPay").waitUntilClickable();
+            getControl("btnPay").click();
+            return true;
+        }
         getControl("btnPay").waitUntilClickable();
         getControl("btnPay").click();
+        return false;
+
     }
+
+    private int getTotalAmountToBePaid() throws Exception {
+        return Integer.parseInt(getControl("lblTotalDueAmount").getText().replace("INR ", ""));
+    }
+
 
     private void PaymentDetailsFullPaymentEmployee() throws Exception {
         scrollDown(1); // #TODO
@@ -173,7 +228,7 @@ public class PropertyTax extends FullPage {
         getControl("txtAmountToBePaid").enterText(getTestData().get("AmountToBePaid"));
     }
 
-    private void fillOwnerInformation() throws Exception {
+    private void fillSingleOwnerInformation() throws Exception {
         getControl("txtOwnerName").waitUntilVisible();
         getControl("txtOwnerName").enterText(getTestData().get("OwnerName"));
 //        getControl("rdoGenderFemale").click(); #TODO
@@ -187,6 +242,9 @@ public class PropertyTax extends FullPage {
         Thread.sleep(1000);
         getControl("drpOwnerCategory").click();
         selectfromDropDown(getTestData().get("OwnerCategory"));
+        if (!getTestData().get("OwnerCategory").equalsIgnoreCase("None of the above")) {
+            getControl("txtDocumentIdNo").enterText(getTestData().get("DocumentIdNo"));
+        }
 //        getControl("txtEMailID").enterText(getTestData().get("EMailID")); #TODO
         scrollDown();
         Thread.sleep(1000);
@@ -194,6 +252,17 @@ public class PropertyTax extends FullPage {
         getControl("btnNext").click();
     }
 
+    private void fillMultipleOwnerInformation(String ownerInformationCardLocator, int i) throws Exception {
+        WebDriver driver = getAgent().getWebDriver();
+        String txtOwnerName = ownerInformationCardLocator + getLoacatorWithOutLocatorType("txtOwnerName");
+        String variableName = getVariableName("OwnerName", i);
+        driver.findElement(By.cssSelector(txtOwnerName)).sendKeys(getTestData().get(variableName ));
+
+    }
+
+    private String getVariableName(String variableName, int i) {
+        return variableName+i;
+    }
 
     public void fillPropertyAddressCitizen() throws Exception {
         getControl("drpDwnCity").click();
