@@ -356,7 +356,8 @@
   },
   "btnAssess&Pay": {
     "DESKTOP_WEB":"xpath=//div[contains(text(),'Assess & Pay')]"
+  },
+  "lstFinancialYear": {
+    "DESKTOP_WEB":"css=.year-range-botton-cont #financialYear span"
   }
-
-
 }

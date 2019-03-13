@@ -2,9 +2,12 @@ package testcore.pages;
 
 import agent.IAgent;
 import central.Configuration;
+import control.IControl;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 
+import java.util.List;
 import java.util.Map;
 
 public class PropertyTax extends FullPage {
@@ -25,7 +28,8 @@ public class PropertyTax extends FullPage {
 		getControl("btnAddNewProperty").waitUntilClickable();
 		getControl("btnAddNewProperty").click();
 		getControl("financialYear2018_19").waitUntilClickable();
-		getControl("financialYear2018_19").click();
+//		getControl("financialYear2018_19").click();
+		selectFinancialYear();
 		return this;
 	}
 
@@ -34,8 +38,19 @@ public class PropertyTax extends FullPage {
 		getControl("btnAssessNewPropertyEmployee").waitUntilClickable();
 		getControl("btnAddNewProperty").click();
 		getControl("financialYear2018_19").waitUntilClickable();
-		getControl("financialYear2018_19").click();
+//		getControl("financialYear2018_19").click();
+		selectFinancialYear();
 		return this;
+	}
+
+	public void selectFinancialYear() throws Exception	{
+		List<IControl> lstFinancialYear = getControls("lstFinancialYear");
+		for(int i=0; i<lstFinancialYear.size(); i++){
+			if(lstFinancialYear.get(i).getText().equalsIgnoreCase(getTestData().get("FinancialYear"))){
+				lstFinancialYear.get(i).click();
+				break;
+			}
+		}
 	}
 
 	public PaymentPage fillPropertyTaxFormAndMakeFullPaymentCitizen() throws Exception {
